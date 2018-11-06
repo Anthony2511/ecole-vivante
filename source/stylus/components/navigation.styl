@@ -1,0 +1,187 @@
+.menu-page
+  position relative
+  top: 30px
+.nav
+  font-size: s(16,16)
+  font-weight: 500
+  position: absolute
+  top: s(50,16)
+  max-width: s(1240,16)
+  margin: 0 auto
+  right: 0
+  left: 0
+  z-index: 20
+  color: $white
+  text-align: right
+  &__logo
+    max-width: s(60,16)
+    height: s(68,16)
+  &__bloc-link
+    position: absolute
+    left: 0
+    top: s(-20,16)
+    text-align: center
+    max-width s(104,16)
+  &__bloc-title
+    font-family: 'whoopass'
+    font-size: s(18)
+    letter-spacing: 0.2em
+    margin-top: s(10,18)
+  &__item
+    display: inline-block
+    padding-bottom: s(5,16)
+    &:hover span
+      background-size: 100% s(3,16)
+  &__item + &__item
+    margin-left: s(40,16)
+  &__link
+    display: block
+    width: 100%
+    height: 100%
+  &__span
+    display: inline-block
+    border-bottom: s(2,16) solid transparent
+    transition: 0.5s
+    border: none
+    background:linear-gradient(to top, $darkYellow,$darkYellow) no-repeat bottom left
+    padding-bottom: s(6,16)
+    background-size: 0 s(2,16)
+    background-position: bottom center
+    &--active
+      border-color: $darkYellow
+      background: none
+      transition: none
+      padding-bottom: s(5,16)
+  &__button
+    top: -4em
+    right: s(20,16)
+    width: s(35,16)
+    height: s(80,16)
+    display: none
+  &__button-wrap
+    position: absolute
+    top: 15%
+    right: 5%
+  &__icon
+    position: relative
+    width: s(35,16)
+    height: s(45,16)
+    margin: s(5,16) auto
+    cursor: pointer
+    transition: .5s ease-in-out
+    transform: rotate(0deg)
+    & span
+      display: block;
+      position: absolute;
+      height: s(5,20)
+      width: 100%;
+      background: $black
+      border-radius: s(9,16)
+      opacity: 1;
+      left: 0;
+      transform: rotate(0deg);
+      transition: .25s ease-in-out;
+  &__icon span:nth-child(1)
+    top: s(8,16)
+  &__icon span:nth-child(2)
+    top: s(18,16)
+  &__icon span:nth-child(3)
+    top s(18,16)
+  &__icon span:nth-child(4)
+    top: s(28,16)
+  &__icon span
+    position: absolute
+    left: 0
+    display: block
+    width: 100%
+    height: s(4,16)
+    transition: .25s ease-in-out
+    transform: rotate(0deg)
+    opacity: 1
+    border-radius: s(9,16)
+    background: $white
+.with-menu
+    .nav
+      &__bloc
+        height s(610,16)
+        transition height .5s ease
+      &__link
+        padding-top s(5,16)
+.menu-unfolded
+  .nav
+    &__icon span:nth-child(1)
+      top: s(18,16)
+      width: 0%
+      left: 50%
+    &__icon span:nth-child(2)
+      transform: rotate(45deg)
+    &__icon span:nth-child(3)
+      transform: rotate(-45deg)
+    &__icon span:nth-child(4)
+      top: s(18,16)
+      width: 0%
+      left: 50%
+
+@media screen and ( max-width: 1300px)
+  .nav
+    margin-right: s(20,16)
+    &__bloc-link
+      margin-left: s(20,16)
+
+@media screen and ( max-width: 1024px)
+  .nav
+    min-height: 0
+    margin-right: 0
+    &__item + &__item
+      margin-left: 0
+    &__logo
+      max-width: s(40,16)
+      height: s(48,16)
+    &__item
+      display: block
+      text-align: center
+      margin-right: 0
+      font-size: s(20,20)
+      padding: s(20,20) 0
+      line-height: 2
+    &__button
+      display inline-block
+      position: absolute
+      top: s(-30,16)
+      text-align: right
+      cursor pointer
+    &__bloc
+      margin-top s(75,22)
+      height 0
+      padding 0
+      overflow: hidden
+      transition .5s height ease
+    &__bloc-link
+      max-width 100%
+      display flex
+      align-items: center
+    &__bloc-title
+      margin-left: s(20,16)
+    &__link
+      display block
+      margin-right: 0
+    &__item:hover .open
+    &__item .open
+      transition .5s all ease
+      transition-property height, visibility, opacity
+      height s(90,22)
+      opacity 1
+    &__item .unfolded:after
+      transition .5s transform ease
+      transform rotate(0deg)
+      top s(12,22)
+  .with-menu
+    .nav
+      &__bloc
+        background-color: $mediumRed
+
+@media screen and (max-width: 350px)
+  .nav
+    &__bloc-title
+      font-size s(16)
+      margin-left: s(10)
