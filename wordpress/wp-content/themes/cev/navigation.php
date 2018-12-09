@@ -1,35 +1,54 @@
-<nav class="nav">
-  <h2 aria-level="2" role="heading" class="hidden"><?= __('Navigation principale','wp'); ?></h2>
-  <div class="nav__button">
-    <div class="nav__button-wrap">
-      <div class="nav__icon">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-  </div>
-  <div class="nav__bloc">
-    <a href="#" class="nav__bloc-link">
-      <svg class="nav__logo" xmlns="http://www.w3.org/2000/svg" viewBox="1133 -93.672 66.69 74.15">
-        <defs><style>.a{fill:#da4736;}.b{fill:#ffcd79;}.c{fill:#fff;}</style></defs>
-        <g transform="translate(303 -325.672)">
-          <g transform="translate(830 232)">
-            <path class="a" d="M63,37.08a29.62,29.62,0,1,1-8.686-20.965A29.62,29.62,0,0,1,63,37.08"/>
-            <rect class="b" width="30.94" height="68.08" transform="translate(17.87 3.04)"/>
-            <path class="c" d="M66.69,39.59,0,0V34.57L66.69,74.15V39.59Z"/>
-          </g>
-        </g>
-      </svg>
+<nav class="menu">
+		<h2 class="hidden">Menu de navigation</h2>
+		<a href="#" class="menu-button">
+			<div class="menu-button__wrap"><span class="menu-button__label">Menu</span>
+				<div class="nav-icon"><span></span><span></span><span></span><span></span></div>
+			</div>
+		</a>
+    <a href="<?= get_home_url(); ?>" class="nav__bloc-link">
+      <figure>
+      <img src="./images/LogoSite.png" alt="">
+      </figure>
     </a>
-    <ul class="nav__menu">
-      <?php global $post; $thePostID = $post->ID; ?>
-      <?php foreach (b_get_menu_items('main-nav') as $navItem): ?>
-        <li class="nav__item">
-            <a class="nav__link" href="<?= $navItem->url;?>" title="Vers la page <?php the_title(); ?>"><span class="nav__span <?php echo $thePostID == $navItem->id ? "nav__span--active" : "" ;?>"><?php echo $navItem->label;?></span></a>
-        </li>
-        <?php endforeach; ?>
-    </ul>
-  </div>
-</nav>
+		<?php global $post; $thePostID = $post->ID; ?>
+			<div class="flexnav__wrap"><a class="flexnav__link <?php echo $thePostID == 5 ? "active" : ""; ?>" href="<?php echo home_url(); ?>">
+					Accueil
+				</a>
+				<div class="flexnav__dropwrap flexnav__dropwrap1">
+					<a href="#" class="flexnav__dropbtn flexnav__dropbtn1 <?php echo $thePostID == 33 || $thePostID == 59 ? "active" : ""; ?>" id="test">
+						Présentation
+					</a>
+					<div class="flexnav__dropcnt flexnav__dropcnt1">
+						<a class="flexnav__dropcnt__link <?php echo $thePostID == 33 ? "active" : ""; ?>" href="<?php echo the_permalink('33'); ?>">
+							A Propos
+						</a>
+						<a class="flexnav__dropcnt__link <?php echo $thePostID == 59 ? "active" : ""; ?>" href="<?php echo the_permalink('59'); ?>">
+							Nos membres
+						</a>
+					</div>
+				</div>
+				<div class="flexnav__dropwrap flexnav__dropwrap2">
+					<a href="#" class="flexnav__dropbtn flexnav__dropbtn2 <?php echo $thePostID == 106 || $thePostID == 127 ? "active" : ""; ?>">
+						Comprendre
+					</a>
+					<div class="flexnav__dropcnt flexnav__dropcnt2">
+						<a class="flexnav__dropcnt__link <?php echo $thePostID == 106 ? "active" : ""; ?>" href="<?php the_permalink('106'); ?>">
+							A Propos
+						</a>
+						<a class="flexnav__dropcnt__link <?php echo $thePostID == 127 ? "active" : ""; ?>" href="<?php echo the_permalink('127'); ?>">
+							Nos membres
+						</a>
+					</div>
+				</div>
+				<a class="flexnav__link <?php echo $thePostID == 155 ? "active" : ""; ?>" href="<?php the_permalink('155'); ?>">
+					Actualités/Évènements
+				</a>
+				<a class="flexnav__link <?php echo $thePostID == 178 ? "active" : ""; ?>" href="<?php the_permalink('178'); ?>">
+					Partenaires
+				</a>
+				<a class="flexnav__link <?php echo $thePostID == 267 ? "active" : ""; ?>" href="<?php the_permalink('267'); ?>">
+					Contact
+				</a>
+			</div>
+		</div>
+	</nav>
