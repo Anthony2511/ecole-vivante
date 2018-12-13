@@ -1,19 +1,30 @@
 .header
-    background url('../images/backgroundheader.png') no-repeat top center/cover
-    background-position: 50% 80%
     position: relative
-    min-height: 45.8em
-    &:before
-      content: ''
-      position: absolute
-      top: 0
-      left: 0
-      right: 0
-      bottom: 0
-      width: 100%
-      height: 100%
-      background-color: alpha($cBlue,0.9)
-      z-index: 10
+    overflow hidden
+    height 100vh
+    &__bg
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background url('../images/backgroundheader.png') no-repeat top center/cover
+      background-position: 50% 80%
+      transform: skewY(4deg);
+      transform-origin: bottom right;
+      &:before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        width: 100%
+        height: 100%
+        background-color: alpha($cBlue,0.9)
+        z-index: 10
 .header-home
   position: relative
   z-index: 15
@@ -37,4 +48,5 @@
     max-width 50%
     text-align center
     line-height: 1.2
+
     
