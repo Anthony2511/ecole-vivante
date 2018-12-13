@@ -59,19 +59,8 @@ function wp_register_types() {
               'menu_icon' => 'dashicons-welcome-write-blog',
               'supports' => ['title','thumbnail']
         ] );
-  register_post_type( 'lieux', [
-              'label' => 'Lieux',
-              'labels' => [
-                          'singular_name' => 'lieux',
-                          'add_new' =>'Ajouter un nouveau lieu'
-                    ],
-              'description' => 'Permet d\'afficher les différents lieux',
-              'public' => true,
-              'menu_position' => 22,
-              'menu_icon' => 'dashicons-location',
-              'supports' => ['title','thumbnail']
-        ] );
-  register_taxonomy('places', array('artistes', 'activites'), [
+
+  register_taxonomy('category', array('news'), [
       'label' => 'Secteur d\'activité',
       'labels' => [
           'singular_name' => 'Secteur d\'activité',

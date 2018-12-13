@@ -16,7 +16,7 @@
                 Accueil
             </a>
             <div class="flexnav__dropwrap flexnav__dropwrap1">
-                <a href="#" class="flexnav__dropbtn flexnav__dropbtn1 <?php echo $thePostID == 33 || $thePostID == 59 ? "active" : ""; ?>" id="test">
+                <a href="#" class="flexnav__dropbtn flexnav__dropbtn1 <?php echo $thePostID == 33 || $thePostID == 59 ? "active" : ""; ?> flexnav__dropbtn--arrow" id="test">
                     Présentation
                 </a>
                 <div class="flexnav__dropcnt flexnav__dropcnt1">
@@ -29,7 +29,7 @@
                 </div>
             </div>
             <div class="flexnav__dropwrap flexnav__dropwrap2">
-                <a href="#" class="flexnav__dropbtn flexnav__dropbtn2 <?php echo $thePostID == 106 || $thePostID == 127 ? "active" : ""; ?>">
+                <a href="#" class="flexnav__dropbtn flexnav__dropbtn2 <?php echo $thePostID == 106 || $thePostID == 127 ? "active" : ""; ?> flexnav__dropbtn--arrow">
                     Comprendre
                 </a>
                 <div class="flexnav__dropcnt flexnav__dropcnt2">
@@ -51,5 +51,7 @@
                 Contact
             </a>
         </div>
+        <a href="#" class="search"><span class="hidden">Recherche</span></a>
+
     </div>
 </nav>
