@@ -187,8 +187,8 @@ body
     font-weight: normal;
     font-style: normal;
 
-    src: url('../fonts/icomoon/icomoon.eot?66xix8');
-    src: url('../fonts/icomoon/icomoon.eot?66xix8#iefix') format('embedded-opentype'), url('../fonts/icomoon/icomoon.ttf?66xix8') format('truetype'), url('../fonts/icomoon/icomoon.woff?66xix8') format('woff'), url('../fonts/icomoon/icomoon.svg?66xix8#icomoon') format('svg');
+    src: url('../fonts/icomoon/icomoon.eot?up9vi8');
+    src: url('../fonts/icomoon/icomoon.eot?up9vi8#iefix') format('embedded-opentype'), url('../fonts/icomoon/icomoon.ttf?up9vi8') format('truetype'), url('../fonts/icomoon/icomoon.woff?up9vi8') format('woff'), url('../fonts/icomoon/icomoon.svg?up9vi8#icomoon') format('svg');
 }
 @font-face
 {
@@ -345,6 +345,55 @@ body
     margin-bottom: 2em;
 
     text-align: center;
+}
+.home-who
+{
+    padding: 3.125em 0;
+}
+.home-who__container
+{
+    display: -ms-flexbox;
+    display: flex;
+        flex-direction: row;
+
+    width: 100%;
+
+    -ms-flex-direction: row;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.home-who__bloc
+{
+    width: 50%;
+    margin-right: 10%;
+}
+.home-who__bloc-text p
+{
+    font-family: 'opensans';
+    font-weight: 300;
+    line-height: 2;
+
+    margin-bottom: 2.5em;
+
+    color: #4f6c7a;
+}
+.home-who__title--icon:before
+{
+    font-family: 'icomoon';
+    font-size: .857142857142857em;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+
+    margin-right: .666666666666667em;
+
+    content: '\e900';
+    text-transform: none;
+
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 .menu
 {
@@ -855,6 +904,18 @@ body
         transition: .3s ease-out;
         transition-property: color;
     }
+}
+.title
+{
+    font-family: 'firasans';
+    font-size: 2.1875em;
+    font-weight: 600;
+
+    margin-bottom: .857142857142857em;
+}
+.title__blue
+{
+    color: #4f6c7a;
 }
 .wpcf7
 {
