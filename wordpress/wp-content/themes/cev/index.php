@@ -43,56 +43,37 @@ Template Name: Page d’accueil
       <section class="home-news wrap">
           <h2 class="home-news__title home-news__title--icon title-center title__white" aria-level="2" role="heading"><?= __('Nos dernières actualités/évènements','wp'); ?></h2>
           <div class="home-news__container">
+	          <?php $posts = new WP_Query( ['posts_per_page' => 3, 'post_type' => 'news', 'orderby' => 'post-date', 'order' => 'ASC'] ); ?>
+	          <?php if($posts->have_posts()) : while($posts->have_posts()): $posts->the_post();?>
                   <div class="home-news__bloc">
+	                  <?php $homeNews = get_field('news-img'); ?>
                       <figure>
-                          <img src="<?= $images . '/../../images/imageNews1.png';?>" class="home-news__img" alt="">
+	                      <?php if( !empty($homeNews) ): ?>
+		                      <?php $size = 'thumb-home-news';
+		                      $thumb = $homeNews['sizes'][ $size ]; ?>
+                              <img class="home-news__img" src="<?= $thumb; ?>" width="336" height="215" alt="<?= $homeNews['alt']; ?>">
+	                      <?php endif; ?>
                       </figure>
                       <section class="home-news__infos">
-                          <span class="home-news__category">Évènement</span>
-                          <h3 class="home-news__bloc-title">Apéro de la cité</h3>
-                          <time class="home-news__bloc-date">8 Octobre 2018</time>
+	                      <?php $newsID = $post->ID; ?>
+	                      <?php if(wp_get_taxonomies($newsID, 'category')): ?>
+                              <span class="home-news__category"><?= wp_get_taxonomies($newsID, 'category'); ?></span>
+	                      <?php endif; ?>
+                  
+                          <h3 class="home-news__bloc-title"><?= the_title(); ?></h3>
+                          <time class="home-news__bloc-date"><?= get_the_date(); ?></time>
                           <p class="home-news__bloc-text">
                               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non turpis in nulla dignissim
                               hendrerit. Phasellus gravida diam vitae lacus egestas, a ultricies libero rutrum.
                           </p>
-                          <a href="#" class="button-white"><?= __('En savoir plus','wp'); ?></a>
+                          <a href="<?= the_permalink(); ?>" class="button-white"><?= __('En savoir plus','wp'); ?></a>
                       </section>
-                      <a href="<?php the_permalink(); ?>" class="home-news__bloc-link"></a>
+                      <a href="<?= the_permalink(); ?>" class="home-news__bloc-link"></a>
                   </div>
-              <div class="home-news__bloc">
-                  <figure>
-                      <img src="<?= $images . '/../../images/imageNews2.png';?>" class="home-news__img" alt="">
-                  </figure>
-                  <section class="home-news__infos">
-                      <span class="home-news__category">Évènement</span>
-                      <h3 class="home-news__bloc-title">Apéro de la cité</h3>
-                      <time class="home-news__bloc-date">8 Octobre 2018</time>
-                      <p class="home-news__bloc-text">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non turpis in nulla dignissim
-                          hendrerit. Phasellus gravida diam vitae lacus egestas, a ultricies libero rutrum.
-                      </p>
-                      <a href="#" class="button-white"><?= __('En savoir plus','wp'); ?></a>
-                  </section>
-                  <a href="<?php the_permalink(); ?>" class="home-news__bloc-link"></a>
-              </div>
-              <div class="home-news__bloc">
-                  <figure>
-                      <img src="<?= $images . '/../../images/imageNews3.png';?>" class="home-news__img" alt="">
-                  </figure>
-                  <section class="home-news__infos">
-                      <span class="home-news__category">Évènement</span>
-                      <h3 class="home-news__bloc-title">Apéro de la cité</h3>
-                      <time class="home-news__bloc-date">8 Octobre 2018</time>
-                      <p class="home-news__bloc-text">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non turpis in nulla dignissim
-                          hendrerit. Phasellus gravida diam vitae lacus egestas, a ultricies libero rutrum.
-                      </p>
-                      <a href="#" class="button-white"><?= __('En savoir plus','wp'); ?></a>
-                  </section>
-                  <a href="<?php the_permalink(); ?>" class="home-news__bloc-link"></a>
-              </div>
+                  <?php wp_reset_postdata(); ?>
+	          <?php endwhile; endif; ?>
           </div>
-          <a href="#" class="button-yellow button-center"><?= __('Voir plus d\'actualités','wp'); ?></a>
+          <a href="<?= the_permalink(16); ?>" class="button-yellow button-center"><?= __('Voir plus d\'actualités','wp'); ?></a>
       </section>
   </div>
   	  <?php include('footer.php'); ?>
