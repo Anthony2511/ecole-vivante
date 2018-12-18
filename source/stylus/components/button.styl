@@ -4,6 +4,13 @@
     padding: s(10,16) s(40,16)
     border-radius: 10px
     font-weight: 500
+    display inline-block
+    border 1px solid transparent
+    transition .3s ease-in-out
+    &:hover
+        background-color $cWhite
+        border 1px solid $cBlue
+        transition .3s ease-in-out
 
 .button-white
     background-color: $cWhite
@@ -12,6 +19,14 @@
     padding: s(10,16) s(40,16)
     border-radius: 10px
     font-weight: 500
+    display inline-block
+    position relative
+    z-index 20
+    transition .3s ease-in-out
+    &:hover
+        background-color $cYellow
+        border 1px solid transparent
+        transition .3s ease-in-out
 
 .button-center
     display flex

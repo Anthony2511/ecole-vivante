@@ -7,9 +7,15 @@
     </a>
     <div class="menu__container">
         <a href="<?= get_home_url(); ?>" class="menu__bloc-link">
-            <figure>
-                <img src="<?= $images . '/../../images/LogoSite.png';?>" alt="">
-            </figure>
+            <?php if ( !is_front_page() && !is_home() ): ?>
+                <figure>
+                    <img src="<?= $images . '/../../images/LogoSiteNom.png';?>" alt="">
+                </figure>
+            <?php else: ?>
+                <figure>
+                    <img src="<?= $images . '/../../images/LogoSite.png';?>" alt="">
+                </figure>
+            <?php endif; ?>
         </a>
 	    <?php global $post; $thePostID = $post->ID; ?>
         <div class="flexnav__wrap"><a class="flexnav__link <?php echo $thePostID == 5 ? "active" : ""; ?>" href="<?php echo home_url(); ?>">
@@ -41,7 +47,7 @@
                     </a>
                 </div>
             </div>
-            <a class="flexnav__link <?php echo $thePostID == 155 ? "active" : ""; ?>" href="<?php the_permalink('155'); ?>">
+            <a class="flexnav__link <?php echo $thePostID == 16 ? "active" : ""; ?>" href="<?php the_permalink('16'); ?>">
                 Actualités/Évènements
             </a>
             <a class="flexnav__link <?php echo $thePostID == 178 ? "active" : ""; ?>" href="<?php the_permalink('178'); ?>">

@@ -47,7 +47,7 @@ Template Name: Page d’accueil
 	          <?php if($posts->have_posts()) : while($posts->have_posts()): $posts->the_post();?>
                   <div class="home-news__bloc">
 	                  <?php $homeNews = get_field('news-img'); ?>
-                      <figure>
+                      <figure class="home-news__figure">
 	                      <?php if( !empty($homeNews) ): ?>
 		                      <?php $size = 'thumb-home-news';
 		                      $thumb = $homeNews['sizes'][ $size ]; ?>
@@ -59,7 +59,7 @@ Template Name: Page d’accueil
 	                      <?php if(wp_get_taxonomies($newsID, 'category')): ?>
                               <span class="home-news__category"><?= wp_get_taxonomies($newsID, 'category'); ?></span>
 	                      <?php endif; ?>
-                  
+
                           <h3 class="home-news__bloc-title"><?= the_title(); ?></h3>
                           <time class="home-news__bloc-date"><?= get_the_date(); ?></time>
                           <p class="home-news__bloc-text">

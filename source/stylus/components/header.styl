@@ -1,0 +1,16 @@
+.header-two
+  background url('../images/backgroundheader.png') no-repeat top center/cover
+  background-position: 50% 80%
+  min-height 200px
+  position relative
+  &:before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    width: 100%
+    height 100%
+    background-color: alpha($cBlue,0.75)
+    z-index: 10

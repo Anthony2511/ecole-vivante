@@ -303,7 +303,7 @@ body
 
     content: '';
 
-    background-color: rgba(79,108,122,.9);
+    background-color: rgba(79,108,122,.75);
 }
 .header-home
 {
@@ -493,6 +493,10 @@ body
 
     border-radius: 10px 0;
     background-color: #f9ca24;
+}
+.home-news__figure
+{
+    position: relative;
 }
 .home-news__img
 {
@@ -1091,6 +1095,31 @@ body
 
     text-align: center;
 }
+.header-two
+{
+    position: relative;
+
+    min-height: 200px;
+
+    background: url('../images/backgroundheader.png') no-repeat top center/cover;
+    background-position: 50% 80%;
+}
+.header-two:before
+{
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    content: '';
+
+    background-color: rgba(79,108,122,.75);
+}
 .wpcf7
 {
     width: 45%;
@@ -1131,22 +1160,48 @@ body
 {
     font-weight: 500;
 
+    display: inline-block;
+
     padding: .625em 2.5em;
 
+    transition: .3s ease-in-out;
+
     color: #4f6c7a;
+    border: 1px solid transparent;
     border-radius: 10px;
     background-color: #f9ca24;
+}
+.button-yellow:hover
+{
+    transition: .3s ease-in-out;
+
+    border: 1px solid #4f6c7a;
+    background-color: #fff;
 }
 .button-white
 {
     font-weight: 500;
 
+    position: relative;
+    z-index: 20;
+
+    display: inline-block;
+
     padding: .625em 2.5em;
+
+    transition: .3s ease-in-out;
 
     color: #4f6c7a;
     border: 1px solid #4f6c7a;
     border-radius: 10px;
     background-color: #fff;
+}
+.button-white:hover
+{
+    transition: .3s ease-in-out;
+
+    border: 1px solid transparent;
+    background-color: #f9ca24;
 }
 .button-center
 {
