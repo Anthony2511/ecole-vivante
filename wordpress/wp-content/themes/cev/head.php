@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html <?php language_attributes(); ?>>
 <head>
-  <title>La cité - Ecole Vivante</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" href="<?=$css; ?>">
+  <title><?= __('La cité - Ecole Vivante','wp'); ?> - <?php the_title(); ?></title>
+    <meta charset="<?php bloginfo( 'charset' ); ?>">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="<?=$css; ?>">
 </head>

@@ -2,9 +2,9 @@
 /*
 Template Name: Page d’accueil
 */
-; ?>
 
-<?php include('head.php'); ?>
+
+include('head.php'); ?>
 
 <body>
   <h1 class="hidden" aria-level="1" role="heading"><?php the_title(); ?></h1>
@@ -30,7 +30,7 @@ Template Name: Page d’accueil
                       une intention.
                   </p>
               </div>
-              <a href="#" class="button-yellow"><?= __('En savoir plus','wp'); ?></a>
+              <a href="<?php the_permalink(); ?>" class="button-yellow"><?= __('En savoir plus','wp'); ?></a>
           </div>
           <div class="home-who__bloc-img">
               <figure>
@@ -45,7 +45,7 @@ Template Name: Page d’accueil
           <div class="home-news__container">
 	          <?php $posts = new WP_Query( ['posts_per_page' => 3, 'post_type' => 'news', 'orderby' => 'post-date', 'order' => 'ASC'] ); ?>
 	          <?php if($posts->have_posts()) : while($posts->have_posts()): $posts->the_post();?>
-                  <div class="home-news__bloc">
+                  <div class="home-news__bloc" id="post-<?php the_ID(); ?>">
 	                  <?php $homeNews = get_field('news-img'); ?>
                       <figure class="home-news__figure">
 	                      <?php if( !empty($homeNews) ): ?>
@@ -63,8 +63,7 @@ Template Name: Page d’accueil
                           <h3 class="home-news__bloc-title"><?= the_title(); ?></h3>
                           <time class="home-news__bloc-date"><?= get_the_date(); ?></time>
                           <p class="home-news__bloc-text">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non turpis in nulla dignissim
-                              hendrerit. Phasellus gravida diam vitae lacus egestas, a ultricies libero rutrum.
+	                          <?= wp_trim_words( get_field('news-text'), 30, '...' );?>
                           </p>
                           <a href="<?= the_permalink(); ?>" class="button-white"><?= __('En savoir plus','wp'); ?></a>
                       </section>
@@ -76,4 +75,4 @@ Template Name: Page d’accueil
           <a href="<?= the_permalink(16); ?>" class="button-yellow button-center"><?= __('Voir plus d\'actualités','wp'); ?></a>
       </section>
   </div>
-  	  <?php include('footer.php'); ?>
+  <?php get_footer(); ?>
