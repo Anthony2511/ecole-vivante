@@ -1,0 +1,20 @@
+.footer
+  background-color $cBlue
+  padding s(50,16) 0
+  &__intro
+    display flex
+    flex-direction row
+    justify-content space-between
+    align-items center
+    border-bottom  1px solid $cWhite
+    padding-bottom s(30,16)
+  &__social
+    & span
+      hidden()
+    &:before
+      icon('iconFacebook')
+      color $cWhite
+      font-size s(20,16)
+      border 1px solid $cWhite
+      border-radius 50%
+      padding s(10,20) s(15,20)

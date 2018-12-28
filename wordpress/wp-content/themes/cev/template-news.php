@@ -9,7 +9,7 @@ Template Name: Page News
 <h1 class="hidden" aria-level="1" role="heading"><?php the_title(); ?></h1>
 <?php include( 'navigation.php' ); ?>
 <?php get_header(); ?>
-<section class="home-news wrap">
+<section class="home-news wrap news-page">
     <h2 class="home-news__title home-news__title--icon title-center title__blue" aria-level="2"
         role="heading"><?= __( 'Nos dernières actualités/évènements', 'wp' ); ?></h2>
     <div class="home-news__container">
@@ -50,6 +50,7 @@ Template Name: Page News
     </div>
 </section>
 <div class="infos infos__white">
+    <div class="infos__bg"></div>
     <section class="wrap">
         <h2 class="infos__title" aria-level="2"
             role="heading"><?= __( 'Besoin d\'information sur L\'école vivante ?', 'wp' ); ?></h2>
