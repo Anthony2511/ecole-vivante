@@ -1,2 +1,33 @@
 .single-news
   padding s(50,16) 0
+  &__container
+    background-color $cWhite
+    position relative
+    top -50px
+    z-index -1
+    padding s(50,16) 0
+    border-radius 10px
+  &__date
+    text-align center
+    display block
+    font-size s(20,16)
+    color $cBlue
+    font-weight: 300
+    margin-bottom s(30,20)
+  &__figure
+    text-align center
+    & img
+      width 80%
+  &__text
+    max-width 80%
+    margin s(50,16) auto
+    color $cBlue
+    & h1,h2,h3,h4,h5,h6
+      font-size s(25,16)
+      font-family 'firasans'
+      font-weight: 600
+      margin-bottom s(20,25)
+    & p
+      font-weight: 300
+      line-height 1.6
+      margin-bottom s(30,16)
