@@ -71,7 +71,7 @@ include( 'head.php' ); ?>
 						<?php endif; ?>
 
                         <h3 class="home-news__bloc-title"><?= the_title(); ?></h3>
-                        <time class="home-news__bloc-date"><?= get_the_date(); ?></time>
+                        <time class="home-news__bloc-date" datetime="<?= get_the_date("d/m/y"); ?>"><?= get_the_date(); ?></time>
                         <p class="home-news__bloc-text">
 							<?= wp_trim_words( get_field( 'news-text' ), 30, '...' ); ?>
                         </p>
