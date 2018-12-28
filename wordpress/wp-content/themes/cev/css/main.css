@@ -654,6 +654,10 @@ body
 {
     margin-bottom: 3.125em;
 }
+.single-news
+{
+    padding: 3.125em 0;
+}
 .search:before
 {
     font-family: 'icomoon';
@@ -1267,6 +1271,46 @@ body
     content: '';
 
     background-color: rgba(79,108,122,.75);
+}
+.breadcrumb
+{
+    font-weight: 500;
+
+    display: -ms-flexbox;
+    display: flex;
+
+    margin-bottom: 3.125em;
+
+    color: #4f6c7a;
+}
+.breadcrumb:before
+{
+    font-family: 'icomoon';
+    font-size: .5625em;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+
+    display: inline-block;
+
+    margin-right: 1.111111111111111em;
+
+    content: '\e904';
+    transition: .2s ease-in-out;
+    -ms-transform: rotate(90deg) translateY(0);
+        transform: rotate(90deg) translateY(0);
+    text-transform: none;
+
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.breadcrumb:hover:before
+{
+    transition: .2s ease-in-out;
+    -ms-transform: rotate(90deg) translateY(3px);
+        transform: rotate(90deg) translateY(3px);
 }
 .wpcf7
 {

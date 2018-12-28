@@ -1,0 +1,16 @@
+.breadcrumb
+  color $cBlue
+  margin-bottom s(50,16)
+  font-weight: 500
+  display flex
+  &:before
+    icon('iconArrow')
+    transform rotate(90deg) translateY(0)
+    display inline-block
+    font-size s(9,16)
+    margin-right s(10,9)
+    transition .2s ease-in-out
+  &:hover
+    &:before
+      transform rotate(90deg) translateY(3px)
+      transition .2s ease-in-out
