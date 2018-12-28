@@ -718,6 +718,11 @@ body
 
     margin-bottom: 1.875em;
 }
+.single-news__bloc
+{
+    width: 47.5%;
+    margin-top: 3.125em;
+}
 .search:before
 {
     font-family: 'icomoon';
