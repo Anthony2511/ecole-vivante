@@ -51,7 +51,7 @@ include( 'head.php' ); ?>
 				'posts_per_page' => 3,
 				'post_type'      => 'news',
 				'orderby'        => 'post-date',
-				'order'          => 'ASC'
+				'order'          => 'DESC'
 			] ); ?>
 			<?php if ( $posts->have_posts() ) : while ( $posts->have_posts() ): $posts->the_post(); ?>
                 <div class="home-news__bloc" id="post-<?php the_ID(); ?>">
@@ -100,12 +100,14 @@ include( 'head.php' ); ?>
             </p>
             <ul class="under-home__list">
                 <li class="under-home__item">
-                    <a href="<?php the_permalink(); ?>" class="under-home__link" title="Vers la page : Le temps d'apprentissage">
+                    <a href="<?php the_permalink(); ?>" class="under-home__link"
+                       title="Vers la page : Le temps d'apprentissage">
                         Le temps d'apprentissage
                     </a>
                 </li>
                 <li class="under-home__item">
-                    <a href="<?php the_permalink(); ?>" class="under-home__link" title="Vers la page : Le métier d'enseignant">
+                    <a href="<?php the_permalink(); ?>" class="under-home__link"
+                       title="Vers la page : Le métier d'enseignant">
                         Le métier d'enseignant
                     </a>
                 </li>
