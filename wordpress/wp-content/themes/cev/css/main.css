@@ -1310,6 +1310,18 @@ body
 
     background-color: #4f6c7a;
 }
+.footer__container
+{
+    display: -ms-flexbox;
+    display: flex;
+        flex-direction: row;
+
+    margin-top: 1.875em;
+
+    -ms-flex-direction: row;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
 .footer__intro
 {
     display: -ms-flexbox;
@@ -1353,6 +1365,88 @@ body
     speak: none;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+.footer__title
+{
+    font-family: 'firasans';
+    font-size: 1.5625em;
+    font-weight: 500;
+
+    margin-bottom: .8em;
+
+    color: #fff;
+}
+.footer__contact
+{
+    font-size: 1.125em;
+    font-weight: 300;
+    line-height: 1.6;
+
+    margin-bottom: 1.666666666666667em;
+
+    color: #fff;
+}
+.footer__contact-item--tel:before
+{
+    font-family: 'icomoon';
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+
+    margin-right: .625em;
+
+    content: '\e902';
+    text-transform: none;
+
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.footer__contact-item--mail:before
+{
+    font-family: 'icomoon';
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+
+    margin-right: .625em;
+
+    content: '\e902';
+    text-transform: none;
+
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.footer__contact-item a
+{
+    line-height: 2;
+
+    position: relative;
+
+    display: block;
+
+    transition: .2s ease-in-out;
+}
+.footer__contact-item a:before
+{
+    position: absolute;
+    top: calc(100%);
+    left: 0;
+
+    width: 0;
+    height: 1px;
+
+    content: '';
+    transition: width .3s ease-in-out;
+
+    background-color: #fff;
+}
+.footer__contact-item a:hover:before
+{
+    width: 20%;
 }
 .button-yellow
 {
