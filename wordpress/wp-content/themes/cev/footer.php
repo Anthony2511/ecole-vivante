@@ -34,11 +34,14 @@
 						<?php wp_reset_postdata(); ?>
 					<?php endwhile; endif; ?>
                 </ul>
-
-
             </section>
             <section class="footer__bloc">
                 <h3 aria-level="3" role="heading" class="footer__title">S'inscrire à la newsletter</h3>
+                <form action="" method="post">
+                    <label for="email" class="hidden"></label>
+                    <input type="text" id="email" placeholder="jeandupont@gmail.com" class="footer__newsletter-input">
+                    <input type="submit" value="S'inscrire" class="button-yellow">
+                </form>
             </section>
         </div>
     </div>

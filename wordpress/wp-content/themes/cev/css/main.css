@@ -1557,6 +1557,14 @@ body
 {
     width: 20%;
 }
+.footer__newsletter-input
+{
+    display: block;
+
+    width: 100%;
+    margin-bottom: 1.25em;
+    padding: .625em .9375em;
+}
 .button-yellow
 {
     font-weight: 500;
