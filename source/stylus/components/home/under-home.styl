@@ -1,0 +1,37 @@
+.under-home
+  padding s(50,16) 0
+  &__container
+    display flex
+    flex-direction row
+    justify-content space-between
+    width 100%
+    color $cBlue
+  &__bloc
+    width 50%
+    margin-right 10%
+  &__figure
+    & img
+      width 100%
+  &__title-icon
+    &:before
+      icon('iconUser')
+      margin-right s(20,35)
+  &__text
+    font-weight: 300
+    line-height 1.6
+    margin-bottom s(30,16)
+  &__link
+    font-size s(18,16)
+    font-weight: 500
+    line-height 2
+    display block
+    &:after
+      icon('iconArrowRight')
+      font-size s(14,18)
+      margin-left s(5,14)
+      display inline-block
+      transition .3s ease-in-out
+    &:hover
+      &:after
+        transform translateX(5px)
+        transition .3s ease-in-out
