@@ -6,7 +6,7 @@
     right 0
     top 41px
     font-size s(16,14)
-.menu
+.nav
   font-size: s(14,16)
   font-weight: 500
   position: absolute
@@ -16,7 +16,7 @@
   right: 0
   left: 0
   z-index: 20
-  color: $white
+  color: $cWhite
   &__logo
     position: absolute
     left 3em
@@ -30,52 +30,26 @@
     margin-right s(50,16)
 .menu-button
   display none
-.flexnav
-  position: relative
-  width 100%
-  padding 1.350em 3em 0 3em // 27px 60px
-  &:before
-    content: "";
-    display: block;
-    clear: both;
-  a
-    font-family 'opensans'
-    vertical-align top
-    letter-spacing 0.71px
-    transition .3s all ease-out
-    transition-property height, opacity, visibility
-    &:hover
-    &:focus
-      color color-lightblue
-      transition .3s ease
-  &__link
-    display: inline-block
-    margin-right: 30px
-    color $cWhite
-    &:last-child
-      margin-right: 0
-    &:first-child
-      margin-right 25px
-  &__dropwrap
-    position: relative
-    display: inline-block
-  &__dropbtn
-    margin-right: 30px
-    vertical-align top
-    font-family 'opensans'
-    appearance none
-    border none
-    background none
-    outline none
-    cursor pointer
-    letter-spacing 0.51px
-    transition .3s ease-out
-    color: $cWhite
-    &:hover
-    &:focus
-      color color-lightblue
-      transition .3s ease
-    &--arrow
+
+
+.menu
+  &__item
+    list-style none
+    display inline-block
+    padding 0
+    margin 0
+    & a
+      position relative
+      display inline-block
+      padding 0.5em 1em
+      margin: 0 0 -1px 0
+      border: 1px solid transparent
+  &__item > a:focus,
+  &__item > a.open
+    z-index 1
+    border 1px solid #dedede
+  &__item-dropdown
+    & a
       &:after
         icon('iconArrow')
         font-size s(8,14)
@@ -83,254 +57,58 @@
         display inline-block
         transition .3s ease-in-out
 
-  &__dropcnt
-    height 0
-    opacity 0
-    visibility hidden
-    position: absolute
-    text-align: center
-    background-color: #F1F1F1;
-    border-radius 2px
-    min-width: 180px;
-    box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.20);
-    top 35px
-    &:before
-      content ""
-      position absolute
-      margin-left: auto
-      margin-right: auto
-      left: 0
-      right: 0
-      top -11px
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 0 9.5px 11px 9.5px;
-      border-color: transparent transparent #F1F1F1 transparent;
-      // Tips for better implementation
-      -webkit-transform:rotate(360deg)
-      border-style: inset
-    & a
-      display: block
-      font-size: 14px
-      letter-spacing 0
-      display: block
-      padding 8px 8px
-      border-bottom: 1px solid #FFF
-      &:last-child
-        border none
-  &__dropcnt1
-    left -30px
-  &__dropcnt2
-    left -34px
-
-.flexnav__dropwrap:hover .flexnav__dropbtn
-  padding 0 0 10px 0
-
-.flexnav__dropwrap:hover .flexnav__dropcnt
-  z-index 10
-  transition .5s all ease
-  transition-property height, opacity, visibility
-  height auto
-  opacity 1
-  visibility visible
-
-
-.flexnav
-  .open
-    z-index 10
-    transition .5s all ease
-    transition-property height, opacity, visibility
-    height auto
-    opacity 1
-    visibility visible
-
-.no-js
-  .flexnav
-    .flexnav__dropcnt
-      z-index 10
-      transition .5s all ease
-      transition-property height, opacity, visibility
-      height auto
-      opacity 1
-      visibility visible
-
-.flexnav__dropbtn:hover.flexnav__dropbtn--arrow:after
-  transform rotate(180deg)
-  transition .3s ease-in-out
-
-
-/**MEDIA QUERIES**/
-@media screen and ( max-width: 1024px )
-  .menu-button
+.subnav
+  position absolute
+  display none
+  top 2.2em
+  margin-top -1px
+  padding 0.5em 1em
+  border 1px solid #dedede
+  background-color #fff
+  &__group
     display inline-block
-    position: absolute
-    right: 3em
-    top: -2.5em;
-    text-align: right
-    cursor pointer
-  .menu
-    min-height 0
-  .flexnav
-    margin-top: 1.3em
-    background-color color-greybackground
-    margin-top 4em
-    padding 1.5em 0
-    height 0
+    vertical-align top
+    margin 0 1em 0 0
     padding 0
-    overflow: hidden;
-    transition .5s height ease
-    & a
-      font-size: 20px
-      padding 10px 3em
-      display block
-      margin-right: 0
-      text-align: left
-      &:first-child
-        margin-right: 0
-    &__dropwrap
-      display block
-      text-align: left
-      overflow hidden
-    &__dropbtn
-      display: block
-      margin-right: 0
-      font-size: 20px
-      padding 10px 3em
-      &:hover .flexnav__dropbtn
-        padding 10px 3em
-      &:after
-        content "\e905"
-        display: inline-block
-        font-family 'icons'
-        width 30px
-        height 30px
-        background-repeat no-repeat
-        position: absolute
-        right: 10px
-        top 6px
-        transform rotate(-90deg)
-    &__dropcnt
-      position static
-      display block
-      height auto
-      opacity 1
-      visibility visible
-      box-shadow none
-      background-color #F1F1F1 - 5%
-      background-color #F1F1F1 - 5%
-      &:before
-        display none
-  .flexnav__link:first-child
-    padding-top 1.5em
-  .flexnav__dropwrap:hover .flexnav__dropbtn
-    transition 0s
-    height auto
-    opacity 1
-    visibility visible
-    padding 10px 3em
-  // Jquery Style start
-  .flexnav__dropcnt
-    height 0
-    visibility hidden
-    transition 0s
-    opacity 0
-  .flexnav__dropwrap:hover .flexnav__dropcnt
-  .flexnav__dropwrap .flexnav__dropcnt
-    height 0
-    opacity 0
-    visibility visible
-    transition .5s all ease
-    color transparent
-    transition-property height, opacity
-  .flexnav__dropwrap:hover .open
-  .flexnav__dropwrap .open
-    transition .5s all ease
-    transition-property height, visibility, opacity
-    height 97px
-    opacity 1
-    color color-black
-  .flexnav__dropwrap .unfolded:after
-    transition .5s transform ease
-    transform rotate(0deg)
-    top 12px
+  &__li
+    display block
+    list-style-type none
+    margin 0
+    padding 0
 
-/************************************\
-  BOUTTON MENU
-\************************************/
 
-  .menu-button
-    height 80px
-    width 45px
-    top -4em
-    right 3em
-    &__label
-      text-align: right
-      position: absolute
-      top: 15px
-      left: -40px
-      font-size 14px
-    &__wrap
-      position: absolute
-      top 0.7em
-      right 0
 
-  .nav-icon
-    width: 35px
-    height: 45px
-    position: relative
-    margin: 5px auto
-    transform: rotate(0deg);
-    transition: .5s ease-in-out;
-    cursor pointer
-    & span
-      display: block;
-      position: absolute;
-      height: 4px;
-      width: 100%;
-      background: color-black
-      border-radius: 9px;
-      opacity: 1;
-      left: 0;
-      transform: rotate(0deg);
-      transition: .25s ease-in-out;
-    & span:nth-child(1)
-      top 8px
-    & span:nth-child(2),
-    & span:nth-child(3)
-      top 18px
-    & span:nth-child(4)
-      top: 28px;
 
-  .with-menu
-    .flexnav
-      height 381px
-      transition height .5s ease
-    .flexnav__link:first-child
-      padding-top 1.5em
-  .menu-unfolded
-    .nav-icon span:nth-child(1)
-      top: 18px;
-      width: 0%;
-      left: 50%;
-    .nav-icon span:nth-child(2)
-      transform: rotate(45deg)
-    .nav-icon span:nth-child(3)
-      transform: rotate(-45deg);
-    .nav-icon span:nth-child(4)
-      top: 18px;
-      width: 0%;
-      left: 50%;
+/* mega menu list */
+.nav-menu {
+  display: block;
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  z-index: 15;
+}
 
-@media screen and ( max-width: 580px )
-  .menu-button
-    right 1em
-  .menu__logo
-    left 1em
-  .flexnav a
-  .flexnav__dropbtn
-    padding 10px 1em
-  .flexnav__dropwrap:hover .flexnav__dropbtn
-    padding 10px 1em
-    transition .3s ease-out
-    transition-property color
+
+
+
+/* sub-navigation panel */
+.sub-nav {
+  position: absolute;
+  display: none;
+  top: 2.2em;
+  margin-top: -1px;
+  padding: 0.5em 1em;
+  border: 1px solid #dedede;
+  background-color: #fff;
+}
+
+/* sub-navigation panel open state */
+.sub-nav.open {
+  display: block;
+}
+
+
+
+
+

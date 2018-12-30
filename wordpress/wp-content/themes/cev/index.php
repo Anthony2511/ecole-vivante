@@ -124,4 +124,4 @@ include( 'head.php' ); ?>
     </div>
 
 </section>
-<?php get_footer(); ?>
+<?php include('footer.php'); ?>
