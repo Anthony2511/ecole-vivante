@@ -1,10 +1,15 @@
 <nav class="nav">
     <h2 class="hidden">Menu de navigation</h2>
-    <a href="#" class="menu-button">
-        <div class="menu-button__wrap"><span class="menu-button__label">Menu</span>
-            <div class="nav-icon"><span></span><span></span><span></span><span></span></div>
+    <div class="nav__button">
+        <div class="nav__button-wrap">
+            <div class="nav__icon">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-    </a>
+    </div>
     <div class="nav__container">
         <a href="<?= get_home_url(); ?>" class="nav__bloc-link">
 			<?php if ( ! is_front_page() && ! is_home() ): ?>

@@ -1,7 +1,7 @@
 .header
     position: relative
     overflow hidden
-    height 100vh
+    height s(700,16)
     &__bg
       position: absolute;
       top: 0;
@@ -48,5 +48,32 @@
     max-width 50%
     text-align center
     line-height: 1.2
+
+
+@media screen and (max-width:1024px)
+  .header-home
+    padding s(300,16) s(20,16) 0
+
+@media screen and (max-width:800px)
+  .header-home
+    &__text
+      max-width 75%
+
+@media screen and (max-width:626px)
+  .header-home
+    &__text
+      max-width 100%
+    &__title
+      text-align center
+      font-size s(40,16)
+
+@media screen and (max-width:500px)
+  .header-home
+    &__title
+      text-align center
+      font-size s(30,16)
+    &__text
+      font-size s(16,16)
+
 
     

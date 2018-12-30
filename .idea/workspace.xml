@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a36dd27-ee25-4553-990f-318f72c892ef" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/nav.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/nav.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/stylus/components/home/home-header.styl" beforeDir="false" afterPath="$PROJECT_DIR$/source/stylus/components/home/home-header.styl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/stylus/components/navigation.styl" beforeDir="false" afterPath="$PROJECT_DIR$/source/stylus/components/navigation.styl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/cev/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/cev/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/cev/navigation.php" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/cev/navigation.php" afterDir="false" />
@@ -29,8 +28,8 @@
       <file leaf-file-name="navigation.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wordpress/wp-content/themes/cev/navigation.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
+            <state relative-caret-position="115">
+              <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
               <folding>
                 <element signature="e#1#9#0" expanded="true" />
               </folding>
@@ -41,8 +40,17 @@
       <file leaf-file-name="navigation.styl" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/stylus/components/navigation.styl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="88" column="14" selection-start-line="88" selection-start-column="14" selection-end-line="88" selection-end-column="14" />
+            <state relative-caret-position="412">
+              <caret line="222" column="16" selection-start-line="222" selection-start-column="16" selection-end-line="222" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home-header.styl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/stylus/components/home/home-header.styl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -99,7 +107,6 @@
         <option value="$PROJECT_DIR$/source/stylus/components/button.styl" />
         <option value="$PROJECT_DIR$/wordpress/wp-content/themes/cev/header-home.php" />
         <option value="$PROJECT_DIR$/wordpress/wp-content/themes/cev/header.php" />
-        <option value="$PROJECT_DIR$/source/stylus/components/home/home-header.styl" />
         <option value="$PROJECT_DIR$/source/stylus/components/header.styl" />
         <option value="$PROJECT_DIR$/wordpress/wp-content/themes/cev/404.php" />
         <option value="$PROJECT_DIR$/wordpress/wp-content/themes/cev/head.php" />
@@ -119,6 +126,7 @@
         <option value="$PROJECT_DIR$/wordpress/wp-content/themes/cev/index.php" />
         <option value="$PROJECT_DIR$/source/scripts/nav.js" />
         <option value="$PROJECT_DIR$/wordpress/wp-content/themes/cev/navigation.php" />
+        <option value="$PROJECT_DIR$/source/stylus/components/home/home-header.styl" />
         <option value="$PROJECT_DIR$/source/stylus/components/navigation.styl" />
       </list>
     </option>
@@ -185,6 +193,14 @@
               <item name="source" type="462c0819:PsiDirectoryNode" />
               <item name="stylus" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ecole-vivante" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ecole-vivante" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+              <item name="stylus" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ecole-vivante" type="b2602c69:ProjectViewProjectNode" />
@@ -270,12 +286,12 @@
       <workItem from="1545134597139" duration="6749000" />
       <workItem from="1545148069231" duration="39000" />
       <workItem from="1545988244530" duration="16876000" />
-      <workItem from="1546167534785" duration="10897000" />
+      <workItem from="1546167534785" duration="13126000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56521000" />
+    <option name="totallyTimeSpent" value="58750000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1548" height="832" extended-state="0" />
@@ -286,9 +302,9 @@
       <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.3294964" />
       <window_info anchor="bottom" id="Run" order="0" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="0" sideWeight="0.49932885" visible="true" weight="0.2028777" />
+      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49932885" visible="true" weight="0.2028777" />
       <window_info id="Gulp" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2557047" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2557047" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="0" />
       <window_info id="Structure" order="0" side_tool="true" />
@@ -506,13 +522,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/stylus/components/home/home-header.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="15" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/stylus/config/icons.styl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
@@ -635,10 +644,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/source/stylus/components/home/home-header.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/wordpress/wp-content/themes/cev/navigation.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
+        <state relative-caret-position="115">
+          <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
           <folding>
             <element signature="e#1#9#0" expanded="true" />
           </folding>
@@ -647,8 +663,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/stylus/components/navigation.styl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="88" column="14" selection-start-line="88" selection-start-column="14" selection-end-line="88" selection-end-column="14" />
+        <state relative-caret-position="412">
+          <caret line="222" column="16" selection-start-line="222" selection-start-column="16" selection-end-line="222" selection-end-column="16" />
         </state>
       </provider>
     </entry>
