@@ -38,75 +38,107 @@
     display inline-block
     padding 0
     margin 0
+    position relative
     & a
       position relative
       display inline-block
-      padding 0.5em 1em
-      margin: 0 0 -1px 0
-      border: 1px solid transparent
-  &__item > a:focus,
-  &__item > a.open
-    z-index 1
-    border 1px solid #dedede
+      padding s(10,16)
+      &:before
+        content ''
+        position absolute
+        top calc(100%)
+        width 0
+        left 10px
+        height 1px
+        transition width.3s ease-in-out
+        background-color $cWhite
+      &:hover,
+      &:focus-within
+        &:before
+          width 20%
   &__item-dropdown
-    & a
-      &:after
-        icon('iconArrow')
-        font-size s(8,14)
-        margin-left s(5,8)
-        display inline-block
-        transition .3s ease-in-out
+    list-style none
+    display inline-block
+    padding 0
+    margin 0
+    position relative
+  &__item-link
+    position relative
+    display inline-block
+    padding s(10,16) s(10,16) s(30,16)
+    margin: 0 0 -1px 0
+    &:after
+      icon('iconArrow')
+      font-size s(8,14)
+      margin-left s(5,8)
+      display inline-block
+      transition .3s ease-in-out
 
 .subnav
   position absolute
+  padding s(10,14) s(20,14)
+  background-color $cWhite
+  border-radius 10px
+  opacity 0
+  visibility hidden
+  transition: .5s ease-in-out
+  left: 0
   display none
-  top 2.2em
-  margin-top -1px
-  padding 0.5em 1em
-  border 1px solid #dedede
-  background-color #fff
-  &__group
-    display inline-block
-    vertical-align top
-    margin 0 1em 0 0
-    padding 0
+  min-width 200px
+  &:before
+    content ''
+    position absolute
+    left: 20px
+    right: 0
+    top -11px
+    width: 0
+    height: 0
+    border-style: solid
+    border-width: 0 9.5px 11px 9.5px
+    border-color: transparent transparent $cWhite transparent
+    transform:rotate(360deg)
+    border-style: inset
   &__li
-    display block
-    list-style-type none
-    margin 0
-    padding 0
+    width 100%
+    color $cBlue
+    padding s(10,16) 0
+    position relative
+    & a
+      &:before
+        content ''
+        position absolute
+        top calc(100%)
+        width 0
+        left 0
+        height 1px
+        transition width.3s ease-in-out
+        background-color $cBlue
+      &:hover,
+      &:focus-within
+        &:before
+          width 20%
 
 
 
 
-/* mega menu list */
-.nav-menu {
+
+
+
+li:focus-within a {
+  outline: none;
+}
+
+ul li:hover > ul,
+ul li:focus-within > ul,
+ul li ul:hover,
+ul li ul:focus {
+  visibility: visible;
+  opacity: 1;
   display: block;
-  position: relative;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  z-index: 15;
 }
 
 
 
-
-/* sub-navigation panel */
-.sub-nav {
-  position: absolute;
-  display: none;
-  top: 2.2em;
-  margin-top: -1px;
-  padding: 0.5em 1em;
-  border: 1px solid #dedede;
-  background-color: #fff;
-}
-
-/* sub-navigation panel open state */
-.sub-nav.open {
-  display: block;
-}
 
 
 

@@ -24,24 +24,20 @@
             <li class="menu__item">
                 <a href="<?php echo home_url(); ?>" class="menu__link">Accueil</a>
             </li>
-            <li class="menu__item menu__item-dropdown">
-                <a href="?movie">Présentation</a>
-                <div class="subnav">
-                    <ul class="subnav__group">
-                        <li><a href="?movie&genre=0">&aacute; Propos</a></li>
-                        <li><a href="?movie&genre=2">Nos membres</a></li>
-                    </ul>
-                </div>
+            <li class="menu__item-dropdown">
+                <a href="#" class="menu__item-link">Présentation</a>
+                <ul class="subnav">
+                    <li class="subnav__li"><a href="<?php the_permalink(); ?>">&Aacute; Propos</a></li>
+                    <li class="subnav__li"><a href="<?php the_permalink(); ?>">Nos membres</a></li>
+                </ul>
             </li>
-            <li class="menu__item menu__item-dropdown">
-                <a href="?tv">Comprendre</a>
-                <div class="subnav">
-                    <ul class="subnav__group">
-                        <li><a href="?tv&genre=20">Temps d'apprentissage</a></li>
-                        <li><a href="?tv&genre=21">Métier d'enseigant</a></li>
-                        <li><a href="?tv&genre=21">Nos valeurs</a></li>
-                    </ul>
-                </div>
+            <li class="menu__item-dropdown">
+                <a href="#" class="menu__item-link">Comprendre</a>
+                <ul class="subnav">
+                    <li class="subnav__li"><a href="<?php the_permalink( '16' ); ?>">Temps d'apprentissage</a></li>
+                    <li class="subnav__li"><a href="<?php the_permalink(); ?>">Métier d'enseigant</a></li>
+                    <li class="subnav__li"><a href="<?php the_permalink(); ?>">Nos valeurs</a></li>
+                </ul>
             </li>
             <li class="menu__item">
                 <a href="<?php the_permalink( '16' ); ?>" class="menu__link">Actualités/Évènements</a>
