@@ -125,8 +125,17 @@
           width 20%
   &__active
     & a
+      position relative
+      display inline-block
+      padding s(10,16)
       &:before
+        content ''
+        position absolute
+        top calc(100%)
         width 20%
+        left 10px
+        height 2px
+        transition width.3s ease-in-out
         background-color $cYellow
   &__item-dropdown
     list-style none
@@ -181,8 +190,7 @@
         position absolute
         top calc(100%)
         width 0
-        left 0
-        height 1px
+        height 2px
         transition width.3s ease-in-out
         background-color $cBlue
       &:hover,

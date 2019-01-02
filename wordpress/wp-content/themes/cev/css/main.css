@@ -807,6 +807,10 @@ body
         font-size: 1em;
     }
 }
+.contact-page
+{
+    padding: 3.125em 0;
+}
 .news-page
 {
     padding: 0 0 6.25em;
@@ -1112,9 +1116,25 @@ body
 {
     width: 20%;
 }
+.menu__active a
+{
+    position: relative;
+
+    display: inline-block;
+
+    padding: .625em;
+}
 .menu__active a:before
 {
+    position: absolute;
+    top: calc(100%);
+    left: 10px;
+
     width: 20%;
+    height: 2px;
+
+    content: '';
+    transition: width .3s ease-in-out;
 
     background-color: #f9ca24;
 }
@@ -1208,10 +1228,9 @@ body
 {
     position: absolute;
     top: calc(100%);
-    left: 0;
 
     width: 0;
-    height: 1px;
+    height: 2px;
 
     content: '';
     transition: width .3s ease-in-out;

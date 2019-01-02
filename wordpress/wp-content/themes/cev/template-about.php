@@ -46,7 +46,7 @@ Template Name: Page About
     <section class="wrap">
         <h2 class="infos__title" aria-level="2"
             role="heading"><?= __( 'Besoin de nous contacter ?', 'wp' ); ?></h2>
-        <a href="<?php the_permalink(); ?>" class="button-yellow button-center"><?= __( 'Contactez-nous', 'wp' ); ?></a>
+        <a href="<?php the_permalink('62'); ?>" class="button-yellow button-center"><?= __( 'Contactez-nous', 'wp' ); ?></a>
     </section>
 </div>
 

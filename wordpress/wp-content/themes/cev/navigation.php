@@ -29,7 +29,7 @@
             <li class="menu__item <?php echo $thePostID == 6 ? "menu__active" : "" ;?>">
                 <a href="<?php echo home_url(); ?>" class="menu__link">Accueil</a>
             </li>
-            <li class="menu__item-dropdown">
+            <li class="menu__item-dropdown <?php echo $thePostID == 42 || $thePostID == 59 ? "menu__active" : "" ;?>">
                 <a href="#" class="menu__item-link">Présentation</a>
                 <ul class="subnav">
                     <li class="subnav__li"><a href="<?php the_permalink('42'); ?>">&Aacute; Propos</a></li>
