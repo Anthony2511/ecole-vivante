@@ -32,7 +32,7 @@
             <li class="menu__item-dropdown">
                 <a href="#" class="menu__item-link">Présentation</a>
                 <ul class="subnav">
-                    <li class="subnav__li"><a href="<?php the_permalink(); ?>">&Aacute; Propos</a></li>
+                    <li class="subnav__li"><a href="<?php the_permalink('42'); ?>">&Aacute; Propos</a></li>
                     <li class="subnav__li"><a href="<?php the_permalink(); ?>">Nos membres</a></li>
                 </ul>
             </li>

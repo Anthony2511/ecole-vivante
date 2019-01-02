@@ -37,7 +37,7 @@ include( 'head.php' ); ?>
         </div>
         <div class="home-who__bloc-img">
             <figure>
-                <img src="<?= $images . '/../../images/blocImage.png'; ?>" alt="">
+                <img src="<?= $images . '/../../images/imageAbout.png'; ?>" alt="">
             </figure>
         </div>
     </div>
