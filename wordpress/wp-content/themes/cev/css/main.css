@@ -1579,6 +1579,34 @@ ul li ul:focus
     -ms-flex-pack: center;
     justify-content: center;
 }
+@media screen and (max-width: 768px)
+{
+    .button-center
+    {
+        max-width: 35%;
+    }
+}
+@media screen and (max-width: 600px)
+{
+    .button-center
+    {
+        max-width: 45%;
+    }
+}
+@media screen and (max-width: 475px)
+{
+    .button-center
+    {
+        max-width: 60%;
+    }
+}
+@media screen and (max-width: 375px)
+{
+    .button-center
+    {
+        max-width: 75%;
+    }
+}
 .infos
 {
     position: relative;
@@ -1617,6 +1645,13 @@ ul li ul:focus
         transform-origin: top right;
 
     background-color: #fff;
+}
+@media screen and (max-width: 768px)
+{
+    .infos__title
+    {
+        font-size: 1.5625em;
+    }
 }
 .wpcf7
 {
