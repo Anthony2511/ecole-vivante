@@ -769,6 +769,44 @@ body
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+@media screen and (max-width: 1300px)
+{
+    .who-page__bloc
+    {
+        width: 70%;
+    }
+}
+@media screen and (max-width: 1024px)
+{
+    .who-page
+    {
+        padding: 3.125em 0 0;
+    }
+    .who-page__bloc
+    {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 768px)
+{
+    .who-page__bloc
+    {
+        width: 100%;
+    }
+    .who-page__list
+    {
+        max-width: 100%;
+    }
+    .who-page__item
+    {
+        font-size: .875em;
+    }
+    .who-page__item span
+    {
+        font-size: 1em;
+    }
+}
 .news-page
 {
     padding: 0 0 6.25em;
@@ -1260,7 +1298,8 @@ ul li ul:focus
 }
 @media screen and (max-width: 768px)
 {
-    .title
+    .title,
+    .title-center
     {
         font-size: 1.5625em;
     }

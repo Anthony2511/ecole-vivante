@@ -20,3 +20,26 @@
       &:before
         icon ('iconWho')
         margin-right s(10,20)
+
+@media screen and (max-width: 1300px)
+  .who-page
+    &__bloc
+      width 70%
+
+@media screen and (max-width: 1024px)
+  .who-page
+    padding s(50,16) 0 0
+    &__bloc
+      width 80%
+      margin 0 auto
+
+@media screen and (max-width: 768px)
+  .who-page
+    &__bloc
+      width 100%
+    &__list
+      max-width 100%
+    &__item
+      font-size s(14,16)
+      & span
+        font-size s(16,16)
