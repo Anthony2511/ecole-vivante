@@ -445,6 +445,10 @@ body
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+.home-who__bloc-img figure img
+{
+    width: 100%;
+}
 .home-news__background
 {
     padding-bottom: 3.125em;
@@ -684,6 +688,50 @@ body
 .who-page
 {
     padding: 3.125em 0;
+}
+.who-page__parcours
+{
+    margin-top: 3.125em;
+}
+.who-page__list
+{
+    max-width: 90%;
+    margin: 1.875em auto;
+
+    color: #4f6c7a;
+}
+.who-page__item
+{
+    line-height: 1.6;
+
+    margin-bottom: 1.25em;
+
+    text-align: center;
+}
+.who-page__item span
+{
+    font-family: 'firasans';
+    font-size: 1.25em;
+    font-weight: 600;
+
+    display: block;
+}
+.who-page__item span:before
+{
+    font-family: 'icomoon';
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+
+    margin-right: .5em;
+
+    content: '\e900';
+    text-transform: none;
+
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 .news-page
 {

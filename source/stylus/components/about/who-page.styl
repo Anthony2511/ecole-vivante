@@ -1,2 +1,20 @@
 .who-page
   padding s(50,16) 0
+  &__parcours
+    margin-top s(50,16)
+  &__list
+    margin s(30,16) auto
+    color $cBlue
+    max-width 90%
+  &__item
+    text-align center
+    margin-bottom s(20,16)
+    line-height 1.6
+    & span
+      display block
+      font-family 'firasans'
+      font-weight: 600
+      font-size s(20,16)
+      &:before
+        icon ('iconWho')
+        margin-right s(10,20)
