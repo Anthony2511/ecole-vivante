@@ -1369,42 +1369,6 @@ ul li ul:focus
     -ms-transform: rotate(90deg) translateY(3px);
         transform: rotate(90deg) translateY(3px);
 }
-.wpcf7
-{
-    width: 45%;
-}
-.screen-reader-response
-{
-    position: absolute;
-    top: -99999px;
-    left: -99999px;
-}
-.wpcf7-not-valid-tip
-{
-    font-size: .875em;
-    font-weight: 600;
-
-    color: $mediumRed;
-}
-.wpcf7-validation-errors
-{
-    font-size: .875em;
-    font-weight: 600;
-
-    margin-top: 1.428571428571429em;
-    padding: .714285714285714em;
-
-    color: $mediumRed;
-    border: 1px solid $mediumRed;
-    border-radius: 5px;
-}
-@media screen and (max-width: 768px)
-{
-    .wpcf7
-    {
-        width: 100%;
-    }
-}
 .footer
 {
     padding: 3.125em 0;
@@ -1614,6 +1578,81 @@ ul li ul:focus
 
     -ms-flex-pack: center;
     justify-content: center;
+}
+.infos
+{
+    position: relative;
+
+    padding: 3.125em 0;
+}
+.infos__white
+{
+    background-color: #fff;
+}
+.infos__title
+{
+    font-family: 'firasans';
+    font-size: 2.1875em;
+    font-weight: 600;
+
+    text-align: center;
+
+    color: #4f6c7a;
+}
+.infos__bg
+{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    -ms-transform: skewY(3deg);
+        transform: skewY(3deg);
+    -ms-transform-origin: top right;
+        transform-origin: top right;
+
+    background-color: #fff;
+}
+.wpcf7
+{
+    width: 45%;
+}
+.screen-reader-response
+{
+    position: absolute;
+    top: -99999px;
+    left: -99999px;
+}
+.wpcf7-not-valid-tip
+{
+    font-size: .875em;
+    font-weight: 600;
+
+    color: $mediumRed;
+}
+.wpcf7-validation-errors
+{
+    font-size: .875em;
+    font-weight: 600;
+
+    margin-top: 1.428571428571429em;
+    padding: .714285714285714em;
+
+    color: $mediumRed;
+    border: 1px solid $mediumRed;
+    border-radius: 5px;
+}
+@media screen and (max-width: 768px)
+{
+    .wpcf7
+    {
+        width: 100%;
+    }
 }
 @font-face
 {
@@ -2713,45 +2752,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object
     {
         left: 0;
     }
-}
-.infos
-{
-    position: relative;
-
-    padding: 3.125em 0;
-}
-.infos__white
-{
-    background-color: #fff;
-}
-.infos__title
-{
-    font-family: 'firasans';
-    font-size: 2.1875em;
-    font-weight: 600;
-
-    text-align: center;
-
-    color: #4f6c7a;
-}
-.infos__bg
-{
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-
-    width: 100%;
-    height: 100%;
-
-    -ms-transform: skewY(3deg);
-        transform: skewY(3deg);
-    -ms-transform-origin: top right;
-        transform-origin: top right;
-
-    background-color: #fff;
 }
 .wrap
 {
