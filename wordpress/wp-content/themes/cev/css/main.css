@@ -1040,15 +1040,13 @@ body
     border-radius: .5625em;
     background: #fff;
 }
-.nav__icon span .with-menu__bloc,
-.nav__icon span .nav__bloc
+.with-menu .nav__bloc
 {
     height: 38.125em;
 
     transition: height .5s ease;
 }
-.nav__icon span .with-menu__link,
-.nav__icon span .nav__link
+.with-menu .nav__link
 {
     padding-top: .3125em;
 }
@@ -1102,7 +1100,7 @@ body
     left: 10px;
 
     width: 0;
-    height: 1px;
+    height: 2px;
 
     content: '';
     transition: width .3s ease-in-out;
@@ -1113,6 +1111,12 @@ body
 .menu__item a:focus-within:before
 {
     width: 20%;
+}
+.menu__active a:before
+{
+    width: 20%;
+
+    background-color: #f9ca24;
 }
 .menu__item-dropdown
 {

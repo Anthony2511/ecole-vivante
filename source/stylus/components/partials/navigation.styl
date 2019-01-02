@@ -77,13 +77,13 @@
     border-radius: s(9,16)
     background: $cWhite
 
-    .with-menu
-    .nav
-      &__bloc
-        height s(610,16)
-        transition height .5s ease
-      &__link
-        padding-top s(5,16)
+.with-menu
+  .nav
+    &__bloc
+      height s(610,16)
+      transition height .5s ease
+    &__link
+      padding-top s(5,16)
 .menu-unfolded
   .nav
     &__icon span:nth-child(1)
@@ -116,13 +116,18 @@
         top calc(100%)
         width 0
         left 10px
-        height 1px
+        height 2px
         transition width.3s ease-in-out
         background-color $cWhite
       &:hover,
       &:focus-within
         &:before
           width 20%
+  &__active
+    & a
+      &:before
+        width 20%
+        background-color $cYellow
   &__item-dropdown
     list-style none
     display inline-block

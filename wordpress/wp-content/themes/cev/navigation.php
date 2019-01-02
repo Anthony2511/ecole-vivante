@@ -26,7 +26,7 @@
 	    <?php global $post;
 	    $thePostID = $post->ID; ?>
         <ul class="menu">
-            <li class="menu__item">
+            <li class="menu__item <?php echo $thePostID == 6 ? "menu__active" : "" ;?>">
                 <a href="<?php echo home_url(); ?>" class="menu__link">Accueil</a>
             </li>
             <li class="menu__item-dropdown">
@@ -44,13 +44,13 @@
                     <li class="subnav__li"><a href="<?php the_permalink(); ?>">Nos valeurs</a></li>
                 </ul>
             </li>
-            <li class="menu__item">
+            <li class="menu__item <?php echo $thePostID == 16 ? "menu__active" : "" ;?>">
                 <a href="<?php the_permalink( '16' ); ?>" class="menu__link">Actualités/Évènements</a>
             </li>
             <li class="menu__item">
                 <a href="<?php the_permalink(); ?>" class="menu__link">Partenaires</a>
             </li>
-            <li class="menu__item">
+            <li class="menu__item <?php echo $thePostID == 62 ? "menu__active" : "" ;?>">
                 <a href="<?php the_permalink('62'); ?>" class="menu__link">Contact</a>
             </li>
         </ul>
