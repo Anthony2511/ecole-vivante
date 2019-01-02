@@ -27,30 +27,7 @@ Template Name: Page Contact
             </ul>
         </div>
         <div class="contact-page__bloc">
-            <form action="" class="contact-page__form">
-                <legend class="contact-page__form-required">Les champs suivi d'un (*) sont obligatoires</legend>
-                <div class="contact-page__form-champ">
-                    <label for="firstname" class="contact-page__form-label">Votre prénom</label>
-                    <input type="text" id="firstname" class="contact-page__form-input" placeholder="Jean">
-                </div>
-                <div class="contact-page__form-champ">
-                    <label for="lastname" class="contact-page__form-label">Votre nom</label>
-                    <input type="text" id="lastname" class="contact-page__form-input" placeholder="Dupont">
-                </div>
-                <div class="contact-page__form-champ">
-                    <label for="email" class="contact-page__form-label">Votre e-mail</label>
-                    <input type="email" id="email" class="contact-page__form-input" placeholder="jean.dupont@gmail.com">
-                </div>
-                <div class="contact-page__form-champ">
-                    <label for="tel" class="contact-page__form-label">Votre téléphone</label>
-                    <input type="number" id="tel" class="contact-page__form-input" placeholder="0478 98 85 72">
-                </div>
-                <div class="contact-page__form-champ">
-                    <label for="message" class="contact-page__form-label">Votre message</label>
-                    <textarea name="message" id="message" cols="30" rows="10" class="contact-page__form-input textarea" placeholder="Écrivez votre message..."></textarea>
-                </div>
-                <input type="submit" value="Envoyez votre message" class="button-yellow">
-            </form>
+	        <?= do_shortcode('[contact-form-7 id="64" title="Contact form 1"]'); ?>
         </div>
     </div>
 </section>
@@ -59,7 +36,8 @@ Template Name: Page Contact
     <section class="wrap">
         <h2 class="infos__title" aria-level="2"
             role="heading"><?= __( 'Besoin d\'informations sur L\'école vivante ?', 'wp' ); ?></h2>
-        <a href="<?php the_permalink('42'); ?>" class="button-yellow button-center"><?= __( 'En savoir plus', 'wp' ); ?></a>
+        <a href="<?php the_permalink( '42' ); ?>"
+           class="button-yellow button-center"><?= __( 'En savoir plus', 'wp' ); ?></a>
     </section>
 </div>
 <?php include( 'footer.php' ); ?>
