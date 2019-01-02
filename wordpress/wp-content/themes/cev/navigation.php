@@ -51,7 +51,7 @@
                 <a href="<?php the_permalink(); ?>" class="menu__link">Partenaires</a>
             </li>
             <li class="menu__item">
-                <a href="<?php the_permalink(); ?>" class="menu__link">Contact</a>
+                <a href="<?php the_permalink('62'); ?>" class="menu__link">Contact</a>
             </li>
         </ul>
         <a href="#" class="search"><span class="hidden">Recherche</span></a>

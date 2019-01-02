@@ -33,7 +33,7 @@ Template Name: Page About
                             <ul class="who-page__list">
                                 <li class="who-page__item">
                                     <span><?= the_sub_field( 'date' ); ?></span>
-	                                <?= the_sub_field('texte'); ?>
+									<?= the_sub_field( 'texte' ); ?>
                                 </li>
                             </ul>
 						<?php endwhile; endif; ?>

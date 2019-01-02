@@ -1604,7 +1604,7 @@ ul li ul:focus
 {
     .button-center
     {
-        max-width: 75%;
+        max-width: 80%;
     }
 }
 .infos
@@ -1645,6 +1645,13 @@ ul li ul:focus
         transform-origin: top right;
 
     background-color: #fff;
+}
+@media screen and (max-width: 1300px)
+{
+    .infos
+    {
+        padding: 3.125em 1.25em;
+    }
 }
 @media screen and (max-width: 768px)
 {
