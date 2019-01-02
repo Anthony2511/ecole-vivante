@@ -671,6 +671,10 @@ body
     -ms-transform: translateX(5px);
         transform: translateX(5px);
 }
+.who-page
+{
+    padding: 3.125em 0;
+}
 .news-page
 {
     padding: 3.125em 0 6.25em;

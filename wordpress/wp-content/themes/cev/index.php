@@ -33,7 +33,7 @@ include( 'head.php' ); ?>
                     une intention.
                 </p>
             </div>
-            <a href="<?php the_permalink(); ?>" class="button-yellow"><?= __( 'En savoir plus', 'wp' ); ?></a>
+            <a href="<?php the_permalink('42'); ?>" class="button-yellow"><?= __( 'En savoir plus', 'wp' ); ?></a>
         </div>
         <div class="home-who__bloc-img">
             <figure>
