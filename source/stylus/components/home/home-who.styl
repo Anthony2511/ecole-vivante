@@ -30,3 +30,25 @@
     & figure
       & img
         width 100%
+
+@media screen and (max-width: 1300px)
+  .home-who
+    padding s(50,16) s(20,16)
+
+@media screen and (max-width: 1024px)
+  .home-who
+    &__container
+      flex-direction column
+    &__bloc
+      margin-right 0
+      width 100%
+    &__bloc-img
+      & figure
+        & img
+          margin-top s(30,16)
+
+@media screen and (max-width: 768px)
+  .home-who
+    &__bloc-text
+      font-size s(14,16)
+

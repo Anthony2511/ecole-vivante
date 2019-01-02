@@ -449,6 +449,38 @@ body
 {
     width: 100%;
 }
+@media screen and (max-width: 1300px)
+{
+    .home-who
+    {
+        padding: 3.125em 1.25em;
+    }
+}
+@media screen and (max-width: 1024px)
+{
+    .home-who__container
+    {
+            flex-direction: column;
+
+        -ms-flex-direction: column;
+    }
+    .home-who__bloc
+    {
+        width: 100%;
+        margin-right: 0;
+    }
+    .home-who__bloc-img figure img
+    {
+        margin-top: 1.875em;
+    }
+}
+@media screen and (max-width: 768px)
+{
+    .home-who__bloc-text
+    {
+        font-size: .875em;
+    }
+}
 .home-news__background
 {
     padding-bottom: 3.125em;
@@ -1225,6 +1257,13 @@ ul li ul:focus
     font-weight: 600;
 
     text-align: center;
+}
+@media screen and (max-width: 768px)
+{
+    .title
+    {
+        font-size: 1.5625em;
+    }
 }
 .header-two
 {
