@@ -407,6 +407,16 @@ body
     width: 50%;
     margin-right: 10%;
 }
+.home-who__bloc-text
+{
+    font-family: 'opensans';
+    font-weight: 300;
+    line-height: 2;
+
+    margin-bottom: 2.5em;
+
+    color: #4f6c7a;
+}
 .home-who__bloc-text p
 {
     font-family: 'opensans';
@@ -677,7 +687,7 @@ body
 }
 .news-page
 {
-    padding: 3.125em 0 6.25em;
+    padding: 0 0 6.25em;
 }
 .news-page__infos
 {
