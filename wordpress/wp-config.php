@@ -40,6 +40,8 @@ define('WPCF7_AUTOP', false );
   */
 define('DB_COLLATE', '');
 
+
+define( 'WPCF7_VALIDATE_CONFIGURATION', false );
 /**#@+
  * Clés uniques d’authentification et salage.
  *

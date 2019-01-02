@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a36dd27-ee25-4553-990f-318f72c892ef" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/stylus/components/wpcf7.styl" beforeDir="false" afterPath="$PROJECT_DIR$/source/stylus/components/wpcf7.styl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-config.php" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-config.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/cev/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/cev/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/cev/template-contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/cev/template-contact.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -63,7 +64,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="template-contact.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="template-contact.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wordpress/wp-content/themes/cev/template-contact.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="184">
@@ -72,11 +73,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wpcf7.styl" pinned="false" current-in-tab="false">
+      <file leaf-file-name="wpcf7.styl" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/stylus/components/wpcf7.styl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="166">
+              <caret line="10" column="41" lean-forward="true" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -136,6 +137,7 @@
         <option value="$PROJECT_DIR$/wordpress/wp-content/themes/cev/template-news.php" />
         <option value="$PROJECT_DIR$/source/stylus/components/contact/contact-page.styl" />
         <option value="$PROJECT_DIR$/wordpress/wp-content/themes/cev/template-contact.php" />
+        <option value="$PROJECT_DIR$/wordpress/wp-config.php" />
         <option value="$PROJECT_DIR$/source/stylus/components/wpcf7.styl" />
       </list>
     </option>
@@ -304,12 +306,12 @@
       <workItem from="1545988244530" duration="16876000" />
       <workItem from="1546167534785" duration="13184000" />
       <workItem from="1546187151717" duration="608000" />
-      <workItem from="1546420683860" duration="15296000" />
+      <workItem from="1546420683860" duration="16616000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74712000" />
+    <option name="totallyTimeSpent" value="76032000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1547" height="832" extended-state="0" />
@@ -320,9 +322,9 @@
       <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="0" />
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.3294964" />
-      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49932885" visible="true" weight="0.2589928" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" sideWeight="0.49932885" visible="true" weight="0.2589928" />
       <window_info id="Gulp" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26259235" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26259235" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="0" />
       <window_info id="Structure" order="0" side_tool="true" />
@@ -360,9 +362,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://D:/Ecole/SVG/EcoleVivanteSVG/Facebook.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://D:/Ecole/SVG/EcoleVivanteSVG/iconNews.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -680,17 +679,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/stylus/components/wpcf7.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wordpress/wp-content/themes/cev/template-contact.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
           <caret line="32" column="10" lean-forward="true" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wordpress/wp-config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="43" column="48" selection-start-line="43" selection-start-column="48" selection-end-line="43" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/stylus/components/wpcf7.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="10" column="41" lean-forward="true" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
         </state>
       </provider>
     </entry>

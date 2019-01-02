@@ -1811,19 +1811,23 @@ ul li ul:focus
     font-size: .875em;
     font-weight: 600;
 
-    color: $mediumRed;
+    margin-bottom: .357142857142857em;
+
+    color: #4f6c7a;
 }
-.wpcf7-validation-errors
+.wpcf7-validation-errors,
+.wpcf7-response-output.wpcf7-mail-sent-ok
 {
     font-size: .875em;
     font-weight: 600;
+    line-height: 1.6;
 
     margin-top: 1.428571428571429em;
     padding: .714285714285714em;
 
-    color: $mediumRed;
-    border: 1px solid $mediumRed;
-    border-radius: 5px;
+    color: #fff;
+    border-radius: 10px;
+    background-color: #4f6c7a;
 }
 @media screen and (max-width: 768px)
 {

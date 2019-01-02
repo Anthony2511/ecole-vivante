@@ -2,18 +2,21 @@
   hidden()
 
 .wpcf7-not-valid-tip
-  color: $mediumRed
+  color: $cBlue
   font-size: s(14,16)
+  margin-bottom s(5,14)
   font-weight 600
 
-.wpcf7-validation-errors
-  border: 1px solid $mediumRed
-  color: $mediumRed
+.wpcf7-validation-errors,
+.wpcf7-response-output.wpcf7-mail-sent-ok
+  color: $cWhite
+  background-color $cBlue
   font-size: s(14,16)
   font-weight 600
   padding: s(10,14)
-  border-radius: 5px
+  border-radius: 10px
   margin-top: s(20,14)
+  line-height 1.6
 
 @media screen and (max-width 768px)
   .wpcf7
