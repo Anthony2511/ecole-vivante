@@ -689,6 +689,10 @@ body
 {
     padding: 3.125em 0;
 }
+.who-page__bloc
+{
+    width: 60%;
+}
 .who-page__parcours
 {
     margin-top: 3.125em;

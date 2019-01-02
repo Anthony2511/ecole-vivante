@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a36dd27-ee25-4553-990f-318f72c892ef" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/scripts/nav.js" beforeDir="false" afterPath="$PROJECT_DIR$/source/scripts/nav.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/stylus/components/about/who-page.styl" beforeDir="false" afterPath="$PROJECT_DIR$/source/stylus/components/about/who-page.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/stylus/components/home/home-who.styl" beforeDir="false" afterPath="$PROJECT_DIR$/source/stylus/components/home/home-who.styl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/cev/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/cev/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/cev/scripts/nav.js" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/cev/scripts/nav.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/cev/template-about.php" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/cev/template-about.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,6 +30,24 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="navigation.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wordpress/wp-content/themes/cev/navigation.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="27" column="25" lean-forward="true" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nav.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wordpress/wp-content/themes/cev/scripts/nav.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="13" selection-start-column="13" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="home-who.styl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/stylus/components/home/home-who.styl">
           <provider selected="true" editor-type-id="text-editor">
@@ -46,11 +66,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="template-about.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="template-about.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wordpress/wp-content/themes/cev/template-about.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
-              <caret line="42" column="103" selection-start-line="42" selection-start-column="103" selection-end-line="42" selection-end-column="103" />
+            <state relative-caret-position="193">
+              <caret line="15" column="49" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -58,8 +78,8 @@
       <file leaf-file-name="who-page.styl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/stylus/components/about/who-page.styl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+            <state relative-caret-position="69">
+              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -111,7 +131,6 @@
         <option value="$PROJECT_DIR$/wordpress/wp-content/themes/cev/single-news.php" />
         <option value="$PROJECT_DIR$/source/stylus/components/footer.styl" />
         <option value="$PROJECT_DIR$/wordpress/wp-content/themes/cev/footer.php" />
-        <option value="$PROJECT_DIR$/source/scripts/nav.js" />
         <option value="$PROJECT_DIR$/source/stylus/components/home/home-header.styl" />
         <option value="$PROJECT_DIR$/source/stylus/components/navigation.styl" />
         <option value="$PROJECT_DIR$/wordpress/wp-content/themes/cev/navigation.php" />
@@ -119,8 +138,10 @@
         <option value="$PROJECT_DIR$/source/stylus/components/news/news-page.styl" />
         <option value="$PROJECT_DIR$/wordpress/wp-content/themes/cev/index.php" />
         <option value="$PROJECT_DIR$/source/stylus/components/home/home-who.styl" />
-        <option value="$PROJECT_DIR$/source/stylus/components/about/who-page.styl" />
+        <option value="$PROJECT_DIR$/source/scripts/nav.js" />
         <option value="$PROJECT_DIR$/wordpress/wp-content/themes/cev/template-about.php" />
+        <option value="$PROJECT_DIR$/source/stylus/components/about/who-page.styl" />
+        <option value="$PROJECT_DIR$/wordpress/wp-content/themes/cev/scripts/nav.js" />
       </list>
     </option>
   </component>
@@ -243,6 +264,15 @@
               <item name="themes" type="462c0819:PsiDirectoryNode" />
               <item name="cev" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="ecole-vivante" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ecole-vivante" type="462c0819:PsiDirectoryNode" />
+              <item name="wordpress" type="462c0819:PsiDirectoryNode" />
+              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="cev" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -287,12 +317,12 @@
       <workItem from="1545988244530" duration="16876000" />
       <workItem from="1546167534785" duration="13184000" />
       <workItem from="1546187151717" duration="608000" />
-      <workItem from="1546420683860" duration="5134000" />
+      <workItem from="1546420683860" duration="6290000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64550000" />
+    <option name="totallyTimeSpent" value="65706000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1547" height="832" extended-state="0" />
@@ -558,9 +588,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wordpress/wp-content/themes/cev/scripts/nav.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/scripts/no-js.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -575,13 +602,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/scripts/nav.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/stylus/components/home/home-header.styl">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -593,13 +613,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
           <caret line="227" lean-forward="true" selection-start-line="227" selection-end-line="227" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wordpress/wp-content/themes/cev/navigation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="34" column="107" lean-forward="true" selection-start-line="34" selection-start-column="107" selection-end-line="34" selection-end-column="107" />
         </state>
       </provider>
     </entry>
@@ -624,34 +637,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wordpress/wp-content/themes/cev/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
-          <folding>
-            <element signature="e#6#41#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/stylus/components/home/home-who.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="713">
-          <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/stylus/config/icons.styl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
           <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/stylus/components/about/who-page.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -662,10 +651,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/source/scripts/nav.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wordpress/wp-content/themes/cev/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+          <folding>
+            <element signature="e#6#41#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/wordpress/wp-content/themes/cev/template-about.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="42" column="103" selection-start-line="42" selection-start-column="103" selection-end-line="42" selection-end-column="103" />
+        <state relative-caret-position="193">
+          <caret line="15" column="49" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/stylus/components/home/home-who.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="713">
+          <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/stylus/components/about/who-page.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wordpress/wp-content/themes/cev/navigation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="27" column="25" lean-forward="true" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wordpress/wp-content/themes/cev/scripts/nav.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
