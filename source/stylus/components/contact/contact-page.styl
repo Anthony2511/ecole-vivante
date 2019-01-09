@@ -67,3 +67,46 @@
 
 .textarea
   resize none
+
+@media screen and (max-width:1300px)
+  .contact-page
+    padding s(50,16) s(20,16)
+
+@media screen and (max-width:1024px)
+  .contact-page
+    &__container
+      flex-direction column
+    &__bloc
+      width 100%
+    &__bloc-flex
+      display flex
+      flex-direction row
+      margin-bottom s(30,16)
+    &__faq
+      margin-top 0
+      width 50%
+    &__flex
+      width 50%
+    &__logo
+      & img
+        width 35%
+
+@media screen and (max-width:768px)
+  .contact-page
+    &__logo
+      & img
+        width 50%
+    &__faq-text
+      width 100%
+
+@media screen and (max-width:600px)
+  .contact-page
+    &__bloc-flex
+      flex-direction column
+    &__flex
+      width 100%
+    &__faq
+      width 100%
+      margin-top s(30,16)
+    &__form-required
+      font-size s(14,16)
