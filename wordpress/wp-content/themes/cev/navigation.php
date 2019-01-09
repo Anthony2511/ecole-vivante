@@ -40,15 +40,19 @@
                 <a href="#" class="menu__item-link">Comprendre</a>
                 <ul class="subnav">
                     <li class="subnav__li"><a href="<?php the_permalink( '16' ); ?>">Temps d'apprentissage</a></li>
-                    <li class="subnav__li"><a href="<?php the_permalink(); ?>">Métier d'enseigant</a></li>
+                    <li class="subnav__li"><a href="<?php the_permalink(); ?>">Métier d'enseignant</a></li>
                     <li class="subnav__li"><a href="<?php the_permalink(); ?>">Nos valeurs</a></li>
+                </ul>
+            </li>
+            <li class="menu__item-dropdown">
+                <a href="#" class="menu__item-link">Infos pratiques</a>
+                <ul class="subnav">
+                    <li class="subnav__li"><a href="<?php the_permalink( '16' ); ?>">FAQ</a></li>
+                    <li class="subnav__li"><a href="<?php the_permalink(); ?>">Horaires</a></li>
                 </ul>
             </li>
             <li class="menu__item <?php echo $thePostID == 16 ? "menu__active" : "" ;?>">
                 <a href="<?php the_permalink( '16' ); ?>" class="menu__link">Actualités/Évènements</a>
-            </li>
-            <li class="menu__item">
-                <a href="<?php the_permalink(); ?>" class="menu__link">Partenaires</a>
             </li>
             <li class="menu__item <?php echo $thePostID == 62 ? "menu__active" : "" ;?>">
                 <a href="<?php the_permalink('62'); ?>" class="menu__link">Contact</a>
