@@ -14,24 +14,24 @@ include( 'head.php' ); ?>
     <h2 class="home-who__title--icon title title__blue" aria-level="2"
         role="heading"><?= __( 'Qui sommes-nous ?', 'wp' ); ?></h2>
     <div class="home-who__container">
-	    <?php $posts = new WP_Query( [
-		    'page_id' => 42,
-	    ] ); ?>
-	    <?php if ( $posts->have_posts() ) : while ( $posts->have_posts() ): $posts->the_post(); ?>
-        <div class="home-who__bloc">
-            <div class="home-who__bloc-text">
-                <?= wp_trim_words( get_field( 'about-intro-text' ), 114, '...' ); ?>
+		<?php $posts = new WP_Query( [
+			'page_id' => 42,
+		] ); ?>
+		<?php if ( $posts->have_posts() ) : while ( $posts->have_posts() ): $posts->the_post(); ?>
+            <div class="home-who__bloc">
+                <div class="home-who__bloc-text">
+					<?= wp_trim_words( get_field( 'about-intro-text' ), 114, '...' ); ?>
+                </div>
+                <a href="<?php the_permalink( '42' ); ?>" class="button-yellow"><?= __( 'En savoir plus', 'wp' ); ?></a>
             </div>
-            <a href="<?php the_permalink('42'); ?>" class="button-yellow"><?= __( 'En savoir plus', 'wp' ); ?></a>
-        </div>
-        <div class="home-who__bloc-img">
-            <figure>
-		        <?php $aboutImg = get_field('about-img'); ?>
-                <img src="<?= $aboutImg['url']; ?>" alt="<?= $aboutImg['alt']; ?>">
-            </figure>
-        </div>
-		    <?php wp_reset_postdata(); ?>
-	    <?php endwhile; endif; ?>
+            <div class="home-who__bloc-img">
+                <figure>
+					<?php $aboutImg = get_field( 'about-img' ); ?>
+                    <img src="<?= $aboutImg['url']; ?>" alt="<?= $aboutImg['alt']; ?>">
+                </figure>
+            </div>
+			<?php wp_reset_postdata(); ?>
+		<?php endwhile; endif; ?>
     </div>
 </section>
 <div class="home-news__background">
@@ -63,13 +63,14 @@ include( 'head.php' ); ?>
 						<?php endif; ?>
 
                         <h3 class="home-news__bloc-title"><?= the_title(); ?></h3>
-                        <time class="home-news__bloc-date" datetime="<?= get_the_date("d/m/y"); ?>"><?= get_the_date(); ?></time>
+                        <time class="home-news__bloc-date"
+                              datetime="<?= get_the_date( "d/m/y" ); ?>"><?= get_the_date(); ?></time>
                         <p class="home-news__bloc-text">
 							<?= wp_trim_words( get_field( 'news-text' ), 25, '...' ); ?>
                         </p>
-                        <a href="<?= the_permalink(); ?>" class="button-white"><?= __( 'En savoir plus', 'wp' ); ?></a>
+                        <a href="<?= the_permalink(); ?>" class="button-white" title="Vers l'article : <?= the_title(); ?>"><?= __( 'En savoir plus', 'wp' ); ?></a>
                     </section>
-                    <a href="<?= the_permalink(); ?>" class="home-news__bloc-link"></a>
+                    <a href="<?= the_permalink(); ?>" class="home-news__bloc-link" title="Vers l'article : <?= the_title(); ?>"></a>
                 </div>
 				<?php wp_reset_postdata(); ?>
 			<?php endwhile; endif; ?>
@@ -116,4 +117,4 @@ include( 'head.php' ); ?>
     </div>
 
 </section>
-<?php include('footer.php'); ?>
+<?php include( 'footer.php' ); ?>

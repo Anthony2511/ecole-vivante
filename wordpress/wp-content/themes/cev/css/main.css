@@ -995,6 +995,13 @@ body
 {
     margin-bottom: 3.125em;
 }
+@media screen and (max-width: 1300px)
+{
+    .news-page
+    {
+        padding: 0 1.25em 3.125em;
+    }
+}
 .single-news
 {
     padding: 3.125em 0;
@@ -1485,6 +1492,14 @@ ul li ul:focus
     .title-center
     {
         font-size: 1.5625em;
+    }
+}
+@media screen and (max-width: 375px)
+{
+    .title,
+    .title-center
+    {
+        font-size: 1.375em;
     }
 }
 .header-two

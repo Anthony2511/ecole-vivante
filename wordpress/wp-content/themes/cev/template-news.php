@@ -39,11 +39,11 @@ Template Name: Page News
                     <h3 class="home-news__bloc-title"><?= the_title(); ?></h3>
                     <time class="home-news__bloc-date" datetime="<?= get_the_date("d/m/y"); ?>"><?= get_the_date(); ?></time>
                     <p class="home-news__bloc-text">
-						<?= wp_trim_words( get_field( 'news-text' ), 30, '...' ); ?>
+						<?= wp_trim_words( get_field( 'news-text' ), 29, '...' ); ?>
                     </p>
-                    <a href="<?= the_permalink(); ?>" class="button-white"><?= __( 'En savoir plus', 'wp' ); ?></a>
+                    <a href="<?= the_permalink(); ?>" class="button-white" title="Vers l'article : <?= the_title(); ?>"><?= __( 'En savoir plus', 'wp' ); ?></a>
                 </section>
-                <a href="<?= the_permalink(); ?>" class="home-news__bloc-link"></a>
+                <a href="<?= the_permalink(); ?>" class="home-news__bloc-link" title="Vers l'article : <?= the_title(); ?>"></a>
             </div>
 			<?php wp_reset_postdata(); ?>
 		<?php endwhile; endif; ?>
