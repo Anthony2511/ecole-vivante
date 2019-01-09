@@ -84,3 +84,32 @@
   background-color alpha($cBlue,0.5)
   transition .3s ease-in-out
 
+@media screen and (max-width: 1300px)
+  .home-news
+    padding 0 s(20,16)
+
+@media screen and (max-width: 1150px)
+  .home-news
+    &__bloc
+      width 30%
+
+@media screen and (max-width: 1024px)
+  .home-news
+    &__container
+      flex-direction column
+      justify-content center
+      align-items center
+    &__bloc
+      width 75%
+    &__bloc + &__bloc
+      margin-top s(30,16)
+
+@media screen and (max-width: 768px)
+  .home-news
+    &__bloc
+      width 100%
+
+
+
+
+
