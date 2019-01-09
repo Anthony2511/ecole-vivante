@@ -1,5 +1,5 @@
 <nav class="nav">
-    <h2 class="hidden">Menu de navigation</h2>
+    <h2 class="hidden"><?= __( 'Menu de navigation', 'wp' ); ?></h2>
     <div class="nav__button">
         <div class="nav__button-wrap">
             <div class="nav__icon">
@@ -23,39 +23,76 @@
 			<?php endif; ?>
         </a>
 
-	    <?php global $post;
-	    $thePostID = $post->ID; ?>
+		<?php global $post;
+		$thePostID = $post->ID; ?>
         <ul class="menu">
-            <li class="menu__item <?php echo $thePostID == 6 ? "menu__active" : "" ;?>">
-                <a href="<?php echo home_url(); ?>" class="menu__link">Accueil</a>
+            <li class="menu__item <?php echo $thePostID == 6 ? "menu__active" : ""; ?>">
+                <a href="<?php echo home_url(); ?>" class="menu__link">
+					<?= __( 'Accueil', 'wp' ); ?>
+                </a>
             </li>
-            <li class="menu__item-dropdown <?php echo $thePostID == 42 || $thePostID == 59 ? "menu__active" : "" ;?>">
-                <a href="#" class="menu__item-link">Présentation</a>
+            <li class="menu__item-dropdown">
+                <a href="#" class="menu__item-link">
+					<?= __( 'Présentation', 'wp' ); ?>
+                </a>
                 <ul class="subnav">
-                    <li class="subnav__li"><a href="<?php the_permalink('42'); ?>">&Aacute; Propos</a></li>
-                    <li class="subnav__li"><a href="<?php the_permalink(); ?>">Nos membres</a></li>
+                    <li class="subnav__li">
+                        <a href="<?php the_permalink( '42' ); ?>">
+							<?= __( '&Aacute; Propos', 'wp' ); ?>
+                        </a>
+                    </li>
+                    <li class="subnav__li">
+                        <a href="<?php the_permalink( '67' ); ?>">
+							<?= __( 'Nos membres', 'wp' ); ?>
+                        </a>
+                    </li>
                 </ul>
             </li>
             <li class="menu__item-dropdown">
-                <a href="#" class="menu__item-link">Comprendre</a>
+                <a href="#" class="menu__item-link">
+					<?= __( 'Comprendre', 'wp' ); ?>
+                </a>
                 <ul class="subnav">
-                    <li class="subnav__li"><a href="<?php the_permalink( '16' ); ?>">Temps d'apprentissage</a></li>
-                    <li class="subnav__li"><a href="<?php the_permalink(); ?>">Métier d'enseignant</a></li>
-                    <li class="subnav__li"><a href="<?php the_permalink(); ?>">Nos valeurs</a></li>
+                    <li class="subnav__li"><a href="<?php the_permalink( '16' ); ?>">
+							<?= __( 'Temps d\'apprentissage', 'wp' ); ?>
+                        </a>
+                    </li>
+                    <li class="subnav__li"><a href="<?php the_permalink(); ?>">
+							<?= __( 'Métier d\'enseignant', 'wp' ); ?>
+                        </a>
+                    </li>
+                    <li class="subnav__li"><a href="<?php the_permalink(); ?>">
+							<?= __( 'Nos valeurs', 'wp' ); ?>
+                        </a>
+                    </li>
                 </ul>
             </li>
             <li class="menu__item-dropdown">
-                <a href="#" class="menu__item-link">Infos pratiques</a>
+                <a href="#" class="menu__item-link">
+					<?= __( 'Infos pratiques', 'wp' ); ?>
+                </a>
                 <ul class="subnav">
-                    <li class="subnav__li"><a href="<?php the_permalink( '16' ); ?>">FAQ</a></li>
-                    <li class="subnav__li"><a href="<?php the_permalink(); ?>">Horaires</a></li>
+                    <li class="subnav__li">
+                        <a href="<?php the_permalink( '16' ); ?>">
+							<?= __( 'FAQ', 'wp' ); ?>
+                        </a>
+                    </li>
+                    <li class="subnav__li">
+                        <a href="<?php the_permalink(); ?>">
+							<?= __( 'Horaires', 'wp' ); ?>
+                        </a>
+                    </li>
                 </ul>
             </li>
-            <li class="menu__item <?php echo $thePostID == 16 ? "menu__active" : "" ;?>">
-                <a href="<?php the_permalink( '16' ); ?>" class="menu__link">Actualités/Évènements</a>
+            <li class="menu__item <?php echo $thePostID == 16 ? "menu__active" : ""; ?>">
+                <a href="<?php the_permalink( '16' ); ?>" class="menu__link">
+					<?= __( 'Actualités/Évènements', 'wp' ); ?>
+                </a>
             </li>
-            <li class="menu__item <?php echo $thePostID == 62 ? "menu__active" : "" ;?>">
-                <a href="<?php the_permalink('62'); ?>" class="menu__link">Contact</a>
+            <li class="menu__item <?php echo $thePostID == 62 ? "menu__active" : ""; ?>">
+                <a href="<?php the_permalink( '62' ); ?>" class="menu__link">
+					<?= __( 'Contact', 'wp' ); ?>
+                </a>
             </li>
         </ul>
         <a href="#" class="search"><span class="hidden">Recherche</span></a>
