@@ -967,6 +967,32 @@ body
 
     color: #4f6c7a;
 }
+.contact-page__faq
+{
+    margin-top: 1.875em;
+
+    color: #4f6c7a;
+}
+.contact-page__faq-title
+{
+    font-size: 1.25em;
+    font-weight: 600;
+
+    margin-bottom: 1em;
+}
+.contact-page__faq-text
+{
+    font-weight: 300;
+    line-height: 1.6;
+
+    width: 75%;
+}
+.contact-page__faq-text a
+{
+    font-weight: 500;
+
+    text-decoration: underline;
+}
 .textarea
 {
     resize: none;

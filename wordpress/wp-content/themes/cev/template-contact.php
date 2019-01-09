@@ -25,9 +25,14 @@ Template Name: Page Contact
                 <li class="contact-page__item contact-page__item--tel">0478 45 85 96</li>
                 <li class="contact-page__item contact-page__item--mail">ecolevivante@gmail.com</li>
             </ul>
+            <section class="contact-page__faq">
+                <h3 aria-level="3" role="heading" class="contact-page__faq-title"><?= __('Besoin de réponses ?','wp');?></h3>
+                <p class="contact-page__faq-text">Vérifiez d'abord si la question n'a pas déja été posée sur notre page
+                    <a href="<?php the_permalink(); ?>">FAQ</a></p>
+            </section>
         </div>
         <div class="contact-page__bloc">
-	        <?= do_shortcode('[contact-form-7 id="64" title="Contact form 1"]'); ?>
+			<?= do_shortcode( '[contact-form-7 id="64" title="Contact form 1"]' ); ?>
         </div>
     </div>
 </section>
