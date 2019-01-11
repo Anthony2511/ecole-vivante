@@ -115,6 +115,5 @@ include( 'head.php' ); ?>
             <img src="<?= $images . '/../../images/comprendre.png'; ?>" alt="">
         </figure>
     </div>
-
 </section>
 <?php include( 'footer.php' ); ?>
