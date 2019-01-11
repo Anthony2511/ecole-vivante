@@ -4,7 +4,7 @@
     color $cWhite
     position absolute
     right 0
-    top 41px
+    top 35px
     font-size s(16,14)
 .nav
   font-size: s(14,16)
@@ -216,6 +216,10 @@ ul li ul:focus {
   .nav
     padding 0 s(20,16)
 
+@media screen and (max-width: 1100px)
+  .nav
+    font-size s(12,16)
+
 @media screen and (max-width: 1024px)
   .search
     display none
@@ -225,7 +229,7 @@ ul li ul:focus {
     &__button
       display inline-block
       position: absolute
-      top: s(-30,16)
+      top: s(10,16)
       text-align: right
       cursor pointer
 

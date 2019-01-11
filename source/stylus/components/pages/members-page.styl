@@ -32,15 +32,38 @@
   &__item
     line-height 1.6
     font-weight: 300
+    font-size s(14,16)
     &--tel
       &:before
         icon('iconUser')
-        margin-right s(10,16)
+        margin-right s(5,14)
     &--email
       &:before
         icon('iconUser')
-        margin-right s(10,16)
+        margin-right s(5,14)
   &__text-info
     line-height 1.6
     margin s(20,16) 0 s(-40,16)
     min-height 180px
+
+@media screen and (max-width: 1300px)
+  .members-page
+    padding s(50,16) s(20,16)
+
+@media screen and (max-width: 1024px)
+  .members-page
+    &__bloc
+      width 45%
+
+@media screen and (max-width: 768px)
+  .members-page
+    &__bloc
+      width 75%
+      margin 0 auto s(125,16)
+
+@media screen and (max-width: 500px)
+  .members-page
+    &__bloc
+      width 100%
+      padding 0 s(20,16)
+

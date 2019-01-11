@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9a36dd27-ee25-4553-990f-318f72c892ef" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/source/stylus/components/pages/members-page.styl" beforeDir="false" afterPath="$PROJECT_DIR$/source/stylus/components/pages/members-page.styl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/stylus/components/partials/navigation.styl" beforeDir="false" afterPath="$PROJECT_DIR$/source/stylus/components/partials/navigation.styl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/cev/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/cev/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/cev/template-members.php" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/cev/template-members.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,10 +33,19 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="navigation.styl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/stylus/components/partials/navigation.styl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="228" column="13" lean-forward="true" selection-start-line="228" selection-start-column="13" selection-end-line="228" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="template-members.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wordpress/wp-content/themes/cev/template-members.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
+            <state relative-caret-position="1035">
               <caret line="49" column="34" lean-forward="true" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="34" />
             </state>
           </provider>
@@ -54,8 +63,8 @@
       <file leaf-file-name="members-page.styl" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/stylus/components/pages/members-page.styl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
+            <state relative-caret-position="74">
+              <caret line="38" column="28" lean-forward="true" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -114,12 +123,12 @@
         <option value="$PROJECT_DIR$/source/stylus/components/partials/breadcrumb.styl" />
         <option value="$PROJECT_DIR$/wordpress/wp-content/themes/cev/template-contact.php" />
         <option value="$PROJECT_DIR$/source/stylus/components/contact/contact-page.styl" />
-        <option value="$PROJECT_DIR$/source/stylus/components/partials/navigation.styl" />
         <option value="$PROJECT_DIR$/wordpress/wp-content/themes/cev/navigation.php" />
         <option value="$PROJECT_DIR$/source/stylus/main.styl" />
         <option value="$PROJECT_DIR$/wordpress/wp-content/themes/cev/functions.php" />
         <option value="$PROJECT_DIR$/wordpress/wp-content/themes/cev/index.php" />
         <option value="$PROJECT_DIR$/wordpress/wp-content/themes/cev/template-members.php" />
+        <option value="$PROJECT_DIR$/source/stylus/components/partials/navigation.styl" />
         <option value="$PROJECT_DIR$/source/stylus/components/pages/members-page.styl" />
       </list>
     </option>
@@ -310,12 +319,12 @@
       <workItem from="1546506787410" duration="50000" />
       <workItem from="1547030051141" duration="12065000" />
       <workItem from="1547113571152" duration="26000" />
-      <workItem from="1547200216854" duration="4552000" />
+      <workItem from="1547200216854" duration="5642000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93084000" />
+    <option name="totallyTimeSpent" value="94174000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -326,9 +335,9 @@
       <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="0" />
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.3281027" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="0" sideWeight="0.49932885" visible="true" weight="0.2981455" />
+      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49932885" visible="true" weight="0.2981455" />
       <window_info id="Gulp" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27680966" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27680966" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="0" />
       <window_info id="Structure" order="0" side_tool="true" />
@@ -622,13 +631,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/stylus/components/partials/navigation.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2967">
-          <caret line="129" column="22" selection-start-line="129" selection-start-column="22" selection-end-line="129" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wordpress/wp-content/themes/cev/template-contact.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -685,17 +687,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/source/stylus/components/partials/navigation.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="228" column="13" lean-forward="true" selection-start-line="228" selection-start-column="13" selection-end-line="228" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/wordpress/wp-content/themes/cev/template-members.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
+        <state relative-caret-position="1035">
           <caret line="49" column="34" lean-forward="true" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/stylus/components/pages/members-page.styl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
+        <state relative-caret-position="74">
+          <caret line="38" column="28" lean-forward="true" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
         </state>
       </provider>
     </entry>

@@ -1130,6 +1130,7 @@ body
 }
 .members-page__item
 {
+    font-size: .875em;
     font-weight: 300;
     line-height: 1.6;
 }
@@ -1141,7 +1142,7 @@ body
     font-variant: normal;
     line-height: 1;
 
-    margin-right: .625em;
+    margin-right: .357142857142857em;
 
     content: '\e902';
     text-transform: none;
@@ -1158,7 +1159,7 @@ body
     font-variant: normal;
     line-height: 1;
 
-    margin-right: .625em;
+    margin-right: .357142857142857em;
 
     content: '\e902';
     text-transform: none;
@@ -1173,6 +1174,36 @@ body
 
     min-height: 180px;
     margin: 1.25em 0 -2.5em;
+}
+@media screen and (max-width: 1300px)
+{
+    .members-page
+    {
+        padding: 3.125em 1.25em;
+    }
+}
+@media screen and (max-width: 1024px)
+{
+    .members-page__bloc
+    {
+        width: 45%;
+    }
+}
+@media screen and (max-width: 768px)
+{
+    .members-page__bloc
+    {
+        width: 75%;
+        margin: 0 auto 7.8125em;
+    }
+}
+@media screen and (max-width: 500px)
+{
+    .members-page__bloc
+    {
+        width: 100%;
+        padding: 0 1.25em;
+    }
 }
 .news-page
 {
@@ -1318,7 +1349,7 @@ body
     line-height: 1;
 
     position: absolute;
-    top: 41px;
+    top: 35px;
     right: 0;
 
     content: '\e906';
@@ -1668,6 +1699,13 @@ ul li ul:focus
         padding: 0 1.25em;
     }
 }
+@media screen and (max-width: 1100px)
+{
+    .nav
+    {
+        font-size: .75em;
+    }
+}
 @media screen and (max-width: 1024px)
 {
     .search
@@ -1681,7 +1719,7 @@ ul li ul:focus
     .nav__button
     {
         position: absolute;
-        top: -1.875em;
+        top: .625em;
 
         display: inline-block;
 
