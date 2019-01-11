@@ -760,6 +760,58 @@ body
     -ms-transform: translateX(5px);
         transform: translateX(5px);
 }
+@media screen and (max-width: 1300px)
+{
+    .under-home
+    {
+        padding: 3.125em 1.25em;
+    }
+}
+@media screen and (max-width: 1024px)
+{
+    .under-home__container
+    {
+            flex-direction: column;
+
+        -ms-flex-direction: column;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    .under-home__bloc
+    {
+        display: -ms-flexbox;
+        display: flex;
+            flex-direction: row;
+
+        width: 100%;
+
+        -ms-flex-direction: row;
+    }
+    .under-home__text
+    {
+        width: 47.5%;
+        margin-right: 10%;
+    }
+}
+@media screen and (max-width: 768px)
+{
+    .under-home__bloc
+    {
+            flex-direction: column;
+
+        -ms-flex-direction: column;
+    }
+    .under-home__text
+    {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 1.25em;
+    }
+    .under-home__list
+    {
+        margin-bottom: 1.25em;
+    }
+}
 .contact-page
 {
     padding: 3.125em 0;
