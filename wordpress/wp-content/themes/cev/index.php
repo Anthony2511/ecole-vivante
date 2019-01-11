@@ -93,7 +93,7 @@ include( 'head.php' ); ?>
             </p>
             <ul class="under-home__list">
                 <li class="under-home__item">
-                    <a href="<?php the_permalink(); ?>" class="under-home__link"
+                    <a href="<?php the_permalink('85'); ?>" class="under-home__link"
                        title="Vers la page : Le temps d'apprentissage">
                         Le temps d'apprentissage
                     </a>

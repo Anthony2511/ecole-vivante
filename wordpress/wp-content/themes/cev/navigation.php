@@ -53,7 +53,7 @@
 					<?= __( 'Comprendre', 'wp' ); ?>
                 </a>
                 <ul class="subnav">
-                    <li class="subnav__li"><a href="<?php the_permalink( '16' ); ?>">
+                    <li class="subnav__li"><a href="<?php the_permalink( '85' ); ?>">
 							<?= __( 'Temps d\'apprentissage', 'wp' ); ?>
                         </a>
                     </li>
