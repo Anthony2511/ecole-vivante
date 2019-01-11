@@ -12,92 +12,53 @@ Template Name: Page Members
 <section class="members-page wrap">
     <h2 class="title-center title__blue" aria-level="2"
         role="heading"><?= __( 'Nos membres', 'wp' ); ?></h2>
-    <div class="members-page__container">
-        <div class="members-page__bloc">
-            <figure class="members-page__figure">
-                <img src="<?= $images . '/../../images/comprendre.png'; ?>" alt="">
-            </figure>
-            <section class="members-page__infos">
-                <h3 aria-level="3" role="heading" class="members-page__title">Virginie Jamsin</h3>
-                <ul class="members-page__list">
-                    <li class="members-page__item members-page__item--tel">0478 85 95 96</li>
-                    <li class="members-page__item members-page__item--email">virginie.jamsin@gmail.com</li>
-                </ul>
-                <p class="members-page__text-info">
-                    Centrée sur l’apprentissage et, plus généralement, sur la formation tout au long de la vie,
-                    Virginie dispose aujourd’hui d’une maitrise en sciences de l’éducation en finalité formation
-                    des adultes et travaille comme assistante et chercheuse à l’université de Liège.
-                </p>
-            </section>
+	<?php if ( have_posts() ): while ( have_posts() ): the_post(); ?>
+        <div class="members-page__container">
+			<?php if ( have_rows( 'membre' ) ): ?>
+				<?php while ( have_rows( 'membre' ) ): the_row(); ?>
+                    <div class="members-page__bloc">
+						<?php $membersImg = get_sub_field( 'membre-img' ); ?>
+
+						<?php if ( $membersImg == '' ): ?>
+                            <figure class="members-page__figure">
+                                <img src="<?= $images . '/../../images/avatar.png'; ?>" alt="">
+                            </figure>
+						<?php else: ?>
+                            <figure class="members-page__figure">
+								<?php if ( ! empty( $membersImg ) ): ?>
+									<?php $size = 'thumb-members';
+									$thumb      = $membersImg['sizes'][ $size ]; ?>
+                                    <img src="<?= $thumb; ?>" width="150" height="150"
+                                         alt="<?= $membersImg['alt']; ?>">
+								<?php endif; ?>
+                            </figure>
+						<?php endif; ?>
+                        <section class="members-page__infos">
+                            <h3 aria-level="3" role="heading"
+                                class="members-page__title"><?= the_sub_field( 'membre-fullname' ); ?></h3>
+                            <ul class="members-page__list">
+                                <li class="members-page__item members-page__item--tel">
+									<?= the_sub_field( 'membre-tel' ); ?>
+                                </li>
+                                <li class="members-page__item members-page__item--email">
+									<?= the_sub_field( 'membre-email' ); ?>
+                                </li>
+                            </ul>
+                            <p class="members-page__text-info">
+								<?= the_sub_field( 'membre-text' ); ?>
+                            </p>
+                        </section>
+                    </div>
+				<?php endwhile; endif; ?>
         </div>
-        <div class="members-page__bloc">
-            <figure class="members-page__figure">
-                <img src="<?= $images . '/../../images/comprendre.png'; ?>" alt="">
-            </figure>
-            <section class="members-page__infos">
-                <h3 aria-level="3" role="heading" class="members-page__title">Virginie Jamsin</h3>
-                <ul>
-                    <li>0478 85 95 96</li>
-                    <li>virginie.jamsin@gmail.com</li>
-                </ul>
-            </section>
-        </div>
-        <div class="members-page__bloc">
-            <figure class="members-page__figure">
-                <img src="<?= $images . '/../../images/comprendre.png'; ?>" alt="">
-            </figure>
-            <section class="members-page__infos">
-                <h3 aria-level="3" role="heading" class="members-page__title">Virginie Jamsin</h3>
-                <ul>
-                    <li>0478 85 95 96</li>
-                    <li>virginie.jamsin@gmail.com</li>
-                </ul>
-            </section>
-        </div>
-        <div class="members-page__bloc">
-            <figure class="members-page__figure">
-                <img src="<?= $images . '/../../images/comprendre.png'; ?>" alt="">
-            </figure>
-            <section class="members-page__infos">
-                <h3 aria-level="3" role="heading" class="members-page__title">Virginie Jamsin</h3>
-                <ul>
-                    <li>0478 85 95 96</li>
-                    <li>virginie.jamsin@gmail.com</li>
-                </ul>
-            </section>
-        </div>
-        <div class="members-page__bloc">
-            <figure class="members-page__figure">
-                <img src="<?= $images . '/../../images/comprendre.png'; ?>" alt="">
-            </figure>
-            <section class="members-page__infos">
-                <h3 aria-level="3" role="heading" class="members-page__title">Virginie Jamsin</h3>
-                <ul>
-                    <li>0478 85 95 96</li>
-                    <li>virginie.jamsin@gmail.com</li>
-                </ul>
-            </section>
-        </div>
-        <div class="members-page__bloc">
-            <figure class="members-page__figure">
-                <img src="<?= $images . '/../../images/comprendre.png'; ?>" alt="">
-            </figure>
-            <section class="members-page__infos">
-                <h3 aria-level="3" role="heading" class="members-page__title">Virginie Jamsin</h3>
-                <ul>
-                    <li>0478 85 95 96</li>
-                    <li>virginie.jamsin@gmail.com</li>
-                </ul>
-            </section>
-        </div>
-    </div>
+	<?php endwhile; endif; ?>
 </section>
 <div class="infos infos__white">
     <div class="infos__bg"></div>
     <section class="wrap">
         <h2 class="infos__title" aria-level="2"
             role="heading"><?= __( 'Envie de nous rejoindre ?', 'wp' ); ?></h2>
-        <a href="<?php the_permalink(  ); ?>"
+        <a href="<?php the_permalink(); ?>"
            class="button-yellow button-center"><?= __( 'Rejoignez-nous', 'wp' ); ?></a>
     </section>
 </div>
