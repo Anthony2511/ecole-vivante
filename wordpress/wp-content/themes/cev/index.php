@@ -68,9 +68,11 @@ include( 'head.php' ); ?>
                         <p class="home-news__bloc-text">
 							<?= wp_trim_words( get_field( 'news-text' ), 25, '...' ); ?>
                         </p>
-                        <a href="<?= the_permalink(); ?>" class="button-white" title="Vers l'article : <?= the_title(); ?>"><?= __( 'En savoir plus', 'wp' ); ?></a>
+                        <a href="<?= the_permalink(); ?>" class="button-white"
+                           title="Vers l'article : <?= the_title(); ?>"><?= __( 'En savoir plus', 'wp' ); ?></a>
                     </section>
-                    <a href="<?= the_permalink(); ?>" class="home-news__bloc-link" title="Vers l'article : <?= the_title(); ?>"></a>
+                    <a href="<?= the_permalink(); ?>" class="home-news__bloc-link"
+                       title="Vers l'article : <?= the_title(); ?>"></a>
                 </div>
 				<?php wp_reset_postdata(); ?>
 			<?php endwhile; endif; ?>
@@ -85,34 +87,31 @@ include( 'head.php' ); ?>
     <div class="under-home__container">
         <div class="under-home__bloc">
             <p class="under-home__text">
-                La CiTé – école vivante est un projet collaboratif de création
-                d’un établissement secondaire différent. Il est porté par des
-                enseignants chevronnés, désireux de soutenir le bien-être et
-                l’exigence dans l’éducation des adolescents d’aujourd’hui,
-                adultes de demain ; déjà citoyens.
+				<?= the_field( 'comprendre-text' ); ?>
             </p>
             <ul class="under-home__list">
                 <li class="under-home__item">
-                    <a href="<?php the_permalink('85'); ?>" class="under-home__link"
+                    <a href="<?php the_permalink( '85' ); ?>" class="under-home__link"
                        title="Vers la page : Le temps d'apprentissage">
-                        Le temps d'apprentissage
+						<?= __( 'Le temps d\'apprentissage', 'wp' ); ?>
                     </a>
                 </li>
                 <li class="under-home__item">
                     <a href="<?php the_permalink(); ?>" class="under-home__link"
                        title="Vers la page : Le métier d'enseignant">
-                        Le métier d'enseignant
+						<?= __( 'Le métier d\'enseignant', 'wp' ); ?>
                     </a>
                 </li>
                 <li class="under-home__item">
                     <a href="<?php the_permalink(); ?>" class="under-home__link" title="Vers la page : Nos valeurs">
-                        Nos valeurs
+						<?= __( 'Nos valeurs', 'wp' ); ?>
                     </a>
                 </li>
             </ul>
         </div>
         <figure class="under-home__figure">
-            <img src="<?= $images . '/../../images/comprendre.png'; ?>" alt="">
+			<?php $understandImg = get_field( 'comprendre-img' ); ?>
+            <img src="<?= $understandImg['url']; ?>" alt="<?= $understandImg['alt']; ?>">
         </figure>
     </div>
 </section>
