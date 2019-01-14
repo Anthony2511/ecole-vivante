@@ -2176,7 +2176,7 @@ ul li ul:focus
 }
 .footer
 {
-    padding: 3.125em 0;
+    padding: 3.125em 0 0;
 
     background-color: #4f6c7a;
 }
@@ -2325,6 +2325,66 @@ ul li ul:focus
     width: 100%;
     margin-bottom: 1.25em;
     padding: .625em .9375em;
+}
+.footer__partners
+{
+    padding-bottom: 3.125em;
+
+    background-color: #365463;
+}
+.footer__partners-bloc
+{
+    display: -ms-flexbox;
+    display: flex;
+        flex-direction: row;
+
+    -ms-flex-direction: row;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.footer__partners-bloc a
+{
+    display: block;
+
+    padding: 0 3.125em;
+}
+.footer__partners-title
+{
+    font-family: 'firasans';
+    font-size: 2.1875em;
+    font-weight: 600;
+
+    padding: 1.428571428571429em 0;
+
+    text-align: center;
+
+    color: #fff;
+}
+.footer__partners-figure img
+{
+    width: 150px;
+    height: auto;
+}
+.footer__copyright
+{
+    padding: 1.25em 0;
+}
+.footer__copyright-text
+{
+    font-size: .875em;
+    font-weight: 300;
+
+    display: block;
+
+    text-align: center;
+
+    color: #fff;
+}
+.footer__copyright-text a
+{
+    font-weight: 500;
 }
 .button-yellow
 {

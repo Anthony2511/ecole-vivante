@@ -4,6 +4,7 @@ add_theme_support('post-thumbnails');
 
 add_image_size( 'thumb-home-news', 336, 215, true );
 add_image_size( 'thumb-members', 150, 150, true );
+add_image_size( 'thumb-partners', 150, 75, true );
 
 
 // Define shortcut path

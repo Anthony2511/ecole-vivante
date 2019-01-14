@@ -1,6 +1,6 @@
 .footer
   background-color $cBlue
-  padding s(50,16) 0
+  padding s(50,16) 0 0
   &__container
     margin-top s(30,16)
     display flex
@@ -66,5 +66,37 @@
     padding s(10,16) s(15,16)
     width 100%
     margin-bottom s(20,16)
+  &__partners
+    background-color $cDarkBlue
+    padding-bottom s(50,16)
+  &__partners-bloc
+    display flex
+    flex-direction row
+    justify-content center
+    align-items center
+    & a
+      display block
+      padding 0 s(50,16)
+  &__partners-title
+    color $cWhite
+    font-size s(35,16)
+    text-align center
+    font-family 'firasans'
+    font-weight: 600
+    padding s(50,35) 0
+  &__partners-figure
+    & img
+      width 150px
+      height auto
+  &__copyright
+    padding s(20,16) 0
+  &__copyright-text
+    text-align center
+    display block
+    color $cWhite
+    font-size s(14,16)
+    font-weight: 300
+    & a
+      font-weight: 500
 
 

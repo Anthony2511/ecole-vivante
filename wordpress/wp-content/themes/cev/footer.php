@@ -7,7 +7,7 @@
         </section>
         <div class="footer__container">
             <section class="footer__bloc">
-                <h3 aria-level="3" role="heading" class="footer__title">Contact</h3>
+                <h3 aria-level="3" role="heading" class="footer__title"><?= __( 'Contact', 'wp' ); ?></h3>
                 <ul class="footer__contact">
                     <li>Rue des charrons n°116</li>
                     <li>4800 Verviers</li>
@@ -29,7 +29,8 @@
 					] ); ?>
 					<?php if ( $posts->have_posts() ) : while ( $posts->have_posts() ): $posts->the_post(); ?>
                         <li class="footer__contact-item">
-                            <a href="<?php the_permalink(); ?>" title="Vers l'actualité : <?php the_title(); ?>"><?= the_title(); ?></a>
+                            <a href="<?php the_permalink(); ?>"
+                               title="Vers l'actualité : <?php the_title(); ?>"><?= the_title(); ?></a>
                         </li>
 						<?php wp_reset_postdata(); ?>
 					<?php endwhile; endif; ?>
@@ -45,7 +46,35 @@
             </section>
         </div>
     </div>
-
+    <div class="footer__partners">
+        <div class="wrap">
+            <h3 class="footer__partners-title" aria-level="3" role="heading">
+				<?= __( 'Nos partenaires', 'wp' ); ?>
+            </h3>
+            <div class="footer__partners-bloc">
+                <a href="">
+                    <figure class="footer__partners-figure">
+                        <img src="<?= $images . '/../../images/hepl-cover.png'; ?>" alt="">
+                    </figure>
+                </a>
+                <a href="">
+                    <figure class="footer__partners-figure">
+                        <img src="<?= $images . '/../../images/liege-cover.png'; ?>" alt="">
+                    </figure>
+                </a>
+                <a href="">
+                    <figure class="footer__partners-figure">
+                        <img src="<?= $images . '/../../images/proximus-cover.png'; ?>" alt="">
+                    </figure>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="footer__copyright">
+        <div class="wrap">
+            <span class="footer__copyright-text">© La cité - École Vivante - Tous droits réservés. Design by <a href="#">Anthony Beaumecker</a></span>
+        </div>
+    </div>
 </footer>
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script src="<?= $scripts . 'nav.js'; ?>"></script>
