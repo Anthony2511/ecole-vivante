@@ -1423,9 +1423,7 @@ body
     width: 75%;
     margin: 3.125em auto;
 
-    list-style: none;
-
-    counter-reset: li;
+    counter-reset: section;
 }
 .job-page__item
 {
@@ -1434,14 +1432,19 @@ body
 
     margin: 1.875em 0;
 
-    counter-increment: li;
+    counter-increment: section;
 }
 .job-page__item:before
 {
     font-size: 1.25em;
     font-weight: 600;
 
-    content: counters(li, '.') '. ';
+    content: counters(section, '.') '. ';
+}
+.job-page__span
+{
+    font-size: 1.25em;
+    font-weight: 600;
 }
 .job-page__conclusion
 {

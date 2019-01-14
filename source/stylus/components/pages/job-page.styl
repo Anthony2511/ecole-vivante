@@ -11,19 +11,21 @@
     & strong
       font-weight:600
   &__list
-    list-style none
-    counter-reset li
+    counter-reset section
     width 75%
     margin s(50,16) auto
   &__item
-    counter-increment li
+    counter-increment section
     margin s(30,16) 0
     font-weight:300
     line-height 1.6
     &:before
       font-weight: 600
       font-size s(20,16)
-      content counters(li, '.') '. '
+      content counters(section, '.') '. '
+  &__span
+    font-size s(20,16)
+    font-weight:600
   &__conclusion
     display flex
     flex-direction row
