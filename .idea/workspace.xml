@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9a36dd27-ee25-4553-990f-318f72c892ef" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/source/stylus/components/partials/footer.styl" beforeDir="false" afterPath="$PROJECT_DIR$/source/stylus/components/partials/footer.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/stylus/settings/colors.styl" beforeDir="false" afterPath="$PROJECT_DIR$/source/stylus/settings/colors.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/cev/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/cev/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/cev/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/cev/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/cev/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/cev/functions.php" afterDir="false" />
-    </list>
+    <list default="true" id="9a36dd27-ee25-4553-990f-318f72c892ef" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,8 +23,8 @@
       <file leaf-file-name="template-job.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wordpress/wp-content/themes/cev/template-job.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
-              <caret line="42" column="6" lean-forward="true" selection-start-line="42" selection-start-column="6" selection-end-line="42" selection-end-column="6" />
+            <state relative-caret-position="966">
+              <caret line="42" column="6" lean-forward="true" selection-end-line="45" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -53,11 +47,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="footer.styl" pinned="false" current-in-tab="true">
+      <file leaf-file-name="footer.styl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/stylus/components/partials/footer.styl">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="72">
               <caret line="70" column="27" selection-start-line="70" selection-start-column="27" selection-end-line="70" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="template-partners.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wordpress/wp-content/themes/cev/template-partners.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -156,6 +159,7 @@
         <option value="$PROJECT_DIR$/wordpress/wp-content/themes/cev/functions.php" />
         <option value="$PROJECT_DIR$/wordpress/wp-content/themes/cev/footer.php" />
         <option value="$PROJECT_DIR$/source/stylus/components/partials/footer.styl" />
+        <option value="$PROJECT_DIR$/wordpress/wp-content/themes/cev/template-partners.php" />
       </list>
     </option>
   </component>
@@ -343,12 +347,12 @@
       <workItem from="1547030051141" duration="12065000" />
       <workItem from="1547113571152" duration="26000" />
       <workItem from="1547200216854" duration="8278000" />
-      <workItem from="1547458096391" duration="14443000" />
+      <workItem from="1547458096391" duration="14614000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111253000" />
+    <option name="totallyTimeSpent" value="111424000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1548" height="832" extended-state="0" />
@@ -399,13 +403,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wordpress/wp-content/themes/cev/head.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wordpress/wp-content/themes/twentyfifteen/page.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -704,13 +701,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wordpress/wp-content/themes/cev/template-job.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="42" column="6" lean-forward="true" selection-start-line="42" selection-start-column="6" selection-end-line="42" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wordpress/wp-content/themes/cev/footer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -729,6 +719,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="70" column="27" selection-start-line="70" selection-start-column="27" selection-end-line="70" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wordpress/wp-content/themes/cev/template-job.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="966">
+          <caret line="42" column="6" lean-forward="true" selection-end-line="45" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wordpress/wp-content/themes/cev/template-partners.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
         </state>
       </provider>
     </entry>
