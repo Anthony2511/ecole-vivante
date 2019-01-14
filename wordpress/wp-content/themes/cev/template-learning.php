@@ -9,7 +9,7 @@ Template Name: Page Learning
 <h1 class="hidden" aria-level="1" role="heading"><?php the_title(); ?></h1>
 <?php include( 'navigation.php' ); ?>
 <?php get_header(); ?>
-<section class="members-page wrap">
+<section class="learning-page wrap">
     <h2 class="title-center title__blue" aria-level="2"
         role="heading"><?= __( 'Le temps d\'apprentissage', 'wp' ); ?></h2>
 	<?php if ( have_posts() ): while ( have_posts() ): the_post(); ?>

@@ -1297,6 +1297,10 @@ body
 {
     width: 47.5%;
 }
+.learning-page__figure
+{
+    width: 47.5%;
+}
 .learning-page__title
 {
     font-family: 'firasans';
@@ -1331,6 +1335,66 @@ body
     line-height: 1.6;
 
     color: #4f6c7a;
+}
+@media screen and (max-width: 1300px)
+{
+    .learning-page
+    {
+        padding: 3.125em 1.25em;
+    }
+}
+@media screen and (max-width: 1024px)
+{
+    .learning-page__bloc
+    {
+            flex-direction: column;
+
+        -ms-flex-direction: column;
+    }
+    .learning-page__bloc:nth-child(even)
+    {
+            flex-direction: column;
+
+        -ms-flex-direction: column;
+    }
+    .learning-page__infos
+    {
+        width: 75%;
+    }
+    .learning-page__figure
+    {
+        width: 75%;
+    }
+    .learning-page__text
+    {
+        margin-bottom: 1.875em;
+    }
+}
+@media screen and (max-width: 768px)
+{
+    .learning-page__infos
+    {
+        width: 100%;
+    }
+    .learning-page__figure
+    {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 650px)
+{
+    .learning-page__container
+    {
+        margin: 3.125em 0 0;
+    }
+    .learning-page__title
+    {
+        font-size: 1.25em;
+    }
+    .learning-page__text
+    {
+        font-size: .875em;
+    }
 }
 .news-page
 {
