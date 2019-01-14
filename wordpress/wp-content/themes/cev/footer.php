@@ -3,7 +3,7 @@
         <section class="footer__intro">
             <h2 class="title title__white title__no-margin" aria-level="2"
                 role="heading"><?= __( 'La cité - Ecole vivante', 'wp' ); ?></h2>
-            <a href="#" class="footer__social"><span>Facebook</span></a>
+            <a href="#" class="footer__social"><span><?= __( 'Facebook', 'wp' ); ?></span></a>
         </section>
         <div class="footer__container">
             <section class="footer__bloc">
@@ -19,7 +19,7 @@
                 </ul>
             </section>
             <section class="footer__bloc">
-                <h3 aria-level="3" role="heading" class="footer__title">Dernières actualités</h3>
+                <h3 aria-level="3" role="heading" class="footer__title"><?= __( 'Dernières actualités', 'wp' ); ?></h3>
                 <ul class="footer__contact">
 					<?php $posts = new WP_Query( [
 						'posts_per_page' => 3,
@@ -37,7 +37,8 @@
                 </ul>
             </section>
             <section class="footer__bloc">
-                <h3 aria-level="3" role="heading" class="footer__title">S'inscrire à la newsletter</h3>
+                <h3 aria-level="3" role="heading"
+                    class="footer__title"><?= __( 'S\'inscrire à la newsletter', 'wp' ); ?></h3>
                 <form action="" method="post">
                     <label for="email" class="hidden"></label>
                     <input type="text" id="email" placeholder="jeandupont@gmail.com" class="footer__newsletter-input">
@@ -51,28 +52,34 @@
             <h3 class="footer__partners-title" aria-level="3" role="heading">
 				<?= __( 'Nos partenaires', 'wp' ); ?>
             </h3>
-            <div class="footer__partners-bloc">
-                <a href="">
-                    <figure class="footer__partners-figure">
-                        <img src="<?= $images . '/../../images/hepl-cover.png'; ?>" alt="">
-                    </figure>
-                </a>
-                <a href="">
-                    <figure class="footer__partners-figure">
-                        <img src="<?= $images . '/../../images/liege-cover.png'; ?>" alt="">
-                    </figure>
-                </a>
-                <a href="">
-                    <figure class="footer__partners-figure">
-                        <img src="<?= $images . '/../../images/proximus-cover.png'; ?>" alt="">
-                    </figure>
-                </a>
-            </div>
+	        <?php $posts = new WP_Query( [
+		        'page_id' => 117,
+	        ] ); ?>
+	        <?php if ( $posts->have_posts() ) : while ( $posts->have_posts() ): $posts->the_post(); ?>
+                <div class="footer__partners-bloc">
+					<?php if ( have_rows( 'partenaires' ) ): ?>
+						<?php while ( have_rows( 'partenaires' ) ): the_row(); ?>
+                            <a href="<?= the_sub_field( 'partner-url' ); ?>" target="_blank">
+								<?php $partnerLogo = get_sub_field( 'partner-img' ); ?>
+                                <figure class="footer__partners-figure">
+									<?php if ( ! empty( $partnerLogo ) ): ?>
+										<?php $size = 'thumb-partners';
+										$thumb      = $partnerLogo['sizes'][ $size ]; ?>
+                                        <img src="<?= $thumb; ?>" width="150" height="75"
+                                             alt="<?= $partnerLogo['alt']; ?>">
+									<?php endif; ?>
+                                </figure>
+                            </a>
+						<?php endwhile; endif; ?>
+                </div>
+			<?php endwhile; endif; ?>
+	        <?php wp_reset_postdata(); ?>
         </div>
     </div>
     <div class="footer__copyright">
         <div class="wrap">
-            <span class="footer__copyright-text">© La cité - École Vivante - Tous droits réservés. Design by <a href="#">Anthony Beaumecker</a></span>
+            <span class="footer__copyright-text">© La cité - École Vivante - Tous droits réservés. Design by <a
+                        href="#">Anthony Beaumecker</a></span>
         </div>
     </div>
 </footer>
