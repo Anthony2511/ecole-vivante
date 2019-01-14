@@ -57,7 +57,7 @@
 							<?= __( 'Temps d\'apprentissage', 'wp' ); ?>
                         </a>
                     </li>
-                    <li class="subnav__li"><a href="<?php the_permalink(); ?>">
+                    <li class="subnav__li"><a href="<?php the_permalink('104'); ?>">
 							<?= __( 'Métier d\'enseignant', 'wp' ); ?>
                         </a>
                     </li>
