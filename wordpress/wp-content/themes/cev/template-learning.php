@@ -12,116 +12,27 @@ Template Name: Page Learning
 <section class="members-page wrap">
     <h2 class="title-center title__blue" aria-level="2"
         role="heading"><?= __( 'Le temps d\'apprentissage', 'wp' ); ?></h2>
-    <div class="learning-page__container">
-        <div class="learning-page__bloc">
-            <section class="learning-page__infos">
-                <h3 class="learning-page__title" aria-level="3" role="heading">Temps de décloisonnement disciplinaire</h3>
-                <p class="learning-page__text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nam tincidunt et neque ultrices cursus. Mauris a ullamcorper
-                    nibh, in hendrerit metus. Proin ultrices, est ac maximus dictum,
-                    elit sem ultrices sem, in molestie quam lorem ut felis. Vestibulum
-                    ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-                    Curae; Pellentesque vehicula venenatis nulla, ut sodales metus vestibulum
-                    tincidunt. Donec nec nunc tellus. Nullam placerat fermentum felis mattis
-                    elementum.
-                </p>
-            </section>
-            <figure class="learning-page__figure">
-                <img src="<?= $images . '/../../images/learning1.png'; ?>" alt="">
-            </figure>
+	<?php if ( have_posts() ): while ( have_posts() ): the_post(); ?>
+        <div class="learning-page__container">
+			<?php if ( have_rows( 'apprentissage' ) ): ?>
+				<?php while ( have_rows( 'apprentissage' ) ): the_row(); ?>
+                    <div class="learning-page__bloc">
+                        <section class="learning-page__infos">
+                            <h3 class="learning-page__title" aria-level="3" role="heading">
+                                <?= the_sub_field('apprentissage-title'); ?>
+                            </h3>
+                            <p class="learning-page__text">
+	                            <?= the_sub_field('apprentissage-text'); ?>
+                            </p>
+                        </section>
+                        <figure class="learning-page__figure">
+	                        <?php $learningImg= get_sub_field( 'apprentissage-img' ); ?>
+                            <img src="<?= $learningImg['url']; ?>" alt="<?= $learningImg['alt']; ?>">
+                        </figure>
+                    </div>
+				<?php endwhile; endif; ?>
         </div>
-        <div class="learning-page__bloc">
-            <section class="learning-page__infos">
-                <h3 class="learning-page__title" aria-level="3" role="heading">Atelier disciplinaire</h3>
-                <p class="learning-page__text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nam tincidunt et neque ultrices cursus. Mauris a ullamcorper
-                    nibh, in hendrerit metus. Proin ultrices, est ac maximus dictum,
-                    elit sem ultrices sem, in molestie quam lorem ut felis. Vestibulum
-                    ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-                    Curae; Pellentesque vehicula venenatis nulla, ut sodales metus vestibulum
-                    tincidunt. Donec nec nunc tellus. Nullam placerat fermentum felis mattis
-                    elementum.
-                </p>
-            </section>
-            <figure class="learning-page__figure">
-                <img src="<?= $images . '/../../images/learning2.png'; ?>" alt="">
-            </figure>
-        </div>
-        <div class="learning-page__bloc">
-            <section class="learning-page__infos">
-                <h3 class="learning-page__title" aria-level="3" role="heading">Enseignement massé</h3>
-                <p class="learning-page__text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nam tincidunt et neque ultrices cursus. Mauris a ullamcorper
-                    nibh, in hendrerit metus. Proin ultrices, est ac maximus dictum,
-                    elit sem ultrices sem, in molestie quam lorem ut felis. Vestibulum
-                    ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-                    Curae; Pellentesque vehicula venenatis nulla, ut sodales metus vestibulum
-                    tincidunt. Donec nec nunc tellus. Nullam placerat fermentum felis mattis
-                    elementum.
-                </p>
-            </section>
-            <figure class="learning-page__figure">
-                <img src="<?= $images . '/../../images/learning3.png'; ?>" alt="">
-            </figure>
-        </div>
-        <div class="learning-page__bloc">
-            <section class="learning-page__infos">
-                <h3 class="learning-page__title" aria-level="3" role="heading">Disciplines ressources</h3>
-                <p class="learning-page__text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nam tincidunt et neque ultrices cursus. Mauris a ullamcorper
-                    nibh, in hendrerit metus. Proin ultrices, est ac maximus dictum,
-                    elit sem ultrices sem, in molestie quam lorem ut felis. Vestibulum
-                    ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-                    Curae; Pellentesque vehicula venenatis nulla, ut sodales metus vestibulum
-                    tincidunt. Donec nec nunc tellus. Nullam placerat fermentum felis mattis
-                    elementum.
-                </p>
-            </section>
-            <figure class="learning-page__figure">
-                <img src="<?= $images . '/../../images/learning4.png'; ?>" alt="">
-            </figure>
-        </div>
-        <div class="learning-page__bloc">
-            <section class="learning-page__infos">
-                <h3 class="learning-page__title" aria-level="3" role="heading">Moi,apprenant</h3>
-                <p class="learning-page__text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nam tincidunt et neque ultrices cursus. Mauris a ullamcorper
-                    nibh, in hendrerit metus. Proin ultrices, est ac maximus dictum,
-                    elit sem ultrices sem, in molestie quam lorem ut felis. Vestibulum
-                    ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-                    Curae; Pellentesque vehicula venenatis nulla, ut sodales metus vestibulum
-                    tincidunt. Donec nec nunc tellus. Nullam placerat fermentum felis mattis
-                    elementum.
-                </p>
-            </section>
-            <figure class="learning-page__figure">
-                <img src="<?= $images . '/../../images/learning5.png'; ?>" alt="">
-            </figure>
-        </div>
-        <div class="learning-page__bloc">
-            <section class="learning-page__infos">
-                <h3 class="learning-page__title" aria-level="3" role="heading">Référant PIA</h3>
-                <p class="learning-page__text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nam tincidunt et neque ultrices cursus. Mauris a ullamcorper
-                    nibh, in hendrerit metus. Proin ultrices, est ac maximus dictum,
-                    elit sem ultrices sem, in molestie quam lorem ut felis. Vestibulum
-                    ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-                    Curae; Pellentesque vehicula venenatis nulla, ut sodales metus vestibulum
-                    tincidunt. Donec nec nunc tellus. Nullam placerat fermentum felis mattis
-                    elementum.
-                </p>
-            </section>
-            <figure class="learning-page__figure">
-                <img src="<?= $images . '/../../images/learning6.png'; ?>" alt="">
-            </figure>
-        </div>
-    </div>
+	<?php endwhile; endif; ?>
 </section>
 <div class="infos infos__white">
     <div class="infos__bg"></div>
