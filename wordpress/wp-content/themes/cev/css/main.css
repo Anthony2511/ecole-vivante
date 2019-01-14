@@ -1257,6 +1257,81 @@ body
         padding: 0 1.25em;
     }
 }
+.learning-page
+{
+    padding: 3.125em 0;
+}
+.learning-page__container
+{
+    margin: 3.125em 0;
+}
+.learning-page__bloc
+{
+    display: -ms-flexbox;
+    display: flex;
+        flex-direction: row;
+
+    width: 100%;
+
+    text-align: right;
+
+    -ms-flex-direction: row;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.learning-page__bloc + .learning-page__bloc
+{
+    margin-top: 1.875em;
+}
+.learning-page__bloc:nth-child(even)
+{
+        flex-direction: row-reverse;
+
+    text-align: left;
+
+    -ms-flex-direction: row-reverse;
+}
+.learning-page__infos
+{
+    width: 47.5%;
+}
+.learning-page__title
+{
+    font-family: 'firasans';
+    font-size: 1.5625em;
+    font-weight: 600;
+
+    margin-bottom: 1.2em;
+
+    color: #4f6c7a;
+}
+.learning-page__title:before
+{
+    font-family: 'icomoon';
+    font-size: .8em;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+
+    margin-right: .5em;
+
+    content: '\e902';
+    text-transform: none;
+
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.learning-page__text
+{
+    font-weight: 300;
+    line-height: 1.6;
+
+    color: #4f6c7a;
+}
 .news-page
 {
     padding: 0 0 6.25em;

@@ -1,0 +1,32 @@
+.learning-page
+  padding s(50,16) 0
+  &__container
+    margin s(50,16) 0
+  &__bloc
+    display flex
+    flex-direction row
+    justify-content space-between
+    align-items center
+    width 100%
+    text-align right
+  &__bloc + &__bloc
+    margin-top s(30,16)
+  &__bloc:nth-child(even)
+    flex-direction row-reverse
+    text-align left
+  &__infos
+    width 47.5%
+  &__title
+    font-size s(25,16)
+    color $cBlue
+    font-weight: 600
+    font-family 'firasans'
+    margin-bottom s(30,25)
+    &:before
+      icon ('iconUser')
+      font-size s(20,25)
+      margin-right s(10,20)
+  &__text
+    color $cBlue
+    font-weight: 300
+    line-height 1.6
