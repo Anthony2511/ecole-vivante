@@ -1,0 +1,53 @@
+.job-page
+  padding s(50,16) 0
+  &__container
+    color $cBlue
+  &__intro
+    font-weight: 300
+    line-height 1.6
+    width 50%
+    margin s(50,16) auto 0
+    text-align center
+    & strong
+      font-weight:600
+  &__list
+    list-style none
+    counter-reset li
+    width 75%
+    margin s(50,16) auto
+  &__item
+    counter-increment li
+    margin s(30,16) 0
+    font-weight:300
+    line-height 1.6
+    &:before
+      font-weight: 600
+      font-size s(20,16)
+      content counters(li, '.') '. '
+  &__conclusion
+    display flex
+    flex-direction row
+    justify-content space-between
+    width 75%
+    margin 0 auto s(50,16)
+    position relative
+    padding-top s(50,16)
+    &:before
+      position absolute
+      content ''
+      width 50%
+      height 1px
+      top: 0
+      left 0
+      right 0
+      margin 0 auto
+      display block
+      background-color $cYellow
+    & p
+      width 47.5%
+      font-weight:300
+      line-height 1.6
+
+@media screen and (max-width: 1300px)
+  .job-page
+    padding s(50,16) s(20,16)
