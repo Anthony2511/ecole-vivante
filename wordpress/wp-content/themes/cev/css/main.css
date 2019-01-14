@@ -1493,6 +1493,38 @@ body
         padding: 3.125em 1.25em;
     }
 }
+@media screen and (max-width: 1024px)
+{
+    .job-page__intro
+    {
+        width: 75%;
+    }
+    .job-page__list
+    {
+        width: 100%;
+    }
+    .job-page__conclusion
+    {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px)
+{
+    .job-page__intro
+    {
+        width: 100%;
+    }
+    .job-page__conclusion
+    {
+            flex-direction: column;
+
+        -ms-flex-direction: column;
+    }
+    .job-page__conclusion p
+    {
+        width: 100%;
+    }
+}
 .news-page
 {
     padding: 0 0 6.25em;

@@ -53,3 +53,21 @@
 @media screen and (max-width: 1300px)
   .job-page
     padding s(50,16) s(20,16)
+
+@media screen and (max-width:1024px)
+  .job-page
+    &__intro
+      width 75%
+    &__list
+      width 100%
+    &__conclusion
+      width 100%
+
+@media screen and (max-width:768px)
+  .job-page
+    &__intro
+      width 100%
+    &__conclusion
+      flex-direction column
+      & p
+        width 100%
