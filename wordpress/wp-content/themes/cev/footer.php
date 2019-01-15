@@ -52,10 +52,10 @@
             <h3 class="footer__partners-title" aria-level="3" role="heading">
 				<?= __( 'Nos partenaires', 'wp' ); ?>
             </h3>
-	        <?php $posts = new WP_Query( [
-		        'page_id' => 117,
-	        ] ); ?>
-	        <?php if ( $posts->have_posts() ) : while ( $posts->have_posts() ): $posts->the_post(); ?>
+			<?php $posts = new WP_Query( [
+				'page_id' => 117,
+			] ); ?>
+			<?php if ( $posts->have_posts() ) : while ( $posts->have_posts() ): $posts->the_post(); ?>
                 <div class="footer__partners-bloc">
 					<?php if ( have_rows( 'partenaires' ) ): ?>
 						<?php while ( have_rows( 'partenaires' ) ): the_row(); ?>
@@ -73,20 +73,22 @@
 						<?php endwhile; endif; ?>
                 </div>
 			<?php endwhile; endif; ?>
-	        <?php wp_reset_postdata(); ?>
+			<?php wp_reset_postdata(); ?>
         </div>
     </div>
     <div class="footer__copyright">
         <div class="wrap">
-            <span class="footer__copyright-text">© La cité - École Vivante - Tous droits réservés. Design by <a
-                        href="#">Anthony Beaumecker</a></span>
+            <span class="footer__copyright-text">
+                <?= __( '© La cité - École Vivante - Tous droits réservés. Design by', 'wp' ); ?>
+                <a href="#">
+                    <?= __('Anthony Beaumecker','wp'); ?>
+                </a>
+            </span>
         </div>
     </div>
 </footer>
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script src="<?= $scripts . 'nav.js'; ?>"></script>
 <script src="<?= $scripts . 'no-js.js'; ?>"></script>
-
-
 </body>
 </html>
