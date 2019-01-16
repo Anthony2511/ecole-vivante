@@ -31,9 +31,10 @@ Template Name: Page Contact
                 <section class="contact-page__faq">
                     <h3 aria-level="3" role="heading"
                         class="contact-page__faq-title"><?= __( 'Besoin de réponses ?', 'wp' ); ?></h3>
-                    <p class="contact-page__faq-text">Vérifiez d'abord si la question n'a pas déja été posée sur notre
-                        page
-                        <a href="<?php the_permalink(); ?>">FAQ</a></p>
+                    <p class="contact-page__faq-text"><?= __( 'Vérifiez d\'abord si la question n\'a pas déja été posée sur notre
+                        page', 'wp' ); ?>
+                        <a href="<?php the_permalink( '127' ); ?>"><?= __( 'FAQ', 'wp' ); ?></a>
+                    </p>
                 </section>
             </div>
         </div>
@@ -51,4 +52,4 @@ Template Name: Page Contact
            class="button-yellow button-center"><?= __( 'En savoir plus', 'wp' ); ?></a>
     </section>
 </div>
-<?php include( 'footer.php' ); ?>
+<?php get_footer(); ?>

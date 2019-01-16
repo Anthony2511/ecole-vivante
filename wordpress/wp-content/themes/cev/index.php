@@ -97,7 +97,7 @@ include( 'head.php' ); ?>
                     </a>
                 </li>
                 <li class="under-home__item">
-                    <a href="<?php the_permalink('104');?>" class="under-home__link"
+                    <a href="<?php the_permalink( '104' ); ?>" class="under-home__link"
                        title="Vers la page : Le métier d'enseignant">
 						<?= __( 'Le métier d\'enseignant', 'wp' ); ?>
                     </a>
@@ -115,4 +115,4 @@ include( 'head.php' ); ?>
         </figure>
     </div>
 </section>
-<?php include( 'footer.php' ); ?>
+<?php get_footer(); ?>

@@ -73,7 +73,7 @@
                 </a>
                 <ul class="subnav">
                     <li class="subnav__li">
-                        <a href="<?php the_permalink( '16' ); ?>">
+                        <a href="<?php the_permalink( '127' ); ?>">
 							<?= __( 'FAQ', 'wp' ); ?>
                         </a>
                     </li>
