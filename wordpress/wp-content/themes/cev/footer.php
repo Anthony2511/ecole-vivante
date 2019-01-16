@@ -62,12 +62,7 @@
                             <a href="<?= the_sub_field( 'partner-url' ); ?>" target="_blank">
 								<?php $partnerLogo = get_sub_field( 'partner-img' ); ?>
                                 <figure class="footer__partners-figure">
-									<?php if ( ! empty( $partnerLogo ) ): ?>
-										<?php $size = 'thumb-partners';
-										$thumb      = $partnerLogo['sizes'][ $size ]; ?>
-                                        <img src="<?= $thumb; ?>" width="150" height="75"
-                                             alt="<?= $partnerLogo['alt']; ?>">
-									<?php endif; ?>
+                                    <img src="<?= $partnerLogo['url']; ?>" alt="<?= $partnerLogo['alt']; ?>">
                                 </figure>
                             </a>
 						<?php endwhile; endif; ?>

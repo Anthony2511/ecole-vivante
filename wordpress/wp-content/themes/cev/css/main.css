@@ -2364,8 +2364,8 @@ ul li ul:focus
 }
 .footer__partners-figure img
 {
-    width: 150px;
-    height: auto;
+    width: auto;
+    height: 3.75em;
 }
 .footer__copyright
 {
