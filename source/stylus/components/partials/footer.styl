@@ -99,4 +99,44 @@
     & a
       font-weight: 500
 
+@media screen and (max-width:1300px)
+  .footer
+    &__main
+      padding 0 s(20,16)
+
+@media screen and (max-width:1024px)
+  .footer
+    &__title
+      font-size s(20,16)
+    &__contact
+      font-size s(16,16)
+
+@media screen and (max-width:768px)
+  .footer
+    &__container
+      flex-direction column
+      justify-content center
+      align-items center
+      padding-bottom s(50,16)
+    &__title
+      font-size s(25,16)
+    &__contact
+      font-size s(18,16)
+    &__bloc
+      text-align center
+    &__partners-bloc
+      flex-direction column
+    &__partners-figure
+      margin-bottom s(30,16)
+      & img
+        width s(150,16)
+        height auto
+    &__copyright
+      padding s(20,16)
+    &__partners
+      padding-bottom s(20,16)
+
+
+
+
 

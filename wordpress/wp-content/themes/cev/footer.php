@@ -1,5 +1,5 @@
 <footer class="footer">
-    <div class="wrap">
+    <div class=" footer__main wrap">
         <section class="footer__intro">
             <h2 class="title title__white title__no-margin" aria-level="2"
                 role="heading"><?= __( 'La cité - Ecole vivante', 'wp' ); ?></h2>
