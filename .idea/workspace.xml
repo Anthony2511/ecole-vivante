@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9a36dd27-ee25-4553-990f-318f72c892ef" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/stylus/main.styl" beforeDir="false" afterPath="$PROJECT_DIR$/source/stylus/main.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/cev/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/cev/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/cev/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/cev/footer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/cev/template-faq.php" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/cev/template-faq.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,15 +44,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="template-faq.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="template-faq.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wordpress/wp-content/themes/cev/template-faq.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="54" column="86" selection-start-line="54" selection-start-column="86" selection-end-line="54" selection-end-column="86" />
+            <state relative-caret-position="253">
+              <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
               <folding>
-                <element signature="e#942#965#0#HTML" expanded="true" />
-                <element signature="e#2097#2119#0#HTML" expanded="true" />
-                <element signature="e#3511#3533#0#HTML" expanded="true" />
+                <element signature="e#1242#1264#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -65,12 +60,12 @@
         <entry file="file://$PROJECT_DIR$/source/scripts/show.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="69">
-              <caret line="3" column="38" lean-forward="true" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
+              <caret line="3" column="38" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="faq-page.styl" pinned="false" current-in-tab="true">
+      <file leaf-file-name="faq-page.styl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/stylus/components/pages/faq-page.styl">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="184">
@@ -169,9 +164,9 @@
         <option value="$PROJECT_DIR$/wordpress/wp-content/themes/cev/template-contact.php" />
         <option value="$PROJECT_DIR$/source/stylus/main.styl" />
         <option value="$PROJECT_DIR$/wordpress/wp-content/themes/cev/footer.php" />
+        <option value="$PROJECT_DIR$/source/stylus/components/pages/faq-page.styl" />
         <option value="$PROJECT_DIR$/source/scripts/show.js" />
         <option value="$PROJECT_DIR$/wordpress/wp-content/themes/cev/template-faq.php" />
-        <option value="$PROJECT_DIR$/source/stylus/components/pages/faq-page.styl" />
       </list>
     </option>
   </component>
@@ -362,12 +357,12 @@
       <workItem from="1547458096391" duration="16173000" />
       <workItem from="1547544895893" duration="43000" />
       <workItem from="1547633852871" duration="3686000" />
-      <workItem from="1547729119114" duration="9155000" />
+      <workItem from="1547729119114" duration="10350000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125867000" />
+    <option name="totallyTimeSpent" value="127062000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1548" height="832" extended-state="0" />
@@ -652,13 +647,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wordpress/wp-content/themes/cev/template-job.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="20" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wordpress/wp-content/themes/cev/template-members.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-69">
@@ -739,29 +727,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/source/stylus/components/pages/faq-page.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wordpress/wp-content/themes/cev/template-job.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="20" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/source/scripts/show.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
-          <caret line="3" column="38" lean-forward="true" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
+          <caret line="3" column="38" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wordpress/wp-content/themes/cev/template-faq.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="54" column="86" selection-start-line="54" selection-start-column="86" selection-end-line="54" selection-end-column="86" />
+        <state relative-caret-position="253">
+          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
           <folding>
-            <element signature="e#942#965#0#HTML" expanded="true" />
-            <element signature="e#2097#2119#0#HTML" expanded="true" />
-            <element signature="e#3511#3533#0#HTML" expanded="true" />
+            <element signature="e#1242#1264#0#HTML" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/stylus/components/pages/faq-page.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
         </state>
       </provider>
     </entry>
