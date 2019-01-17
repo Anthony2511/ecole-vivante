@@ -1,0 +1,38 @@
+.animation
+  &:after
+    transform rotate(180deg);
+    transition .3s ease-in-out
+.faq-page
+  padding s(50,16) 0
+  &__bloc
+    width 80%
+    margin 0 auto s(50,16)
+    text-align center
+  &__question
+    margin-top s(50,16)
+    color $cBlue
+  &__title
+    font-family 'firasans'
+    font-size s(20,16)
+    font-weight: 600
+    margin-bottom s(30,20)
+    &:after
+      icon ('iconArrow')
+      font-size s(12,20)
+      margin-left s(10,12)
+      display inline-block
+  &__text
+    font-weight:300
+    line-height 1.6
+    width 75%
+    margin 0 auto
+    text-align left
+  &__intro
+    margin s(50,16) auto 0
+    color $cBlue
+    font-weight: 300
+    line-height 1.6
+    text-align center
+    width 51%
+    & a
+      font-weight: 600
