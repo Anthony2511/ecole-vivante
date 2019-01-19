@@ -12,6 +12,7 @@ Template Name: Page News
 <section class="home-news wrap news-page">
     <h2 class="home-news__title home-news__title--icon title-center title__blue" aria-level="2"
         role="heading"><?= __( 'Nos dernières actualités/évènements', 'wp' ); ?></h2>
+    <?php include('parts/switcher-news.php'); ?>
     <div class="home-news__container">
 		<?php $posts = new WP_Query( [
 			'posts_per_page' => - 1,
@@ -20,7 +21,7 @@ Template Name: Page News
 			'order'          => 'DESC'
 		] ); ?>
 		<?php if ( $posts->have_posts() ) : while ( $posts->have_posts() ): $posts->the_post(); ?>
-            <div class="home-news__bloc news-page__bloc" id="post-<?php the_ID(); ?>">
+            <div class="home-news__bloc news-page__bloc <?= wp_display_taxonomy_terms($post->ID, 'category', 'slug'); ?>" id="post-<?php the_ID(); ?>">
 				<?php $homeNews = get_field( 'news-img' ); ?>
                 <figure class="home-news__figure">
 					<?php if ( ! empty( $homeNews ) ): ?>

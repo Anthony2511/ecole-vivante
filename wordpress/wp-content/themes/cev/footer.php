@@ -105,5 +105,6 @@
 <script src="<?= $scripts . 'nav.js'; ?>"></script>
 <script src="<?= $scripts . 'no-js.js'; ?>"></script>
 <script src="<?= $scripts . 'show.js'; ?>"></script>
+<script src="<?= $scripts . 'switcherNews.js'; ?>"></script>
 </body>
 </html>

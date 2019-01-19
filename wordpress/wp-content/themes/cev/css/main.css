@@ -177,6 +177,10 @@ img
     top: -99999px;
     left: -99999px;
 }
+.hide
+{
+    display: none;
+}
 body
 {
     background-color: #f3f3f3;
