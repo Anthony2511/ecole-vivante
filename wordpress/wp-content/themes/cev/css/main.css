@@ -1798,6 +1798,35 @@ body
         width: 100%;
     }
 }
+.sorting__form
+{
+    margin-bottom: 1.875em;
+
+    text-align: center;
+}
+.sorting__label
+{
+    font-weight: 300;
+
+    color: #4f6c7a;
+}
+.sorting__select
+{
+    font-weight: 600;
+
+    display: block;
+
+    margin: .625em auto;
+
+    color: #4f6c7a;
+    border: 1px solid transparent;
+}
+.sorting__option
+{
+    font-weight: 600;
+
+    color: #4f6c7a;
+}
 .search:before
 {
     font-family: 'icomoon';
