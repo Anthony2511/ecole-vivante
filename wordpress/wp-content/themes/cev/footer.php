@@ -10,25 +10,25 @@
 				'page_id' => 62,
 			] ); ?>
 			<?php if ( $posts->have_posts() ) : while ( $posts->have_posts() ): $posts->the_post(); ?>
-                <section class="footer__bloc">
+                <section class="footer__bloc" itemscope itemtype="http://schema.org/Organization">
                     <h3 aria-level="3" role="heading" class="footer__title"><?= __( 'Contact', 'wp' ); ?></h3>
-                    <ul class="footer__contact">
-                        <li>
+                    <ul class="footer__contact" temprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                        <li itemprop="streetAddress">
 							<?= the_field( 'contact-street' ); ?>
                         </li>
-                        <li>
+                        <li itemprop="postalCode">
 							<?= the_field( 'contact-localite' ); ?>
                         </li>
-                        <li>
+                        <li itemprop="addressLocality">
 							<?= the_field( 'contact-country' ); ?>
                         </li>
                     </ul>
                     <ul class="footer__contact">
-                        <li class="footer__contact-item footer__contact-item--tel">
+                        <li class="footer__contact-item footer__contact-item--tel" itemprop="telephone">
 							<?= the_field( 'contact-tel' ); ?>
                         </li>
                         <li class="footer__contact-item footer__contact-item--mail">
-                            <a href="mailto:<?= the_field( 'contact-email' ); ?>">
+                            <a href="mailto:<?= the_field( 'contact-email' ); ?>" itemprop="email">
 								<?= the_field( 'contact-email' ); ?>
                             </a>
                         </li>

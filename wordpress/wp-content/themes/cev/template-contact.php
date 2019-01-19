@@ -14,27 +14,27 @@ Template Name: Page Contact
     <div class="contact-page__container">
         <div class="contact-page__bloc">
             <div class="contact-page__bloc-flex">
-                <div class="contact-page__flex">
+                <div class="contact-page__flex" itemscope itemtype="http://schema.org/Organization">
                     <figure class="contact-page__logo">
-                        <img src="<?= $images . '/../../images/LogoSiteNom.png'; ?>" alt="">
+                        <img src="<?= $images . '/../../images/LogoSiteNom.png'; ?>"  itemprop="logo" alt="Logo du site">
                     </figure>
-                    <ul class="contact-page__list">
-                        <li class="contact-page__item">
+                    <ul class="contact-page__list" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                        <li class="contact-page__item" itemprop="streetAddress">
 							<?= the_field( 'contact-street' ); ?>
                         </li>
-                        <li class="contact-page__item">
+                        <li class="contact-page__item" itemprop="postalCode">
 							<?= the_field( 'contact-localite' ); ?>
                         </li>
-                        <li class="contact-page__item">
+                        <li class="contact-page__item" itemprop="addressLocality">
 							<?= the_field( 'contact-country' ); ?>
                         </li>
                     </ul>
                     <ul class="contact-page__list">
-                        <li class="contact-page__item contact-page__item--tel">
+                        <li class="contact-page__item contact-page__item--tel" itemprop="telephone">
 							<?= the_field( 'contact-tel' ); ?>
                         </li>
                         <li class="contact-page__item contact-page__item--mail">
-                            <a href="mailto:<?= the_field( 'contact-email' ); ?>">
+                            <a href="mailto:<?= the_field( 'contact-email' ); ?>" itemprop="email">
 								<?= the_field( 'contact-email' ); ?>
                             </a>
                         </li>
