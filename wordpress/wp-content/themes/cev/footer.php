@@ -6,18 +6,36 @@
             <a href="#" class="footer__social"><span><?= __( 'Facebook', 'wp' ); ?></span></a>
         </section>
         <div class="footer__container">
-            <section class="footer__bloc">
-                <h3 aria-level="3" role="heading" class="footer__title"><?= __( 'Contact', 'wp' ); ?></h3>
-                <ul class="footer__contact">
-                    <li>Rue des charrons n°116</li>
-                    <li>4800 Verviers</li>
-                    <li>Belgique</li>
-                </ul>
-                <ul class="footer__contact">
-                    <li class="footer__contact-item footer__contact-item--tel">0478 45 85 96</li>
-                    <li class="footer__contact-item footer__contact-item--mail">ecolevivante@gmail.com</li>
-                </ul>
-            </section>
+			<?php $posts = new WP_Query( [
+				'page_id' => 62,
+			] ); ?>
+			<?php if ( $posts->have_posts() ) : while ( $posts->have_posts() ): $posts->the_post(); ?>
+                <section class="footer__bloc">
+                    <h3 aria-level="3" role="heading" class="footer__title"><?= __( 'Contact', 'wp' ); ?></h3>
+                    <ul class="footer__contact">
+                        <li>
+							<?= the_field( 'contact-street' ); ?>
+                        </li>
+                        <li>
+							<?= the_field( 'contact-localite' ); ?>
+                        </li>
+                        <li>
+							<?= the_field( 'contact-country' ); ?>
+                        </li>
+                    </ul>
+                    <ul class="footer__contact">
+                        <li class="footer__contact-item footer__contact-item--tel">
+							<?= the_field( 'contact-tel' ); ?>
+                        </li>
+                        <li class="footer__contact-item footer__contact-item--mail">
+                            <a href="mailto:<?= the_field( 'contact-email' ); ?>">
+								<?= the_field( 'contact-email' ); ?>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+				<?php wp_reset_postdata(); ?>
+			<?php endwhile; endif; ?>
             <section class="footer__bloc">
                 <h3 aria-level="3" role="heading" class="footer__title"><?= __( 'Dernières actualités', 'wp' ); ?></h3>
                 <ul class="footer__contact">
@@ -76,7 +94,7 @@
             <span class="footer__copyright-text">
                 <?= __( '© La cité - École Vivante - Tous droits réservés. Design by', 'wp' ); ?>
                 <a href="#">
-                    <?= __('Anthony Beaumecker','wp'); ?>
+                    <?= __( 'Anthony Beaumecker', 'wp' ); ?>
                 </a>
             </span>
         </div>

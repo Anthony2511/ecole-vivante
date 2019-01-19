@@ -19,13 +19,25 @@ Template Name: Page Contact
                         <img src="<?= $images . '/../../images/LogoSiteNom.png'; ?>" alt="">
                     </figure>
                     <ul class="contact-page__list">
-                        <li class="contact-page__item">Rue des charrons n°116</li>
-                        <li class="contact-page__item">4800 Verviers</li>
-                        <li class="contact-page__item">Belgique</li>
+                        <li class="contact-page__item">
+							<?= the_field( 'contact-street' ); ?>
+                        </li>
+                        <li class="contact-page__item">
+							<?= the_field( 'contact-localite' ); ?>
+                        </li>
+                        <li class="contact-page__item">
+							<?= the_field( 'contact-country' ); ?>
+                        </li>
                     </ul>
                     <ul class="contact-page__list">
-                        <li class="contact-page__item contact-page__item--tel">0478 45 85 96</li>
-                        <li class="contact-page__item contact-page__item--mail">ecolevivante@gmail.com</li>
+                        <li class="contact-page__item contact-page__item--tel">
+							<?= the_field( 'contact-tel' ); ?>
+                        </li>
+                        <li class="contact-page__item contact-page__item--mail">
+                            <a href="mailto:<?= the_field( 'contact-email' ); ?>">
+								<?= the_field( 'contact-email' ); ?>
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <section class="contact-page__faq">
@@ -52,4 +64,4 @@ Template Name: Page Contact
            class="button-yellow button-center"><?= __( 'En savoir plus', 'wp' ); ?></a>
     </section>
 </div>
-<?php get_footer(); ?>
+<?php include( 'footer.php' ); ?>

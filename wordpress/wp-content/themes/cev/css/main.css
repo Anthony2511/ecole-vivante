@@ -2374,6 +2374,7 @@ ul li ul:focus
     position: relative;
 
     display: block;
+    display: inline-block;
 
     transition: .2s ease-in-out;
 }
