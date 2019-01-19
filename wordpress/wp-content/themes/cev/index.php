@@ -115,4 +115,4 @@ include( 'head.php' ); ?>
         </figure>
     </div>
 </section>
-<?php get_footer(); ?>
+<?php include('footer.php'); ?>
