@@ -1602,6 +1602,64 @@ body
 {
     font-weight: 600;
 }
+@media screen and (max-width: 1300px)
+{
+    .faq-page
+    {
+        padding: 3.125em 1.25em;
+    }
+}
+@media screen and (max-width: 1024px)
+{
+    .faq-page__bloc
+    {
+        width: 90%;
+    }
+    .faq-page__text
+    {
+        width: 100%;
+    }
+    .faq-page__intro
+    {
+        width: 75%;
+    }
+    .faq-page__title
+    {
+        line-height: 1.6;
+
+        position: relative;
+
+        padding: 0 .5em;
+    }
+    .faq-page__title:after
+    {
+        position: absolute;
+        top: 10px;
+        right: -10px;
+    }
+}
+@media screen and (max-width: 768px)
+{
+    .faq-page__bloc
+    {
+        width: 100%;
+    }
+    .faq-page__title
+    {
+        font-size: 1.125em;
+    }
+    .faq-page__text
+    {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 550px)
+{
+    .faq-page__intro
+    {
+        width: 100%;
+    }
+}
 .news-page
 {
     padding: 0 0 6.25em;
@@ -2333,6 +2391,10 @@ ul li ul:focus
 
     color: #fff;
 }
+.footer__contact-item
+{
+    position: relative;
+}
 .footer__contact-item--tel:before
 {
     font-family: 'icomoon';
@@ -2350,6 +2412,10 @@ ul li ul:focus
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+.footer__contact-item--mail a
+{
+    margin-left: 1.25em;
+}
 .footer__contact-item--mail:before
 {
     font-family: 'icomoon';
@@ -2357,6 +2423,9 @@ ul li ul:focus
     font-style: normal;
     font-variant: normal;
     line-height: 1;
+
+    position: absolute;
+    top: 8px;
 
     margin-right: .625em;
 
@@ -2503,7 +2572,7 @@ ul li ul:focus
     }
     .footer__contact
     {
-        font-size: 1.125em;
+        font-size: 1em;
     }
     .footer__bloc
     {
