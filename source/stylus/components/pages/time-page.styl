@@ -6,6 +6,15 @@
     flex-direction column
     justify-content center
     align-items center
+  &__intro
+    margin s(50,16) auto 0
+    color $cBlue
+    font-weight: 300
+    line-height 1.6
+    text-align center
+    width 51%
+    & a
+      font-weight: 600
   &__title-icon
     &:before
       font-size s(14,16)
@@ -20,3 +29,19 @@
     font-weight:300
     &:before
       icon ('iconFile')
+      margin-right s(10,20)
+
+
+@media screen and (max-width: 1300px)
+  .time-page
+    padding s(50,16) s(20,16)
+  
+@media screen and (max-width: 1024px)
+  .time-page
+    &__intro
+      width 75%
+
+@media screen and (max-width: 550px)
+  .time-page
+    &__intro
+      width 100%

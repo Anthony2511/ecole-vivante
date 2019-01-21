@@ -13,6 +13,9 @@ Template Name: Page Time
     <h2 class="time-page__title-icon title-center title__blue" aria-level="2"
         role="heading"><?= __( 'Nos horaires', 'wp' ); ?></h2>
     <div class="time-page__container">
+        <div class="time-page__intro">
+		    <?= the_field('horaire-intro'); ?>
+        </div>
 		<?php if ( have_posts() ): while ( have_posts() ): the_post(); ?>
             <div class="time-page__bloc">
 				<?php if ( have_rows( 'horaire' ) ): ?>

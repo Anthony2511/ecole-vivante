@@ -1787,6 +1787,22 @@ body
     -ms-flex-align: center;
     align-items: center;
 }
+.time-page__intro
+{
+    font-weight: 300;
+    line-height: 1.6;
+
+    width: 51%;
+    margin: 3.125em auto 0;
+
+    text-align: center;
+
+    color: #4f6c7a;
+}
+.time-page__intro a
+{
+    font-weight: 600;
+}
 .time-page__title-icon:before
 {
     font-family: 'icomoon';
@@ -1826,12 +1842,35 @@ body
     font-variant: normal;
     line-height: 1;
 
+    margin-right: .5em;
+
     content: '\e900';
     text-transform: none;
 
     speak: none;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+@media screen and (max-width: 1300px)
+{
+    .time-page
+    {
+        padding: 3.125em 1.25em;
+    }
+}
+@media screen and (max-width: 1024px)
+{
+    .time-page__intro
+    {
+        width: 75%;
+    }
+}
+@media screen and (max-width: 550px)
+{
+    .time-page__intro
+    {
+        width: 100%;
+    }
 }
 .news-page
 {
