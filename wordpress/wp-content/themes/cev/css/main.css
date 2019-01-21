@@ -1664,6 +1664,10 @@ body
         width: 100%;
     }
 }
+.time-page
+{
+    padding: 3.125em 0;
+}
 .news-page
 {
     padding: 0 0 6.25em;

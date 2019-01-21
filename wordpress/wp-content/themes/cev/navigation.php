@@ -78,7 +78,7 @@
                             </a>
                         </li>
                         <li class="subnav__li">
-                            <a href="<?php the_permalink(); ?>">
+                            <a href="<?php the_permalink('146'); ?>">
 							    <?= __( 'Horaires', 'wp' ); ?>
                             </a>
                         </li>
