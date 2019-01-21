@@ -1670,11 +1670,43 @@ body
 }
 .time-page__bloc
 {
-    margin: 3.125em 0;
+    display: -ms-flexbox;
+    display: flex;
+        flex-direction: column;
+
+    margin: 3.125em auto;
+
+    -ms-flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 .time-page__link
 {
+    font-size: 1.25em;
+    font-weight: 300;
+
     display: block;
+
+    margin-bottom: 1.25em;
+
+    color: #4f6c7a;
+}
+.time-page__link:before
+{
+    font-family: 'icomoon';
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+
+    content: '\e902';
+    text-transform: none;
+
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 .news-page
 {
@@ -2366,13 +2398,6 @@ ul li ul:focus
         background-color: #365463;
     }
 }
-@media screen and (max-width: 500px)
-{
-    .nav__bloc-link img
-    {
-        width: 75%;
-    }
-}
 .title
 {
     font-family: 'firasans';
@@ -2974,6 +2999,22 @@ ul li ul:focus
     color: #fff;
     border-radius: 10px;
     background-color: #4f6c7a;
+}
+.wpcf7-form-control-wrap file-35
+{
+    font-size: .875em;
+
+    display: block;
+
+    margin-top: .714285714285714em;
+
+    color: #4f6c7a;
+}
+.wpcf7-form-control wpcf7-file
+{
+    font-weight: 300;
+
+    color: #4f6c7a;
 }
 @media screen and (max-width: 768px)
 {

@@ -17,8 +17,10 @@ Template Name: Page Time
             <div class="time-page__bloc">
 				<?php if ( have_rows( 'horaire' ) ): ?>
 					<?php while ( have_rows( 'horaire' ) ): the_row(); ?>
-                        <a href="<?= the_sub_field( 'time-pdf' ); ?>" target="_blank" class="time-page__link">
-                            <?= the_sub_field('time-name'); ?>
+                        <a href="<?= the_sub_field( 'time-pdf' ); ?>"
+                           target="_blank" class="time-page__link"
+                           title="Vers le fichier : <?= the_sub_field( 'time-name' ); ?>">
+							<?= the_sub_field( 'time-name' ); ?>
                         </a>
 					<?php endwhile; endif; ?>
             </div>
@@ -30,7 +32,7 @@ Template Name: Page Time
     <div class="infos__bg"></div>
     <section class="wrap">
         <h2 class="infos__title" aria-level="2"
-            role="heading"><?= __( 'Envie d\' en savoir plus ?', 'wp' ); ?></h2>
+            role="heading"><?= __( 'Besoin d\'informations sur L\'école vivante ?', 'wp' ); ?></h2>
         <a href="<?php the_permalink( '42' ); ?>"
            class="button-yellow button-center"><?= __( 'En savoir plus', 'wp' ); ?></a>
     </section>

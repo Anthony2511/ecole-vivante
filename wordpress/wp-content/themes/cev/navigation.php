@@ -61,10 +61,6 @@
 							    <?= __( 'Métier d\'enseignant', 'wp' ); ?>
                             </a>
                         </li>
-                        <li class="subnav__li"><a href="<?php the_permalink(); ?>">
-							    <?= __( 'Nos valeurs', 'wp' ); ?>
-                            </a>
-                        </li>
                     </ul>
                 </li>
                 <li class="menu__item-dropdown">

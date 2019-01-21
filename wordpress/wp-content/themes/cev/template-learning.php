@@ -38,9 +38,9 @@ Template Name: Page Learning
     <div class="infos__bg"></div>
     <section class="wrap">
         <h2 class="infos__title" aria-level="2"
-            role="heading"><?= __( 'Envie de nous rejoindre ?', 'wp' ); ?></h2>
-        <a href="<?php the_permalink(); ?>"
-           class="button-yellow button-center"><?= __( 'Rejoignez-nous', 'wp' ); ?></a>
+            role="heading"><?= __( 'Envie de nous connaître ?', 'wp' ); ?></h2>
+        <a href="<?php the_permalink('67'); ?>"
+           class="button-yellow button-center"><?= __( 'Voir nos membres', 'wp' ); ?></a>
     </section>
 </div>
 

@@ -1,6 +1,16 @@
 .time-page
   padding s(50,16) 0
   &__bloc
-    margin s(50,16) 0
+    margin s(50,16) auto
+    display flex
+    flex-direction column
+    justify-content center
+    align-items center
   &__link
     display block
+    margin-bottom s(20,16)
+    color $cBlue
+    font-size s(20,16)
+    font-weight:300
+    &:before
+      icon ('iconUser')
