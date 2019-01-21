@@ -9,6 +9,12 @@
     align-items center
     width 100%
     text-align right
+  &__title-icon
+    &:before
+      font-size s(14,16)
+      margin-right s(10,14)
+      icon('iconTime')
+      color $cBlue
   &__bloc + &__bloc
     margin-top s(30,16)
   &__bloc:nth-child(even)
@@ -25,6 +31,7 @@
     font-family 'firasans'
     margin-bottom s(30,25)
     &:before
+      color $cBlue
       icon ('iconUser')
       font-size s(20,25)
       margin-right s(10,20)

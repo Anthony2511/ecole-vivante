@@ -4,6 +4,12 @@
     width 60%
   &__parcours
     margin-top s(50,16)
+  &__title
+    &:before
+      font-size s(14,16)
+      margin-right s(10,14)
+      icon('iconWho')
+      color $cBlue
   &__list
     margin s(30,16) auto
     color $cBlue
@@ -18,7 +24,7 @@
       font-weight: 600
       font-size s(20,16)
       &:before
-        icon ('iconWho')
+        icon ('iconCalendar')
         margin-right s(10,20)
 
 @media screen and (max-width: 1300px)

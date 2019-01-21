@@ -10,7 +10,7 @@ Template Name: Page Learning
 <?php include( 'navigation.php' ); ?>
 <?php get_header(); ?>
 <section class="learning-page wrap">
-    <h2 class="title-center title__blue" aria-level="2"
+    <h2 class="learning-page__title-icon title-center title__blue" aria-level="2"
         role="heading"><?= __( 'Le temps d\'apprentissage', 'wp' ); ?></h2>
 	<?php if ( have_posts() ): while ( have_posts() ): the_post(); ?>
         <div class="learning-page__container">

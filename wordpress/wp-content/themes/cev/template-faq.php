@@ -10,7 +10,7 @@ Template Name: Page FAQ
 <?php include( 'navigation.php' ); ?>
 <?php get_header(); ?>
 <section class="faq-page wrap">
-    <h2 class="title-center title__blue" aria-level="2"
+    <h2 class="faq-page__title-icon title-center title__blue" aria-level="2"
         role="heading"><?= __( 'Foire aux questions', 'wp' ); ?></h2>
     <div class="faq-page__container">
         <div class="faq-page__intro">

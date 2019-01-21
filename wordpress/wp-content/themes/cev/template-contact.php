@@ -9,7 +9,7 @@ Template Name: Page Contact
 <?php include( 'navigation.php' ); ?>
 <?php get_header(); ?>
 <section class="contact-page wrap">
-    <h2 class="title-center title__blue" aria-level="2"
+    <h2 class="contact-page__title-icon title-center title__blue" aria-level="2"
         role="heading"><?= __( 'Contact', 'wp' ); ?></h2>
     <div class="contact-page__container">
         <div class="contact-page__bloc">

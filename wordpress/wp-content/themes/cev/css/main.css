@@ -191,8 +191,8 @@ body
     font-weight: normal;
     font-style: normal;
 
-    src: url('../fonts/icomoon/icomoon.eot?up9vi8');
-    src: url('../fonts/icomoon/icomoon.eot?up9vi8#iefix') format('embedded-opentype'), url('../fonts/icomoon/icomoon.ttf?up9vi8') format('truetype'), url('../fonts/icomoon/icomoon.woff?up9vi8') format('woff'), url('../fonts/icomoon/icomoon.svg?up9vi8#icomoon') format('svg');
+    src: url('../fonts/icomoon/icomoon.eot?o2so8g');
+    src: url('../fonts/icomoon/icomoon.eot?o2so8g#iefix') format('embedded-opentype'), url('../fonts/icomoon/icomoon.ttf?o2so8g') format('truetype'), url('../fonts/icomoon/icomoon.woff?o2so8g') format('woff'), url('../fonts/icomoon/icomoon.svg?o2so8g#icomoon') format('svg');
 }
 @font-face
 {
@@ -442,7 +442,7 @@ body
 
     margin-right: .666666666666667em;
 
-    content: '\e900';
+    content: '\e907';
     text-transform: none;
 
     speak: none;
@@ -506,7 +506,7 @@ body
 
     margin-right: .666666666666667em;
 
-    content: '\e901';
+    content: '\e908';
     text-transform: none;
 
     color: #f9ca24;
@@ -715,7 +715,7 @@ body
 
     margin-right: .571428571428571em;
 
-    content: '\e902';
+    content: '\e909';
     text-transform: none;
 
     speak: none;
@@ -750,7 +750,7 @@ body
 
     margin-left: .357142857142857em;
 
-    content: '\e905';
+    content: '\e90c';
     transition: .3s ease-in-out;
     text-transform: none;
 
@@ -836,6 +836,26 @@ body
     -ms-flex-pack: justify;
     justify-content: space-between;
 }
+.contact-page__title-icon:before
+{
+    font-family: 'icomoon';
+    font-size: .875em;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+
+    margin-right: .714285714285714em;
+
+    content: '\e904';
+    text-transform: none;
+
+    color: #4f6c7a;
+
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 .contact-page__bloc
 {
     width: 50%;
@@ -864,13 +884,14 @@ body
 {
     font-family: 'icomoon';
     font-weight: normal;
+    font-weight: 600;
     font-style: normal;
     font-variant: normal;
     line-height: 1;
 
     margin-right: .625em;
 
-    content: '\e902';
+    content: '\e906';
     text-transform: none;
 
     speak: none;
@@ -880,14 +901,16 @@ body
 .contact-page__item--mail:before
 {
     font-family: 'icomoon';
+    font-size: .875em;
     font-weight: normal;
+    font-weight: 600;
     font-style: normal;
     font-variant: normal;
     line-height: 1;
 
-    margin-right: .625em;
+    margin-right: .714285714285714em;
 
-    content: '\e902';
+    content: '\e904';
     text-transform: none;
 
     speak: none;
@@ -1051,6 +1074,26 @@ body
 {
     margin-top: 3.125em;
 }
+.who-page__title:before
+{
+    font-family: 'icomoon';
+    font-size: .875em;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+
+    margin-right: .714285714285714em;
+
+    content: '\e907';
+    text-transform: none;
+
+    color: #4f6c7a;
+
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 .who-page__list
 {
     max-width: 90%;
@@ -1084,7 +1127,7 @@ body
 
     margin-right: .5em;
 
-    content: '\e900';
+    content: '\e905';
     text-transform: none;
 
     speak: none;
@@ -1200,7 +1243,7 @@ body
 
     margin-right: .357142857142857em;
 
-    content: '\e902';
+    content: '\e909';
     text-transform: none;
 
     speak: none;
@@ -1217,7 +1260,7 @@ body
 
     margin-right: .357142857142857em;
 
-    content: '\e902';
+    content: '\e909';
     text-transform: none;
 
     speak: none;
@@ -1285,6 +1328,26 @@ body
     -ms-flex-align: center;
     align-items: center;
 }
+.learning-page__title-icon:before
+{
+    font-family: 'icomoon';
+    font-size: .875em;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+
+    margin-right: .714285714285714em;
+
+    content: '\e903';
+    text-transform: none;
+
+    color: #4f6c7a;
+
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 .learning-page__bloc + .learning-page__bloc
 {
     margin-top: 1.875em;
@@ -1326,8 +1389,10 @@ body
 
     margin-right: .5em;
 
-    content: '\e902';
+    content: '\e909';
     text-transform: none;
+
+    color: #4f6c7a;
 
     speak: none;
     -webkit-font-smoothing: antialiased;
@@ -1407,6 +1472,26 @@ body
 .job-page__container
 {
     color: #4f6c7a;
+}
+.job-page__title-icon:before
+{
+    font-family: 'icomoon';
+    font-size: .875em;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+
+    margin-right: .714285714285714em;
+
+    content: '\e902';
+    text-transform: none;
+
+    color: #4f6c7a;
+
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 .job-page__intro
 {
@@ -1546,6 +1631,26 @@ body
 
     text-align: center;
 }
+.faq-page__title-icon:before
+{
+    font-family: 'icomoon';
+    font-size: .875em;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+
+    margin-right: .714285714285714em;
+
+    content: '\e909';
+    text-transform: none;
+
+    color: #4f6c7a;
+
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 .faq-page__question
 {
     margin-top: 3.125em;
@@ -1573,7 +1678,7 @@ body
 
     margin-left: .833333333333333em;
 
-    content: '\e904';
+    content: '\e90b';
     text-transform: none;
 
     speak: none;
@@ -1682,6 +1787,26 @@ body
     -ms-flex-align: center;
     align-items: center;
 }
+.time-page__title-icon:before
+{
+    font-family: 'icomoon';
+    font-size: .875em;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+
+    margin-right: .714285714285714em;
+
+    content: '\e901';
+    text-transform: none;
+
+    color: #4f6c7a;
+
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 .time-page__link
 {
     font-size: 1.25em;
@@ -1701,7 +1826,7 @@ body
     font-variant: normal;
     line-height: 1;
 
-    content: '\e902';
+    content: '\e900';
     text-transform: none;
 
     speak: none;
@@ -1723,6 +1848,30 @@ body
     color: #fff;
     border-radius: 0 0 10px 10px;
     background-color: #4f6c7a;
+}
+.news-page__title-icon
+{
+    margin: 1.428571428571429em 0;
+}
+.news-page__title-icon:before
+{
+    font-family: 'icomoon';
+    font-size: .875em;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+
+    margin-right: .714285714285714em;
+
+    content: '\e908';
+    text-transform: none;
+
+    color: #4f6c7a;
+
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 .news-page__category
 {
@@ -1884,7 +2033,7 @@ body
     top: 8px;
     right: 0;
 
-    content: '\e906';
+    content: '\e90d';
     text-transform: none;
 
     color: #fff;
@@ -2149,7 +2298,7 @@ body
 
     margin-left: .625em;
 
-    content: '\e904';
+    content: '\e90b';
     transition: .3s ease-in-out;
     text-transform: none;
 
@@ -2491,7 +2640,7 @@ ul li ul:focus
 
     margin-right: 1.111111111111111em;
 
-    content: '\e904';
+    content: '\e90b';
     transition: .2s ease-in-out;
     -ms-transform: rotate(90deg) translateY(0);
         transform: rotate(90deg) translateY(0);
@@ -2569,7 +2718,7 @@ ul li ul:focus
 
     padding: .5em .75em;
 
-    content: '\e903';
+    content: '\e90a';
     text-transform: none;
 
     color: #fff;
@@ -2614,31 +2763,25 @@ ul li ul:focus
 
     margin-right: .625em;
 
-    content: '\e902';
+    content: '\e906';
     text-transform: none;
 
     speak: none;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-.footer__contact-item--mail a
-{
-    margin-left: 1.25em;
-}
 .footer__contact-item--mail:before
 {
     font-family: 'icomoon';
+    font-size: .875em;
     font-weight: normal;
     font-style: normal;
     font-variant: normal;
     line-height: 1;
 
-    position: absolute;
-    top: 8px;
+    margin-right: .714285714285714em;
 
-    margin-right: .625em;
-
-    content: '\e902';
+    content: '\e904';
     text-transform: none;
 
     speak: none;

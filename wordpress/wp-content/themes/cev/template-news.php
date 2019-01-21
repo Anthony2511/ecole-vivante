@@ -10,7 +10,7 @@ Template Name: Page News
 <?php include( 'navigation.php' ); ?>
 <?php get_header(); ?>
 <section class="home-news wrap news-page">
-    <h2 class="home-news__title home-news__title--icon title-center title__blue" aria-level="2"
+    <h2 class="news-page__title-icon title-center title__blue" aria-level="2"
         role="heading"><?= __( 'Nos dernières actualités/évènements', 'wp' ); ?></h2>
 	<?php include( 'parts/switcher-news.php' ); ?>
     <div class="home-news__container">

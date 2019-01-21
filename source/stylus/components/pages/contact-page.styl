@@ -8,6 +8,12 @@
     margin s(50,16) 0
     padding s(30,16)
     border-radius 10px
+  &__title-icon
+    &:before
+      font-size s(14,16)
+      margin-right s(10,14)
+      icon('iconEnvelope')
+      color $cBlue
   &__bloc
     width 50%
   &__logo
@@ -22,12 +28,15 @@
     line-height 1.6
     &--tel
       &:before
-        icon('iconUser')
+        icon('iconTel')
         margin-right s(10,16)
+        font-weight:600
     &--mail
       &:before
-        icon('iconUser')
-        margin-right s(10,16)
+        icon('iconEnvelope')
+        font-size s(14,16)
+        margin-right s(10,14)
+        font-weight:600
   &__form-label
     display block
     color $cBlue

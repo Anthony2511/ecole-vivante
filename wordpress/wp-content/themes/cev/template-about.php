@@ -10,7 +10,7 @@ Template Name: Page About
 <?php include( 'navigation.php' ); ?>
 <?php get_header(); ?>
 <section class="home-who wrap">
-    <h2 class="title-center title__blue" aria-level="2"
+    <h2 class="who-page__title title-center title__blue" aria-level="2"
         role="heading"><?= __( '&Aacute; Propos de nous', 'wp' ); ?></h2>
     <div class="home-who__container who-page">
         <div class="home-who__bloc who-page__bloc">

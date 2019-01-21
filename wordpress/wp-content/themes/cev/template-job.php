@@ -10,7 +10,7 @@ Template Name: Page Job
 <?php include( 'navigation.php' ); ?>
 <?php get_header(); ?>
 <section class="job-page wrap">
-    <h2 class="title-center title__blue" aria-level="2"
+    <h2 class="job-page__title-icon title-center title__blue" aria-level="2"
         role="heading"><?= __( 'Le métier d\'enseignant', 'wp' ); ?></h2>
     <div class="job-page__container">
         <div class="job-page__intro">
