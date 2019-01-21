@@ -1668,6 +1668,14 @@ body
 {
     padding: 3.125em 0;
 }
+.time-page__bloc
+{
+    margin: 3.125em 0;
+}
+.time-page__link
+{
+    display: block;
+}
 .news-page
 {
     padding: 0 0 6.25em;
