@@ -4304,6 +4304,17 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object
         left: 0;
     }
 }
+mc4wp-response
+{
+    margin-top: 1.25em;
+}
+.mc4wp-alert mc4wp-notice
+{
+    padding: .625em;
+
+    color: #fff;
+    background-color: #365463;
+}
 .wrap
 {
     max-width: 77.5em;

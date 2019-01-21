@@ -13,19 +13,19 @@ Template Name: Page About
     <h2 class="who-page__title title-center title__blue" aria-level="2"
         role="heading"><?= __( '&Aacute; Propos de nous', 'wp' ); ?></h2>
     <div class="home-who__container who-page">
-        <div class="home-who__bloc who-page__bloc">
+        <section class="home-who__bloc who-page__bloc">
             <h3 aria-level="3" role="heading" class="title title__blue"><?= __( 'Notre histoire', 'wp' ); ?></h3>
             <div class="home-who__bloc-text">
 				<?= get_field( 'about-intro-text' ); ?>
             </div>
-        </div>
+        </section>
         <div class="home-who__bloc-img">
             <figure>
 				<?php $aboutImg = get_field( 'about-img' ); ?>
                 <img src="<?= $aboutImg['url']; ?>" alt="<?= $aboutImg['alt']; ?>">
             </figure>
 			<?php if ( have_posts() ): while ( have_posts() ): the_post(); ?>
-                <div class="who-page__parcours">
+                <section class="who-page__parcours">
                     <h3 aria-level="3" role="heading"
                         class="title-center title__blue"><?= __( 'Notre parcours', 'wp' ); ?></h3>
 					<?php if ( have_rows( 'parcours' ) ): ?>
@@ -37,9 +37,10 @@ Template Name: Page About
                                 </li>
                             </ul>
 						<?php endwhile; endif; ?>
-                </div>
+                </section>
 			<?php endwhile; endif; ?>
         </div>
+    </div>
 </section>
 <div class="infos infos__white">
     <div class="infos__bg"></div>

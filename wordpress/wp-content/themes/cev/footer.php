@@ -12,7 +12,7 @@
 			<?php if ( $posts->have_posts() ) : while ( $posts->have_posts() ): $posts->the_post(); ?>
                 <section class="footer__bloc" itemscope itemtype="http://schema.org/Organization">
                     <h3 aria-level="3" role="heading" class="footer__title"><?= __( 'Contact', 'wp' ); ?></h3>
-                    <ul class="footer__contact" temprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                    <ul class="footer__contact" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
                         <li itemprop="streetAddress">
 							<?= the_field( 'contact-street' ); ?>
                         </li>
@@ -57,16 +57,12 @@
             <section class="footer__bloc">
                 <h3 aria-level="3" role="heading"
                     class="footer__title"><?= __( 'S\'inscrire à la newsletter', 'wp' ); ?></h3>
-                <form action="" method="post">
-                    <label for="email" class="hidden"></label>
-                    <input type="text" id="email" placeholder="jeandupont@gmail.com" class="footer__newsletter-input">
-                    <input type="submit" value="S'inscrire" class="button-yellow">
-                </form>
+	            <?= do_shortcode( '[mc4wp_form id="158"]' ); ?>
             </section>
         </div>
     </div>
     <div class="footer__partners">
-        <div class="wrap">
+        <section class="wrap">
             <h3 class="footer__partners-title" aria-level="3" role="heading">
 				<?= __( 'Nos partenaires', 'wp' ); ?>
             </h3>
@@ -87,7 +83,7 @@
                 </div>
 			<?php endwhile; endif; ?>
 			<?php wp_reset_postdata(); ?>
-        </div>
+        </section>
     </div>
     <div class="footer__copyright">
         <div class="wrap">
