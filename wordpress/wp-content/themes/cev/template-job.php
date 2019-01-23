@@ -36,9 +36,10 @@ Template Name: Page Job
     <div class="infos__bg"></div>
     <section class="wrap">
         <h2 class="infos__title" aria-level="2"
-            role="heading"><?= __( 'Envie de nous rejoindre ?', 'wp' ); ?></h2>
-        <a href="<?php the_permalink(); ?>"
-           class="button-yellow button-center"><?= __( 'Rejoignez-nous', 'wp' ); ?></a>
+            role="heading"><?= __( 'Envie de voir nos membres ?', 'wp' ); ?></h2>
+        <a href="<?php the_permalink('67'); ?>"
+           title="Vers la page Membres"
+           class="button-yellow button-center"><?= __( 'Voir les membres', 'wp' ); ?></a>
     </section>
 </div>
 

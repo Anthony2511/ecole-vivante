@@ -22,7 +22,7 @@ include( 'head.php' ); ?>
                 <div class="home-who__bloc-text">
 					<?= wp_trim_words( get_field( 'about-intro-text' ), 114, '...' ); ?>
                 </div>
-                <a href="<?php the_permalink( '42' ); ?>" class="button-yellow"><?= __( 'En savoir plus', 'wp' ); ?></a>
+                <a href="<?php the_permalink( '42' ); ?>" title="Vers la page A Propos" class="button-yellow"><?= __( 'En savoir plus', 'wp' ); ?></a>
             </div>
             <div class="home-who__bloc-img">
                 <figure>

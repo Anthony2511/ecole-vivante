@@ -307,7 +307,7 @@ body
 
     content: '';
 
-    background-color: rgba(79,108,122,.75);
+    background-color: rgba(79,108,122,.65);
 }
 .header-home
 {
@@ -1109,7 +1109,7 @@ body
 
     text-align: center;
 }
-.who-page__item span
+.who-page__item time
 {
     font-family: 'firasans';
     font-size: 1.25em;
@@ -1117,7 +1117,7 @@ body
 
     display: block;
 }
-.who-page__item span:before
+.who-page__item time:before
 {
     font-family: 'icomoon';
     font-weight: normal;
@@ -1167,7 +1167,7 @@ body
     {
         font-size: .875em;
     }
-    .who-page__item span
+    .who-page__item time
     {
         font-size: 1em;
     }
@@ -1418,6 +1418,8 @@ body
     {
             flex-direction: column;
 
+        margin-bottom: 3.125em;
+
         -ms-flex-direction: column;
     }
     .learning-page__bloc:nth-child(even)
@@ -1511,6 +1513,8 @@ body
 {
     width: 75%;
     margin: 3.125em auto;
+
+    list-style-type: none;
 
     counter-reset: section;
 }
@@ -2653,7 +2657,7 @@ ul li ul:focus
 
     content: '';
 
-    background-color: rgba(79,108,122,.75);
+    background-color: rgba(79,108,122,.65);
 }
 .breadcrumb
 {
@@ -2869,6 +2873,16 @@ ul li ul:focus
     padding-bottom: 3.125em;
 
     background-color: #365463;
+}
+.footer__partners img
+{
+    transition: .3s ease-in-out;
+}
+.footer__partners img:hover
+{
+    transition: .3s ease-in-out;
+
+    opacity: .5;
 }
 .footer__partners-bloc
 {

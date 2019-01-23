@@ -18,13 +18,14 @@
       font-weight:600
   &__list
     counter-reset section
+    list-style-type none
     width 75%
     margin s(50,16) auto
   &__item
-    counter-increment section
     margin s(30,16) 0
     font-weight:300
     line-height 1.6
+    counter-increment section
     &:before
       font-weight: 600
       font-size s(20,16)

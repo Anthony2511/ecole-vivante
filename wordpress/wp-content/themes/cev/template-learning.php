@@ -40,6 +40,7 @@ Template Name: Page Learning
         <h2 class="infos__title" aria-level="2"
             role="heading"><?= __( 'Envie de nous connaître ?', 'wp' ); ?></h2>
         <a href="<?php the_permalink('67'); ?>"
+           title="Vers la page Membres"
            class="button-yellow button-center"><?= __( 'Voir nos membres', 'wp' ); ?></a>
     </section>
 </div>

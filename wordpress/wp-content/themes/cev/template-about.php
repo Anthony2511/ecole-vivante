@@ -32,7 +32,7 @@ Template Name: Page About
 						<?php while ( have_rows( 'parcours' ) ): the_row(); ?>
                             <ul class="who-page__list">
                                 <li class="who-page__item">
-                                    <span><?= the_sub_field( 'date' ); ?></span>
+                                    <time datetime="<?= the_sub_field('date'); ?>"><?= the_sub_field( 'date' ); ?></time>
 									<?= the_sub_field( 'texte' ); ?>
                                 </li>
                             </ul>
@@ -47,7 +47,7 @@ Template Name: Page About
     <section class="wrap">
         <h2 class="infos__title" aria-level="2"
             role="heading"><?= __( 'Besoin de nous contacter ?', 'wp' ); ?></h2>
-        <a href="<?php the_permalink('62'); ?>" class="button-yellow button-center"><?= __( 'Contactez-nous', 'wp' ); ?></a>
+        <a href="<?php the_permalink('62'); ?>" title="Vers la page Contact" class="button-yellow button-center"><?= __( 'Contactez-nous', 'wp' ); ?></a>
     </section>
 </div>
 

@@ -37,9 +37,10 @@ Template Name: Page FAQ
     <div class="infos__bg"></div>
     <section class="wrap">
         <h2 class="infos__title" aria-level="2"
-            role="heading"><?= __( 'Envie de nous rejoindre ?', 'wp' ); ?></h2>
-        <a href="<?php the_permalink(); ?>"
-           class="button-yellow button-center"><?= __( 'Rejoignez-nous', 'wp' ); ?></a>
+            role="heading"><?= __( 'D\'autres questions ?', 'wp' ); ?></h2>
+        <a href="<?php the_permalink('62'); ?>"
+           title="Vers la page Contact"
+           class="button-yellow button-center"><?= __( 'Contactez-nous', 'wp' ); ?></a>
     </section>
 </div>
 

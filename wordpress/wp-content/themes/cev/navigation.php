@@ -91,7 +91,7 @@
                     </a>
                 </li>
             </ul>
-            <a href="#" class="search"><span class="hidden">Recherche</span></a>
+            <!--<a href="#" class="search"><span class="hidden">Recherche</span></a>-->
         </div>
     </div>
 </nav>

@@ -37,6 +37,7 @@ Template Name: Page Time
         <h2 class="infos__title" aria-level="2"
             role="heading"><?= __( 'Besoin d\'informations sur L\'école vivante ?', 'wp' ); ?></h2>
         <a href="<?php the_permalink( '42' ); ?>"
+           title="Vers la page A Propos"
            class="button-yellow button-center"><?= __( 'En savoir plus', 'wp' ); ?></a>
     </section>
 </div>

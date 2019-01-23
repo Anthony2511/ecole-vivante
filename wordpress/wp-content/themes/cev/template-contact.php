@@ -59,7 +59,7 @@ Template Name: Page Contact
     <div class="infos__bg"></div>
     <section class="wrap">
         <h2 class="infos__title" aria-level="2"
-            role="heading"><?= __( 'Besoin d\'informations sur L\'école vivante ?', 'wp' ); ?></h2>
+            role="heading"><?= __( 'D\'informations sur L\'école vivante ?', 'wp' ); ?></h2>
         <a href="<?php the_permalink( '42' ); ?>"
            class="button-yellow button-center"><?= __( 'En savoir plus', 'wp' ); ?></a>
     </section>

@@ -41,7 +41,9 @@ Template Name: Page Members
 									<?= the_sub_field( 'membre-tel' ); ?>
                                 </li>
                                 <li class="members-page__item members-page__item--email">
-									<?= the_sub_field( 'membre-email' ); ?>
+                                    <a href="mailto:<?= the_sub_field('membre-email'); ?>">
+	                                    <?= the_sub_field( 'membre-email' ); ?>
+                                    </a>
                                 </li>
                             </ul>
                             <p class="members-page__text-info">
@@ -58,8 +60,9 @@ Template Name: Page Members
     <section class="wrap">
         <h2 class="infos__title" aria-level="2"
             role="heading"><?= __( 'Envie de nous rejoindre ?', 'wp' ); ?></h2>
-        <a href="<?php the_permalink(); ?>"
-           class="button-yellow button-center"><?= __( 'Rejoignez-nous', 'wp' ); ?></a>
+        <a href="<?php the_permalink('62'); ?>"
+           title="Vers la page Contact"
+           class="button-yellow button-center"><?= __( 'Contactez-nous', 'wp' ); ?></a>
     </section>
 </div>
 
